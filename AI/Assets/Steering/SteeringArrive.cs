@@ -5,7 +5,7 @@ public class SteeringArrive : MonoBehaviour {
 
 	public float min_distance = 0.1f;
 	public float slow_distance = 5.0f;
-	public float time_to_accel = 0.1f;
+	public float time_to_accel = 0.2f;
     public float slow_factor;
     Move move;
 
@@ -38,7 +38,7 @@ public class SteeringArrive : MonoBehaviour {
 
    
 
-        vec_act = move.movement;
+        vec_act = move.movement_vel;
         vec_t_m = target - this.transform.position;
 
 

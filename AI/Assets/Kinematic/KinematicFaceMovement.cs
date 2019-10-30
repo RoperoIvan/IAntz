@@ -15,7 +15,8 @@ public class KinematicFaceMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		float target_degrees = Mathf.Atan2(move.movement.x, move.movement.z) * Mathf.Rad2Deg;
+		float target_degrees = Mathf.Atan2(move.movement_vel.x, move.movement_vel.z) * Mathf.Rad2Deg;
+
 		float current_degrees = Mathf.Atan2(transform.forward.x, transform.forward.z) * Mathf.Rad2Deg;
 		float delta = Mathf.DeltaAngle(target_degrees, current_degrees);
 

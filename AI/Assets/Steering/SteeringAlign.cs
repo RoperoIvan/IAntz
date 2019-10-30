@@ -30,7 +30,7 @@ public class SteeringAlign : MonoBehaviour {
 
         Vector3 vec_t_m;
         Vector3 vec_my_front;
-        Vector3 vec_to_accel;
+
 
         current_rotation = move.rotation;
 

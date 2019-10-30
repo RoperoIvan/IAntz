@@ -21,8 +21,8 @@ public class SteeringVelocityMatching : MonoBehaviour {
 		{
             // TODO 8: First come up with your ideal velocity
             // then accelerate to it.
-            Vector3 vec_desired = target_move.movement;
-            Vector3 vec_my_vel = move.movement;
+            Vector3 vec_desired = target_move.movement_vel;
+            Vector3 vec_my_vel = move.movement_vel;
             Vector3 final_acc;
 
             Vector3 accelerate_to_match = (vec_desired - vec_my_vel) / time_to_accel;
