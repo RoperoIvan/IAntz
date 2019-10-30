@@ -28,6 +28,7 @@ public class SteeringWander : MonoBehaviour {
 		diff /= time_to_target;
 
 		move.AccelerateMovement(diff);
+        
 	}
 
 	void OnDrawGizmosSelected() 
