@@ -12,14 +12,15 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
 	public LayerMask mask;
 	public float avoid_distance = 5.0f;
     public CustomRayCast[] ray;
-
 	Move move;
 	SteeringSeek seek;
+    SteeringAlign align;
 
 	// Use this for initialization
 	void Start () {
 		move = GetComponent<Move>(); 
 		seek = GetComponent<SteeringSeek>();
+        align = GetComponent<SteeringAlign>();
 	}
 	
 	// Update is called once per frame
@@ -30,21 +31,30 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
         // 2- Calculate a quaternion with rotation based on movement vector
         // 3- Cast all rays. If one hit, get away from that surface using the hitpoint and normal info
         // 4- Make sure there is debug draw for all rays (below in OnDrawGizmosSelected)
+ 
+        float angle = Mathf.Atan2(move.movement_vel.x, move.movement_vel.z);
+        Quaternion q = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, Vector3.up);
 
         foreach (CustomRayCast custom_ray in ray)
         {
             RaycastHit hit;
-            Vector3 vec_detect_pos = new Vector3(transform.position.x, 1.0f, transform.position.z);
-            if (Physics.Raycast(vec_detect_pos, custom_ray.vec_direction, out hit, custom_ray.length, mask) == true)
-            {
-                Vector3 vec_escape = new Vector3(hit.point.x, transform.position.y, hit.point.z) + hit.normal * avoid_distance;
-                seek.Steer(vec_escape);
+            custom_ray.vec_direction = Vector3.zero;
+            custom_ray.vec_direction = q * this.transform.forward;
 
+            if (Physics.Raycast(transform.position, custom_ray.vec_direction, out hit, custom_ray.length, mask) == true)
+            {
+
+                Vector3 vec_escape = hit.point + hit.normal - transform.position;
+                vec_escape.Normalize();
+                vec_escape *= avoid_distance;
+                move.SetMovementVelocity(vec_escape);
             }
+            
         }
     }
-
-	void OnDrawGizmosSelected() 
+    
+    //new Vector3(hit.point.x, transform.position.y, hit.point.z) + hit.normal* avoid_distance;
+    void OnDrawGizmosSelected() 
 	{
 		if(move && this.isActiveAndEnabled)
 		{
@@ -54,7 +64,7 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
 
             // TODO 2: Debug draw thoise rays (Look at Gizmos.DrawLine)
             foreach (CustomRayCast custom_ray in ray)
-                Gizmos.DrawLine(transform.position, transform.position + (q * custom_ray.vec_direction.normalized) * custom_ray.length);
+                Gizmos.DrawLine(transform.position, transform.position + (custom_ray.vec_direction * custom_ray.length));
         }
 	}
 }

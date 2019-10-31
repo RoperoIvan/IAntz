@@ -22,6 +22,12 @@ public class SteeringAlign : MonoBehaviour {
         // TODO 7: Very similar to arrive, but using angular velocities
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
+        DrivetoTarget(move.target.transform.position);
+        
+       
+    }
+    public void DrivetoTarget(Vector3 target)
+    {
 
         float current_rotation;
         float desired_rotation;
@@ -34,7 +40,7 @@ public class SteeringAlign : MonoBehaviour {
 
         current_rotation = move.rotation;
 
-        vec_t_m = move.target.transform.position - this.transform.position;
+        vec_t_m = target - this.transform.position;
         vec_my_front = this.transform.forward;
 
         desired_rotation = Vector3.SignedAngle(vec_my_front, vec_t_m, Vector3.up);
@@ -57,7 +63,5 @@ public class SteeringAlign : MonoBehaviour {
             move.AccelerateMovement(this.transform.forward);
 
         }
-        
-       
     }
 }

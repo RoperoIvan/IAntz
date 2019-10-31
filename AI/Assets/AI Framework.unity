@@ -637,7 +637,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 127bc74a6a175479ea3c5915672c9923, type: 2}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: mask.m_Bits
@@ -697,7 +697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11473662, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11427050, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: m_Enabled
@@ -2408,13 +2408,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: mask.m_Bits
-      value: 256
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.data[0].length
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.data[0].vec_direction.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.data[0].off_set.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.data[0].off_set.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: ray.Array.data[0].vec_direction.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11473662, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427050, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490270, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428332, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2430,11 +2470,8 @@ PrefabInstance:
       propertyPath: time_to_accel
       value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 11428332, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1612423227599879548, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 77aab66f3904942bab33067e31d9d228, type: 3}
 --- !u!1 &1258218286
 GameObject:
@@ -2446,7 +2483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258218287}
   - component: {fileID: 1258218288}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
