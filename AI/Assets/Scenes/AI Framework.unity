@@ -281,11 +281,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185647055}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdb74c0d43ad45458532f1a1ff22e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 3
   Path: {fileID: 322175341}
   ratio_increment: 0.1
   min_distance: 3
@@ -4773,10 +4774,20 @@ PrefabInstance:
       propertyPath: ray.Array.data[0].length
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649397, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: priority
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7988441316693648392, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648392, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5616273183912205160, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
@@ -4888,7 +4899,42 @@ PrefabInstance:
       propertyPath: mask.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: priority
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649396, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648394, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648394, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7988441316693648395, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648395, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: priority
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050468886429065096, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: mask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050468886429065096, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_Enabled
       value: 0
