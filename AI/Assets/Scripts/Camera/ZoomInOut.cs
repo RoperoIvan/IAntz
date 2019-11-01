@@ -10,7 +10,7 @@ public class ZoomInOut : MonoBehaviour
     void Update()
     {
       float fov = Camera.main.fieldOfView;
-      fov -= Input.GetAxis("Mouse ScrollWheel") * zoom_speed;
+      fov -= Input.GetAxis("Mouse ScrollWheel") * zoom_speed * Time.deltaTime;
       fov = Mathf.Clamp(fov, minimum_fov, maximum_fov);
       Camera.main.fieldOfView = fov;
     }
