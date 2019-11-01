@@ -7,31 +7,28 @@ public class SteeringWander : MonoBehaviour {
 	public float time_to_target = 0.25f;
 
 	Move move;
+    SteeringArrive arrive;
+    Vector3 vec_random_destination;
+    // Use this for initialization
 
-	// Use this for initialization
-	void Start () {
-		move = GetComponent<Move>();
-	}
 
-	// Update is called once per frame
-	void Update () 
-	{
-        // TODO Homework: Update the target location to a random point in a circle
-        // You could just call seek.Steer() / arrive.Steer() or simply do the calculations by yourself
-        // like the code below.
+    void Start()
+    {
+        move = GetComponent<Move>();
+        arrive = GetComponent<SteeringArrive>();
+        vec_random_destination = new Vector3(Random.Range(-10.0f, 10.0f), transform.position.y, Random.Range(-10.0f, 10.0f));
+    }
 
-		Vector3 diff = move.target.transform.position - transform.position;
+    void Update()
+    {
+        if (Vector3.Distance(transform.position, vec_random_destination) < 1)
+        {
+            vec_random_destination = new Vector3(Random.Range(-10.0f, 10.0f), transform.position.y, Random.Range(-10.0f, 10.0f));
+        }
+        arrive.Steer(vec_random_destination);
+    }
 
-		if(diff.magnitude < min_distance)
-			return;
-
-		diff /= time_to_target;
-
-		move.AccelerateMovement(diff);
-        
-	}
-
-	void OnDrawGizmosSelected() 
+    void OnDrawGizmosSelected() 
 	{
 		// Display the explosion radius when selected
 		Gizmos.color = Color.white;
