@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteeringArrive : MonoBehaviour {
+public class SteeringArrive : SteeringAbstract
+{
 
 	public float min_distance = 0.1f;
 	public float slow_distance = 5.0f;
@@ -43,7 +44,7 @@ public class SteeringArrive : MonoBehaviour {
 
 
         if (vec_t_m.magnitude <= min_distance)
-            move.SetMovementVelocity(Vector3.zero);
+            move.SetMovementVelocity(Vector3.zero, priority);
         else
         {
             if (vec_t_m.magnitude <= slow_distance)
@@ -60,7 +61,7 @@ public class SteeringArrive : MonoBehaviour {
             float clamped = Mathf.Clamp(vec_crt.magnitude, -move.max_mov_acceleration, move.max_mov_acceleration);
             vec_fn *= clamped;
 
-            move.AccelerateMovement(vec_fn);
+            move.AccelerateMovement(vec_fn, priority);
           
             
         }

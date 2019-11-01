@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteeringVelocityMatching : MonoBehaviour {
+public class SteeringVelocityMatching : SteeringAbstract
+{
 
 	public float time_to_accel = 0.25f;
     public GameObject velocity_target;
@@ -32,7 +33,7 @@ public class SteeringVelocityMatching : MonoBehaviour {
 
             final_acc *= Clamped;
 
-            move.AccelerateMovement(final_acc);
+            move.AccelerateMovement(final_acc, priority);
 
 
             

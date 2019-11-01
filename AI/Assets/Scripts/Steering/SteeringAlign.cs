@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteeringAlign : MonoBehaviour {
+public class SteeringAlign : SteeringAbstract
+{
 
 	public float min_angle = 0.01f;
 	public float slow_angle = 10.0f;
@@ -22,11 +23,11 @@ public class SteeringAlign : MonoBehaviour {
         // TODO 7: Very similar to arrive, but using angular velocities
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
-        DrivetoTarget(move.target.transform.position);
+        DrivetoTarget(move.target.transform.position, priority);
         
        
     }
-    public void DrivetoTarget(Vector3 target)
+    public void DrivetoTarget(Vector3 target, int prio)
     {
 
         float current_rotation;
@@ -46,7 +47,7 @@ public class SteeringAlign : MonoBehaviour {
         desired_rotation = Vector3.SignedAngle(vec_my_front, vec_t_m, Vector3.up);
 
         if (desired_rotation <= min_angle && desired_rotation >= -min_angle)
-            move.SetRotationVelocity(0);
+            move.SetRotationVelocity(0, prio);
         else
         {
             //if (desired_rotation <= slow_angle && desired_rotation >= -slow_angle)
@@ -59,8 +60,8 @@ public class SteeringAlign : MonoBehaviour {
 
             correct_rotation = Mathf.Clamp(correct_rotation, -move.max_rot_acceleration, move.max_rot_acceleration);
 
-            move.AccelerateRotation(correct_rotation);
-            move.AccelerateMovement(this.transform.forward);
+            move.AccelerateRotation(correct_rotation, prio);
+            move.AccelerateMovement(this.transform.forward, prio);
 
         }
     }

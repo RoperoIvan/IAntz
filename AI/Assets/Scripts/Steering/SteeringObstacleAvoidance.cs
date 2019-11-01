@@ -7,7 +7,8 @@ public class CustomRayCast
     public float length = 4.0f;
 }
 
-public class SteeringObstacleAvoidance : MonoBehaviour {
+public class SteeringObstacleAvoidance : SteeringAbstract
+{
 
 	public LayerMask mask;
 	public float avoid_distance = 10.0f;
@@ -50,7 +51,7 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
                 Vector3 vec_escape = (hit.point + (hit.normal*avoid_distance));
                 vec_escape.y = 0;
                 
-                seek.Steer(vec_escape); //todo guillem
+                seek.Steer(vec_escape, priority); //todo guillem
             }
             
         }

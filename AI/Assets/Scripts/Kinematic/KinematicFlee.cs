@@ -17,6 +17,6 @@ public class KinematicFlee : MonoBehaviour {
 		diff.Normalize ();
 		diff *= move.max_mov_speed;
 
-		move.SetMovementVelocity(diff);
+		move.SetMovementVelocity(diff, 0);
 	}
 }

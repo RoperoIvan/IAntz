@@ -28,6 +28,6 @@ public class KinematicWander : MonoBehaviour {
 
 		velocity *= move.max_mov_speed;
 
-		move.SetMovementVelocity(velocity);
+		move.SetMovementVelocity(velocity, 0);
 	}
 }

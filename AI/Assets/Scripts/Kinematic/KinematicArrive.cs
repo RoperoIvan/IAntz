@@ -19,11 +19,11 @@ public class KinematicArrive : MonoBehaviour {
 		Vector3 diff = move.target.transform.position - transform.position;
 
 		if(diff.magnitude < min_distance)
-			move.SetMovementVelocity(Vector3.zero);
+			move.SetMovementVelocity(Vector3.zero, 0);
 
 		diff /= time_to_target;
 
-		move.SetMovementVelocity(diff);
+		move.SetMovementVelocity(diff, 0);
 	}
 
 	void OnDrawGizmosSelected() 

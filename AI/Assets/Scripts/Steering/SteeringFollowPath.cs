@@ -3,10 +3,12 @@ using System.Collections;
 using BansheeGz.BGSpline.Components;
 using BansheeGz.BGSpline.Curve;
 
-public class SteeringFollowPath : MonoBehaviour {
+public class SteeringFollowPath : SteeringAbstract
+{
 
 	Move move;
 	SteeringSeek seek;
+    SteeringAlign align;
 
     public BGCcMath Path;
     public float ratio_increment = 0.1f;
@@ -19,6 +21,7 @@ public class SteeringFollowPath : MonoBehaviour {
 	void Start () {
 		move = GetComponent<Move>();
 		seek = GetComponent<SteeringSeek>();
+        align = GetComponent<SteeringAlign>();
 
         // TODO 1: Calculate the closest point from the tank to the curve
         path_point = Path.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
@@ -40,7 +43,7 @@ public class SteeringFollowPath : MonoBehaviour {
             path_point = Path.CalcPositionByDistanceRatio(current_ratio);
         }
 
-        seek.Steer(path_point);
+        align.DrivetoTarget(path_point, priority);
 
 	}
 

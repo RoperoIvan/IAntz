@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteeringFlee : MonoBehaviour {
+public class SteeringFlee : SteeringAbstract
+{
 
 	Move move;
 
@@ -29,7 +30,7 @@ public class SteeringFlee : MonoBehaviour {
 
         movement_accelerated = vec_t_m * move.max_mov_acceleration;
 
-        move.AccelerateMovement(-movement_accelerated);
+        move.AccelerateMovement(-movement_accelerated, priority);
 
     }
 }

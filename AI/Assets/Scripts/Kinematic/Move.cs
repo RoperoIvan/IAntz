@@ -16,32 +16,71 @@ public class Move : MonoBehaviour {
 	public Vector3 current_velocity = Vector3.zero;
 	public float current_rotation_speed = 0.0f; // degrees
 
-	// Methods for behaviours to set / add velocities
-	public void SetMovementVelocity (Vector3 velocity) 
+    private Vector3[] movement_velocity = new Vector3[6];
+    private float[] angular_velocity = new float[6];
+
+    // Methods for behaviours to set / add velocities
+    public void SetMovementVelocity (Vector3 velocity, int priority) 
 	{
+        // movement_velocity[priority] = velocity;
+        for (int i = 0; i < movement_velocity.Length; i++)
+        {
+            movement_velocity[i] = Vector3.zero;
+        }
         current_velocity = velocity;
 	}
 
-	public void AccelerateMovement (Vector3 acceleration) 
+	public void AccelerateMovement (Vector3 acceleration, int priority) 
 	{
-        current_velocity += acceleration;
+        movement_velocity[priority] += acceleration;
+        //current_velocity += acceleration;
 	}
 
-	public void SetRotationVelocity (float rotation_speed) 
+	public void SetRotationVelocity (float rotation_speed, int priority) 
 	{
+
+        //angular_velocity[priority] = rotation_speed;
         current_rotation_speed = rotation_speed;
 	}
 
-	public void AccelerateRotation (float rotation_acceleration) 
-	{
-        current_rotation_speed += rotation_acceleration;
+	public void AccelerateRotation (float rotation_acceleration, int priority)
+    {
+        angular_velocity[priority] += rotation_acceleration;
+        //current_rotation_speed += rotation_acceleration;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		// cap velocity
-		if(current_velocity.magnitude > max_mov_speed)
+
+        for (int i = movement_velocity.Length - 1; i >= 0; i--)
+        {
+            if (movement_velocity[i] != Vector3.zero)
+            {
+                current_velocity += movement_velocity[i];
+                break;
+            }
+            else
+            {
+                current_velocity += Vector3.zero;
+            }
+        }
+        for (int i = angular_velocity.Length - 1; i >= 0; i--)
+        {
+            if (angular_velocity[i] != 0)
+            {
+                current_rotation_speed += angular_velocity[i];
+                break;
+            }
+            else
+            {
+                current_rotation_speed += 0;
+            }
+        }
+
+
+        if (current_velocity.magnitude > max_mov_speed)
 		{
             current_velocity = current_velocity.normalized * max_mov_speed;
 		}
@@ -61,5 +100,15 @@ public class Move : MonoBehaviour {
 
 		// finally move
 		transform.position += current_velocity * Time.deltaTime;
-	}
+
+
+        for (int i = 0; i < movement_velocity.Length; i++)
+        {
+            movement_velocity[i] = Vector3.zero;
+        }
+        for (int i = 0; i < angular_velocity.Length; i++)
+        {
+            angular_velocity[i] = 0f;
+        }
+    }
 }

@@ -21,8 +21,8 @@ public class KinematicFaceMovement : MonoBehaviour {
 		float delta = Mathf.DeltaAngle(target_degrees, current_degrees);
 
 		if(Mathf.Abs(delta) < min_angle)
-			move.SetRotationVelocity(0.0f);
+			move.SetRotationVelocity(0.0f, 0);
 		else
-			move.SetRotationVelocity(-delta);
+			move.SetRotationVelocity(-delta, 0);
 	}
 }
