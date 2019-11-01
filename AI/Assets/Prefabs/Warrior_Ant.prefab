@@ -19,7 +19,9 @@ GameObject:
   - component: {fileID: 7988441316693648394}
   - component: {fileID: 7988441316693648395}
   - component: {fileID: 8050468886429065096}
+  - component: {fileID: 5018018643794526484}
   - component: {fileID: 7988441316693648392}
+  - component: {fileID: 2091671761912225595}
   m_Layer: 0
   m_Name: Warrior_Ant
   m_TagString: Untagged
@@ -68,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e439e859d063a4ca9983e1f7bb60411a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   min_distance: 0.1
   time_to_target: 0.25
 --- !u!114 &7988441316693649393
@@ -82,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacba9e12dcf945949586a2aa108bfdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   time_to_accel: 0.25
   velocity_target: {fileID: 0}
 --- !u!114 &7988441316693649398
@@ -96,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782558cc3a6d845a990f61f72475c82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   mask:
     serializedVersion: 2
     m_Bits: 0
@@ -106,6 +111,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  cancer: 0
 --- !u!114 &7988441316693649399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612fefe37772540c8bb2bcc1639f521e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
 --- !u!114 &7988441316693649396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00aba7cc561b495a9a1faa0fad585dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   max_seconds_prediction: 0
 --- !u!114 &7988441316693649397
 MonoBehaviour:
@@ -143,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e3618e1707546a19fff3fb11d7c9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   mask:
     serializedVersion: 2
     m_Bits: 0
@@ -163,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a5519694be34ab8bb93b90947ad198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
 --- !u!114 &7988441316693648395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13ae3cbc54e44631ae987b5486c59f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   min_distance: 0.1
   slow_distance: 5
   time_to_accel: 0.2
@@ -191,10 +202,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6266ae67cca43b082b876366196cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   mask:
     serializedVersion: 2
     m_Bits: 0
   search_radius: 5
+--- !u!114 &5018018643794526484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160962680777309941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdb74c0d43ad45458532f1a1ff22e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 0
+  Path: {fileID: 0}
+  ratio_increment: 0.1
+  min_distance: 1
+  current_ratio: 0
+  current_path_pos: 0
+  cancer: 0
 --- !u!114 &7988441316693648392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,10 +238,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a2539257a3a4efeb46289d1eb08300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
   min_angle: 0.01
   slow_angle: 10
   time_to_target: 0.1
   slow_factor: 0
+  cancer: 0
+--- !u!114 &2091671761912225595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160962680777309941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968724c3b6f64198b9b015470e4f6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  aim: {fileID: 0}
+  arrow: {fileID: 0}
+  max_mov_speed: 5
+  max_mov_acceleration: 0.1
+  max_rot_speed: 10
+  max_rot_acceleration: 0.1
+  current_velocity: {x: 0, y: 0, z: 0}
+  current_rotation_speed: 0
 --- !u!1 &5616273183912205160
 GameObject:
   m_ObjectHideFlags: 0

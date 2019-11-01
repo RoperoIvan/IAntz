@@ -51,7 +51,7 @@ public class SteeringObstacleAvoidance : SteeringAbstract
                 Vector3 vec_escape = (hit.point + (hit.normal*avoid_distance));
                 vec_escape.y = 0;
                 
-                seek.Steer(vec_escape, priority); //todo guillem
+                align.DrivetoTarget(vec_escape, priority); //todo guillem
             }
             
         }

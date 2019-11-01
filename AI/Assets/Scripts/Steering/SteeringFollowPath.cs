@@ -11,11 +11,13 @@ public class SteeringFollowPath : SteeringAbstract
     SteeringAlign align;
 
     public BGCcMath Path;
+    public BGCurve curve;
     public float ratio_increment = 0.1f;
     public float min_distance = 1.0f;
     public  float current_ratio = 0.0f;
     private Vector3 path_point;
     public float current_path_pos = 0.0f;
+
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +42,11 @@ public class SteeringFollowPath : SteeringAbstract
             Path.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
             current_ratio = current_path_pos / total_path;
             current_ratio += ratio_increment;
+            if(curve.Closed)
+            {
+                if (current_ratio >= 1)
+                    current_ratio = 0.01f;
+            }
             path_point = Path.CalcPositionByDistanceRatio(current_ratio);
         }
 

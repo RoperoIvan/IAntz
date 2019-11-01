@@ -8,12 +8,16 @@ public class SteeringSeparation : SteeringAbstract
 	public float search_radius = 5.0f;
 	public AnimationCurve strength;
 
-	Move move;
 
-	// Use this for initialization
-	void Start () {
+
+	Move move;
+    SteeringAlign align;
+
+    // Use this for initialization
+    void Start () {
 		move = GetComponent<Move>();
-	}
+        align = GetComponent<SteeringAlign>();
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -38,10 +42,15 @@ public class SteeringSeparation : SteeringAbstract
             vec_res += vec_helper;
         }
 
-        vec_res.Normalize();
-        vec_res *= move.max_mov_acceleration;
+        //vec_res.Normalize();
+        //vec_res *= move.max_mov_acceleration;
+        if (vec_res != Vector3.zero)
+        {
+            align.DrivetoTarget(vec_res, priority);
+        }
+        
 
-        move.AccelerateMovement(vec_res, priority);
+        
         
 
 

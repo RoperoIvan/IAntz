@@ -10,6 +10,7 @@ public class SteeringAlign : SteeringAbstract
     public float slow_factor;
 
 
+
     Move move;
 
 	// Use this for initialization
@@ -23,7 +24,7 @@ public class SteeringAlign : SteeringAbstract
         // TODO 7: Very similar to arrive, but using angular velocities
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
-        DrivetoTarget(move.target.transform.position, priority);
+        //DrivetoTarget(move.target.transform.position, priority);
         
        
     }
@@ -33,7 +34,7 @@ public class SteeringAlign : SteeringAbstract
         float current_rotation;
         float desired_rotation;
         float correct_rotation;
-        float slow_factor;
+        
 
         Vector3 vec_t_m;
         Vector3 vec_my_front;
@@ -62,6 +63,7 @@ public class SteeringAlign : SteeringAbstract
 
             move.AccelerateRotation(correct_rotation, prio);
             move.AccelerateMovement(this.transform.forward, prio);
+
 
         }
     }
