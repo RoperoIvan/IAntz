@@ -38,7 +38,7 @@ public class SteeringAlign : MonoBehaviour {
         Vector3 vec_my_front;
 
 
-        current_rotation = move.rotation;
+        current_rotation = move.current_rotation_speed;
 
         vec_t_m = target - this.transform.position;
         vec_my_front = this.transform.forward;

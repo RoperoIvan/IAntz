@@ -33,7 +33,7 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
         // 3- Cast all rays. If one hit, get away from that surface using the hitpoint and normal info
         // 4- Make sure there is debug draw for all rays (below in OnDrawGizmosSelected)
  
-        float angle = Mathf.Atan2(move.movement_vel.x, move.movement_vel.z);
+        float angle = Mathf.Atan2(move.current_velocity.x, move.current_velocity.z);
         Quaternion q = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, Vector3.up);
 
         foreach (CustomRayCast custom_ray in ray)
@@ -59,7 +59,7 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
 		if(move && this.isActiveAndEnabled)
 		{
 			Gizmos.color = Color.red;
-			float angle = Mathf.Atan2(move.movement_vel.x, move.movement_vel.z);
+			float angle = Mathf.Atan2(move.current_velocity.x, move.current_velocity.z);
 			Quaternion q = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, Vector3.up);
 
             // TODO 2: Debug draw thoise rays (Look at Gizmos.DrawLine)

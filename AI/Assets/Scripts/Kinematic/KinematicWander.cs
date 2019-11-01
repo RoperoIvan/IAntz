@@ -23,10 +23,11 @@ public class KinematicWander : MonoBehaviour {
 	{
 		// random rotation
 		float angle = RandomBinominal() * max_angle;
+
 		Vector3 velocity = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, Vector3.up) * Vector3.forward;
 
 		velocity *= move.max_mov_speed;
 
-		move.SetMovementVelocity (velocity);
+		move.SetMovementVelocity(velocity);
 	}
 }

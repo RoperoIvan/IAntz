@@ -38,7 +38,7 @@ public class SteeringArrive : MonoBehaviour {
 
    
 
-        vec_act = move.movement_vel;
+        vec_act = move.current_velocity;
         vec_t_m = target - this.transform.position;
 
 
