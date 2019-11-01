@@ -13,7 +13,9 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
 	public float avoid_distance = 10.0f;
     public CustomRayCast[] ray;
     public Vector3 Normal;
-	Move move;
+    public float current_x;
+    public float current_y;
+    Move move;
 	SteeringSeek seek;
     SteeringAlign align;
 
@@ -35,17 +37,18 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
  
         float angle = Mathf.Atan2(move.current_velocity.x, move.current_velocity.z);
         Quaternion q = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, Vector3.up);
+        current_x = move.current_velocity.x;
 
+        current_y = move.current_velocity.z;
         foreach (CustomRayCast custom_ray in ray)
         {
             RaycastHit hit;
-            custom_ray.vec_direction = Vector3.zero;
             custom_ray.vec_direction = q * this.transform.forward;
 
             if (Physics.Raycast(transform.position, custom_ray.vec_direction, out hit, custom_ray.length, mask) == true)
             {
-                Vector3 vec_escape = (hit.point + (hit.normal*4));
-               
+                Vector3 vec_escape = (hit.point + (hit.normal*avoid_distance));
+                vec_escape.y = 0;
                 
                 seek.Steer(vec_escape); //todo guillem
             }

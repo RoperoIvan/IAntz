@@ -339,7 +339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5998682336157774329}
   - component: {fileID: 1604738337002855141}
-  - component: {fileID: 1604738337002855143}
   - component: {fileID: 1604738337002855064}
   - component: {fileID: 1604738337002855065}
   - component: {fileID: 1604738337002855066}
@@ -385,27 +384,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5427145, y: 0.14548695, z: 1}
   m_Center: {x: 0.005424147, y: -0.0145204915, z: 0}
---- !u!114 &1604738337002855143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7306175694219690986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a968724c3b6f64198b9b015470e4f6f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  aim: {fileID: 1604738336889202962}
-  arrow: {fileID: 1604738336772071169}
-  max_mov_speed: 5
-  max_mov_acceleration: 0.1
-  max_rot_speed: 10
-  max_rot_acceleration: 0.1
-  movement_vel: {x: 0, y: 0, z: 0}
-  rotation: 0
 --- !u!114 &1604738337002855064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time_to_accel: 0.25
+  velocity_target: {fileID: 0}
 --- !u!114 &1604738337002855066
 MonoBehaviour:
   m_ObjectHideFlags: 0

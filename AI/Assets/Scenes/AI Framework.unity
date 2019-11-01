@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reed (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50.49
@@ -277,7 +281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185647055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fdb74c0d43ad45458532f1a1ff22e32, type: 3}
   m_Name: 
@@ -297,6 +301,10 @@ PrefabInstance:
     - target: {fileID: 1000010824186820, guid: 30319199574ca3644bf3898bb5cac486, type: 3}
       propertyPath: m_Name
       value: Pumpkin_Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010824186820, guid: 30319199574ca3644bf3898bb5cac486, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011223534310, guid: 30319199574ca3644bf3898bb5cac486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -459,14 +467,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307293650}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a968724c3b6f64198b9b015470e4f6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  aim: {fileID: 0}
-  arrow: {fileID: 0}
+  target: {fileID: 1258218286}
+  aim: {fileID: 895208073}
+  arrow: {fileID: 1898213358}
   max_mov_speed: 5
   max_mov_acceleration: 0.1
   max_rot_speed: 10
@@ -781,6 +789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -57.64052
@@ -862,6 +874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1Small
       objectReference: {fileID: 0}
+    - target: {fileID: 199576, guid: b06557ebaf0cf854795ad8c6f1f25fa3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 477022, guid: b06557ebaf0cf854795ad8c6f1f25fa3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 104
@@ -931,6 +947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54.22
@@ -999,6 +1019,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,6 +1099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43
@@ -1143,6 +1171,10 @@ PrefabInstance:
     - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_Name
       value: Tomato_Fruit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011252979702, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1225,6 +1257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reed (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.526863
@@ -1301,6 +1337,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1390,6 +1430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43
@@ -1448,6 +1492,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+--- !u!1 &895208073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1604738336889202962, guid: ed113ef7217dab349912c5f9abdbfbe9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1604738336976821720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895532476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1458,6 +1508,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1533,6 +1587,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1634,6 +1692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.859997
@@ -1714,6 +1776,10 @@ PrefabInstance:
     - target: {fileID: 157192, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_Name
       value: RockGrey1
+      objectReference: {fileID: 0}
+    - target: {fileID: 157192, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2092,6 +2158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.94052
@@ -2264,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reed
       objectReference: {fileID: 0}
+    - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.350525
@@ -2353,6 +2427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato_Fruit
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011252979702, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.58
@@ -2421,6 +2499,10 @@ PrefabInstance:
     - target: {fileID: 114240, guid: 6d29a20042cbcc14faad58c20a191901, type: 3}
       propertyPath: m_Name
       value: Tree1Large
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240, guid: 6d29a20042cbcc14faad58c20a191901, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 407010, guid: 6d29a20042cbcc14faad58c20a191901, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2777,6 +2859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dirt_Pile
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011580534764, guid: c26cacf51e485c54b95fdbf9ad976ddf, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010819335194, guid: c26cacf51e485c54b95fdbf9ad976ddf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14
@@ -2845,6 +2931,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2915,6 +3005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.06
@@ -2983,6 +3077,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3065,6 +3163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.27948
@@ -3134,6 +3236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50.33948
@@ -3202,6 +3308,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3277,6 +3387,10 @@ PrefabInstance:
     - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_Name
       value: Reed (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3354,6 +3468,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3589,6 +3707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.27948
@@ -3658,6 +3780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.859997
@@ -3716,6 +3842,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+--- !u!114 &1898213358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1604738336772071169, guid: ed113ef7217dab349912c5f9abdbfbe9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1604738336976821720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1969505353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3726,6 +3864,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3796,6 +3938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.92
@@ -3863,7 +4009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1988122782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Turnips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3918,6 +4064,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3988,6 +4138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato_Fruit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011252979702, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.18
@@ -4056,6 +4210,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4126,6 +4284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Plant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.580517
@@ -4194,6 +4356,10 @@ PrefabInstance:
     - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_Name
       value: Tomato_Fruit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010004241426, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011252979702, guid: ad3b2f45225bb0c4f8f80eacd5111af1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4266,10 +4432,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1258218286}
     - target: {fileID: 7306175694219690986, guid: ed113ef7217dab349912c5f9abdbfbe9,
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306175694219690986, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5998682336157774329, guid: ed113ef7217dab349912c5f9abdbfbe9,
         type: 3}
@@ -4279,7 +4454,7 @@ PrefabInstance:
     - target: {fileID: 5998682336157774329, guid: ed113ef7217dab349912c5f9abdbfbe9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5998682336157774329, guid: ed113ef7217dab349912c5f9abdbfbe9,
         type: 3}
@@ -4326,18 +4501,107 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1604738337002855143, guid: ed113ef7217dab349912c5f9abdbfbe9,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1258218286}
     - target: {fileID: 1604738336930182911, guid: ed113ef7217dab349912c5f9abdbfbe9,
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1604738337002855143, guid: ed113ef7217dab349912c5f9abdbfbe9, type: 3}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].inSlope
+      value: 0.011411759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].outSlope
+      value: 0.011411759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].outWeight
+      value: 0.050904237
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].time
+      value: 0.9833476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].value
+      value: 0.42114252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].inSlope
+      value: -2.1268547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].outSlope
+      value: -2.1268547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855066, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].inWeight
+      value: 0.04276377
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855067, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337002855069, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: mask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738336889202962, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742897401813974407, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738336772071168, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027491912815351326, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738336930182910, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738337305332077, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604738336997211739, guid: ed113ef7217dab349912c5f9abdbfbe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed113ef7217dab349912c5f9abdbfbe9, type: 3}
 --- !u!1001 &4703107412897339114
 PrefabInstance:
@@ -4432,12 +4696,12 @@ PrefabInstance:
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.2
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
@@ -4452,17 +4716,17 @@ PrefabInstance:
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
@@ -4477,7 +4741,7 @@ PrefabInstance:
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3145220919233711334, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
@@ -4497,12 +4761,17 @@ PrefabInstance:
     - target: {fileID: 7988441316693649397, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7988441316693649397, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: mask.m_Bits
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649397, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: ray.Array.data[0].length
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7988441316693648392, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
@@ -4542,6 +4811,86 @@ PrefabInstance:
     - target: {fileID: 7988441317275532593, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649394, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649393, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: velocity_target
+      value: 
+      objectReference: {fileID: 307293650}
+    - target: {fileID: 7988441316693649393, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].inSlope
+      value: 0.011411759
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].outSlope
+      value: 0.011411759
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[0].outWeight
+      value: 0.050904237
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].time
+      value: 0.9833476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].value
+      value: 0.42114252
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].inSlope
+      value: -2.1268547
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].outSlope
+      value: -2.1268547
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: strength.m_Curve.Array.data[1].inWeight
+      value: 0.04276377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693649398, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: mask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648395, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

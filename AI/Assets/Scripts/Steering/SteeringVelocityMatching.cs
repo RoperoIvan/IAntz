@@ -4,14 +4,14 @@ using System.Collections;
 public class SteeringVelocityMatching : MonoBehaviour {
 
 	public float time_to_accel = 0.25f;
-
-	Move move;
+    public GameObject velocity_target;
+    Move move;
 	Move target_move;
 
 	// Use this for initialization
 	void Start () {
 		move = GetComponent<Move>();
-		target_move = move.target.GetComponent<Move>();
+		target_move = velocity_target.GetComponent<Move>();
 	}
 	
 	// Update is called once per frame
