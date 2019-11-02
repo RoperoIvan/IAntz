@@ -5,13 +5,18 @@ using BansheeGz.BGSpline.Curve;
 
 public class SteeringFollowPath : SteeringAbstract
 {
-
-	Move move;
+    public GameObject UI;
+    Move move;
 	SteeringSeek seek;
     SteeringAlign align;
 
-    public BGCcMath Path;
-    public BGCurve curve;
+    public int type;
+    public BGCcMath Path_day;
+    public BGCcMath Path_night;
+    BGCcMath actpath;
+    public BGCurve curve_day;
+    public BGCurve curve_night;
+    BGCurve actcurve;
     public float ratio_increment = 0.1f;
     public float min_distance = 1.0f;
     public  float current_ratio = 0.0f;
@@ -24,30 +29,54 @@ public class SteeringFollowPath : SteeringAbstract
 		move = GetComponent<Move>();
 		seek = GetComponent<SteeringSeek>();
         align = GetComponent<SteeringAlign>();
-
+        actpath = Path_day;
+        actcurve = curve_day;
         // TODO 1: Calculate the closest point from the tank to the curve
-        path_point = Path.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
-        
+        path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        float total_path = Path.GetDistance();
+        if (UI.GetComponent<Day_night>()._update)
+        {
+            if (UI.GetComponent<Day_night>().day)
+            {
+                actpath = Path_day;
+                actcurve = curve_day;
+
+            }
+            else
+            {
+                actpath = Path_night;
+                actcurve = curve_night;
+            }
+            path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
+        }
+           
+
+        float total_path = actpath.GetDistance();
         Vector3 current_dist = path_point - this.transform.position;
-        
 
         if (current_dist.magnitude <= min_distance)
         {
-            Path.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
+            actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
             current_ratio = current_path_pos / total_path;
             current_ratio += ratio_increment;
-            if(curve.Closed)
+            if(actcurve.Closed)
             {
                 if (current_ratio >= 1)
+                {
+                    if (type == 1)
+                    {
+                        UI.GetComponent<Day_night>().Add_food(10);
+                    }
                     current_ratio = 0.01f;
+
+                }
+                    
             }
-            path_point = Path.CalcPositionByDistanceRatio(current_ratio);
+            path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
         }
 
         align.DrivetoTarget(path_point, priority);

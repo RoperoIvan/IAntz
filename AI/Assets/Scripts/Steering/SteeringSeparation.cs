@@ -28,7 +28,7 @@ public class SteeringSeparation : SteeringAbstract
         // 3- Sum up all vectors and trim down to maximum acceleration
 
         Vector3 vec_res = Vector3.zero;
-        Vector3 vec_helper;
+        Vector3 vec_helper = Vector3.zero;
         Collider[] nearby_tanks = Physics.OverlapSphere(this.transform.position, search_radius, mask);
 
    
@@ -48,15 +48,6 @@ public class SteeringSeparation : SteeringAbstract
         {
             align.DrivetoTarget(vec_res, priority);
         }
-        
-
-        
-        
-
-
-        
-
-        
 	}
 
 	void OnDrawGizmosSelected() 
