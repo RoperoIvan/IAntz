@@ -5577,6 +5577,11 @@ PrefabInstance:
       propertyPath: time_to_target
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7988441316693648392, guid: d79c7987a70c7084b81179e74eb14d44,
+        type: 3}
+      propertyPath: min_angle
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5616273183912205160, guid: d79c7987a70c7084b81179e74eb14d44,
         type: 3}
       propertyPath: m_Layer
