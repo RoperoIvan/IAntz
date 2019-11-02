@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class SteeringVelocityMatching : SteeringAbstract
 {
 
 	public float time_to_accel = 0.25f;
     public GameObject velocity_target;
+    NavMeshPath path;
     Move move;
 	Move target_move;
 
@@ -33,7 +35,9 @@ public class SteeringVelocityMatching : SteeringAbstract
 
             final_acc *= Clamped;
 
-            move.AccelerateMovement(final_acc, priority);
+            NavMesh.CalculatePath(transform.position, final_acc, NavMesh.GetAreaFromName("Walkable"), path);
+
+            move.AccelerateMovement(path.corners[1], priority);
 
 
             
