@@ -4,31 +4,36 @@ using System.Collections;
 public class SteeringWander : SteeringAbstract
 {
 
-	public float min_distance = 0.1f;
-	public float time_to_target = 0.25f;
+	public float min_distance = 5f;
 
 	Move move;
-    SteeringArrive arrive;
+    SteeringAlign align;
     Vector3 vec_random_destination;
     // Use this for initialization
-
+    float random_angle;
 
     void Start()
     {
         move = GetComponent<Move>();
-        arrive = GetComponent<SteeringArrive>();
-        vec_random_destination = new Vector3(Random.Range(-10.0f, 10.0f), transform.position.y, Random.Range(-10.0f, 10.0f));
+        align = GetComponent<SteeringAlign>();        
+        random_angle = Random.Range(0, 359);
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, vec_random_destination) < 1)
-        {
-            vec_random_destination = new Vector3(Random.Range(-10.0f, 10.0f), transform.position.y, Random.Range(-10.0f, 10.0f));
-        }
-        arrive.Steer(vec_random_destination);
-    }
+        Vector3 vec_circle = move.current_velocity;
+        vec_circle.Normalize();
+        vec_circle *= min_distance;
+        Vector3 vec_displacement = new Vector3(0, -1);
+        vec_displacement *= 10;
+        vec_displacement.x = Mathf.Cos(random_angle) * vec_displacement.magnitude;
+        vec_displacement.y = Mathf.Sin(random_angle) * vec_displacement.magnitude;
 
+        random_angle = Random.Range(0, 359);
+        Vector3 vec_wander_force = vec_circle + vec_displacement;
+        align.DrivetoTarget(vec_wander_force, priority);
+    }
+    
     void OnDrawGizmosSelected() 
 	{
 		// Display the explosion radius when selected
