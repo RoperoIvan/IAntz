@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     public float cam_speed = 20f;
     public float cam_rot_speed = 5f;
-    Camera cam;
+    public Vector2 bounds = new Vector2(100,100);
     // Start is called before the first frame update
     void Start()
     {
@@ -15,28 +15,27 @@ public class Movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         TranslateCamera();
         RotateCamera();
-
     }
     void TranslateCamera()
     {
         float trans = cam_speed * Time.deltaTime;
 
-        if (Input.GetKey("w"))
+        if (Input.GetKey("w") && transform.position.z < bounds.y)
         {
             this.transform.Translate(0, trans, 0);
         }
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") && transform.position.x > -bounds.x)
         {
             this.transform.Translate(-trans, 0, 0);
         }
-        if (Input.GetKey("s"))
+        if (Input.GetKey("s") && transform.position.z > -bounds.y)
         {
             this.transform.Translate(0, -trans, 0);
         }
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") && transform.position.x < bounds.x)
         {
             this.transform.Translate(trans, 0, 0);
         }

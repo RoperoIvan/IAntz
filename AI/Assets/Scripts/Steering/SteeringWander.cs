@@ -25,11 +25,10 @@ public class SteeringWander : SteeringAbstract
         vec_circle.Normalize();
         vec_circle *= min_distance;
         Vector3 vec_displacement = new Vector3(0, -1);
-        vec_displacement *= 10;
-        vec_displacement.x = Mathf.Cos(random_angle) * vec_displacement.magnitude;
-        vec_displacement.y = Mathf.Sin(random_angle) * vec_displacement.magnitude;
-
+        vec_displacement *= 5;
         random_angle = Random.Range(-359, 359);
+        vec_displacement.x = Mathf.Cos(random_angle) * vec_displacement.magnitude;
+        vec_displacement.y = Mathf.Sin(random_angle) * vec_displacement.magnitude;     
         Vector3 vec_wander_force = vec_circle + vec_displacement;
         align.DrivetoTarget(vec_wander_force, priority);
     }
