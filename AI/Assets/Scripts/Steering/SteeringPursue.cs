@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class SteeringPursue : SteeringAbstract
 {
 
 	public float max_seconds_prediction;
     public GameObject target;
+    
 	Move move;
     SteeringSeek seek;
     SteeringAlign align;

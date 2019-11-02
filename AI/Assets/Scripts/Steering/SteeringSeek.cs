@@ -1,20 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class SteeringSeek : SteeringAbstract {
 
 	Move move;
+    NavMeshPath path;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
 		move = GetComponent<Move>();
+        path = new NavMeshPath();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        Steer(move.target.transform.position, priority);
+        NavMesh.CalculatePath(transform.position, move.target.transform.position, NavMesh.GetAreaFromName("walkable"), path);
+        Steer(path.corners[1], priority);
 	}
 
 	public void Steer(Vector3 target, int prio)
