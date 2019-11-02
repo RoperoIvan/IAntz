@@ -9,6 +9,9 @@ public class SteeringAlign : SteeringAbstract
 	public float slow_angle = 10.0f;
 	public float time_to_target = 0.1f;
     public float slow_factor;
+    public float desired_rotation;
+    public Vector3 vec_my_front;
+    public Vector3 vec_t_m;
 
 
 
@@ -32,7 +35,7 @@ public class SteeringAlign : SteeringAbstract
     public void DrivetoTarget(Vector3 target, int prio)
     {
         float current_rotation;
-        float desired_rotation;
+        
         float correct_rotation;
         Vector3 to_do;
 
@@ -41,8 +44,8 @@ public class SteeringAlign : SteeringAbstract
         else
             to_do = target;
 
-        Vector3 vec_t_m;
-        Vector3 vec_my_front;
+        
+       
 
 
         current_rotation = move.current_rotation_speed;
@@ -62,7 +65,7 @@ public class SteeringAlign : SteeringAbstract
             //    slow_factor = 1;
             //desired_rotation *= slow_factor;
 
-            correct_rotation = (desired_rotation - current_rotation) / time_to_target;
+            correct_rotation = (desired_rotation);
 
             correct_rotation = Mathf.Clamp(correct_rotation, -move.max_rot_acceleration, move.max_rot_acceleration);
 

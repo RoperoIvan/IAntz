@@ -7,10 +7,11 @@ public class SteeringSeparation : SteeringAbstract
 	public LayerMask mask;
 	public float search_radius = 5.0f;
 	public AnimationCurve strength;
+    public Vector3 vec_res;
 
 
 
-	Move move;
+    Move move;
     SteeringAlign align;
 
     // Use this for initialization
@@ -27,7 +28,7 @@ public class SteeringSeparation : SteeringAbstract
         // 2- For each of them calculate a escape vector using the AnimationCurve
         // 3- Sum up all vectors and trim down to maximum acceleration
 
-        Vector3 vec_res = Vector3.zero;
+        vec_res = Vector3.zero;
         Vector3 vec_helper = Vector3.zero;
         Collider[] nearby_tanks = Physics.OverlapSphere(this.transform.position, search_radius, mask);
 
@@ -41,7 +42,7 @@ public class SteeringSeparation : SteeringAbstract
             vec_helper *= str;
             vec_res += vec_helper;
         }
-
+        vec_res += transform.position;
         //vec_res.Normalize();
         //vec_res *= move.max_mov_acceleration;
         if (vec_res != Vector3.zero)

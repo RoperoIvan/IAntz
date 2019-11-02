@@ -57,7 +57,7 @@ public class Move : MonoBehaviour {
     void Update () 
 	{
 		// cap velocity
-
+        
         for (int i = movement_velocity.Length - 1; i >= 0; i--)
         {
             if (movement_velocity[i] != Vector3.zero)
@@ -80,7 +80,9 @@ public class Move : MonoBehaviour {
             else
             {
                 current_rotation_speed += 0;
+              
             }
+            
         }
 
 
