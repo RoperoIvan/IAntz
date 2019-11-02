@@ -11,8 +11,8 @@ public class Move : MonoBehaviour {
 	public float max_mov_acceleration = 0.1f;
 	public float max_rot_speed = 10.0f; // in degrees / second
 	public float max_rot_acceleration = 0.1f; // in degrees
-
-	[Header("-------- Read Only --------")]
+    Animator m_Animator;
+    [Header("-------- Read Only --------")]
 	public Vector3 current_velocity = Vector3.zero;
 	public float current_rotation_speed = 0.0f; // degrees
 
@@ -33,8 +33,9 @@ public class Move : MonoBehaviour {
 	public void AccelerateMovement (Vector3 acceleration, int priority) 
 	{
         movement_velocity[priority] += acceleration;
+        m_Animator.SetBool("Movement", true);
         //current_velocity += acceleration;
-	}
+    }
 
 	public void SetRotationVelocity (float rotation_speed, int priority) 
 	{
@@ -48,9 +49,12 @@ public class Move : MonoBehaviour {
         angular_velocity[priority] += rotation_acceleration;
         //current_rotation_speed += rotation_acceleration;
 	}
-	
-	// Update is called once per frame
-	void Update () 
+    private void Start()
+    {
+        m_Animator = gameObject.GetComponent<Animator>();
+    }
+    // Update is called once per frame
+    void Update () 
 	{
 		// cap velocity
 
