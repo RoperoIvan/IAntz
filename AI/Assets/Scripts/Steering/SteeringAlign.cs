@@ -30,7 +30,8 @@ public class SteeringAlign : SteeringAbstract
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
         //DrivetoTarget(move.target.transform.position, priority);
-
+        if (desired_rotation <= min_angle && desired_rotation >= -min_angle)
+            move.SetRotationVelocity(0, priority);
     }
     public void DrivetoTarget(Vector3 target, int prio)
     {
