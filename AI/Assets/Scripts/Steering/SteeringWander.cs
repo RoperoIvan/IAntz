@@ -16,7 +16,7 @@ public class SteeringWander : SteeringAbstract
     {
         move = GetComponent<Move>();
         align = GetComponent<SteeringAlign>();        
-        random_angle = Random.Range(0, 359);
+        random_angle = Random.Range(-359, 359);
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class SteeringWander : SteeringAbstract
         vec_displacement.x = Mathf.Cos(random_angle) * vec_displacement.magnitude;
         vec_displacement.y = Mathf.Sin(random_angle) * vec_displacement.magnitude;
 
-        random_angle = Random.Range(0, 359);
+        random_angle = Random.Range(-359, 359);
         Vector3 vec_wander_force = vec_circle + vec_displacement;
         align.DrivetoTarget(vec_wander_force, priority);
     }
