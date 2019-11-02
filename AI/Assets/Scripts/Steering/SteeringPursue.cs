@@ -19,7 +19,7 @@ public class SteeringPursue : SteeringAbstract
 	// Update is called once per frame
 	void Update () 
 	{
-
+        Steer();
 	}
 
 	public void Steer()
@@ -32,19 +32,30 @@ public class SteeringPursue : SteeringAbstract
 
         // TODO 6: Improve the prediction based on the distance from
         // our target and the speed we have
-        float future_speed;
-        Vector3 vec_direction = target.transform.position - transform.position; //Direction between the character and the target
+
+        Vector3 vec_direction = target.transform.position - this.transform.position; //Direction between the character and the target
         float distance_from_target = vec_direction.magnitude;
         float current_speed = move.current_velocity.magnitude;
-        float speed_desired = distance_from_target / max_seconds_prediction; // We want to arrive as fast as needed based in the time we put
+        float time_until_we_collide = distance_from_target / current_speed; // We want to arrive as fast as needed based in the time we put
 
-        if (current_speed > speed_desired) // If the speed of the character is higher than what we want we cap our future speed;
-            future_speed = distance_from_target / current_speed;
-        else //If not we will go fullspeed
-            future_speed = max_seconds_prediction;
+        if (time_until_we_collide > max_seconds_prediction)
+            time_until_we_collide = max_seconds_prediction;
+
+        vec_direction = (target.transform.position + target.GetComponent<Move>().current_velocity * time_until_we_collide) - transform.position;
+        distance_from_target = vec_direction.magnitude;
+        current_speed = move.current_velocity.magnitude;
+        time_until_we_collide = distance_from_target / current_speed; // We want to arrive as fast as needed based in the time we put
+
+        if (time_until_we_collide > max_seconds_prediction)
+            time_until_we_collide = max_seconds_prediction;
+
+        //if (current_speed > speed_desired) // If the speed of the character is higher than what we want we cap our future speed;
+        //    future_speed = distance_from_target / current_speed;
+        //else //If not we will go fullspeed
+        //    future_speed = max_seconds_prediction;
 
 
-        Vector3 vec_prediction = target.transform.position + target.GetComponent<Move>().current_velocity * future_speed; //Then we add our future speed to the target one
+        Vector3 vec_prediction = target.transform.position + target.GetComponent<Move>().current_velocity * time_until_we_collide; //Then we add our future speed to the target one
         align.DrivetoTarget(vec_prediction, priority);
     }
 }

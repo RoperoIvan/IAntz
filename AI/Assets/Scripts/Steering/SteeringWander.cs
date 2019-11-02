@@ -17,6 +17,7 @@ public class SteeringWander : SteeringAbstract
         move = GetComponent<Move>();
         align = GetComponent<SteeringAlign>();        
         random_angle = Random.Range(-359, 359);
+       
     }
 
     void Update()
