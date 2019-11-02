@@ -13,12 +13,14 @@ public class SteeringArrive : SteeringAbstract
     // Use this for initialization
     void Start () { 
 		move = GetComponent<Move>();
+        path = new NavMeshPath();
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
-		    Steer(move.target.transform.position);
+        Steer(move.target.transform.position);
+            
 	}
 
 	public void Steer(Vector3 target)

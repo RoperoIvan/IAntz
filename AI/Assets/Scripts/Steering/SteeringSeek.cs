@@ -17,8 +17,8 @@ public class SteeringSeek : SteeringAbstract {
 	// Update is called once per frame
 	void Update () 
 	{
-        NavMesh.CalculatePath(transform.position, move.target.transform.position, NavMesh.GetAreaFromName("walkable"), path);
-        Steer(path.corners[1], priority);
+       if (NavMesh.CalculatePath(transform.position, move.target.transform.position, NavMesh.GetAreaFromName("walkable"), path))
+            Steer(path.corners[1], priority);
 	}
 
 	public void Steer(Vector3 target, int prio)

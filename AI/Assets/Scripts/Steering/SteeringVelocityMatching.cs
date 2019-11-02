@@ -15,6 +15,7 @@ public class SteeringVelocityMatching : SteeringAbstract
 	void Start () {
 		move = GetComponent<Move>();
 		target_move = velocity_target.GetComponent<Move>();
+        path = new NavMeshPath();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +36,7 @@ public class SteeringVelocityMatching : SteeringAbstract
 
             final_acc *= Clamped;
 
-            NavMesh.CalculatePath(transform.position, final_acc, NavMesh.GetAreaFromName("Walkable"), path);
+            NavMesh.CalculatePath(transform.position, final_acc, NavMesh.GetAreaFromName("walkable"), path);
 
             move.AccelerateMovement(path.corners[1], priority);
 

@@ -17,7 +17,8 @@ public class SteeringAlign : SteeringAbstract
     // Use this for initialization
     void Start () {
 		move = GetComponent<Move>();
-	}
+         path = new NavMeshPath();
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -33,9 +34,12 @@ public class SteeringAlign : SteeringAbstract
         float current_rotation;
         float desired_rotation;
         float correct_rotation;
+        Vector3 to_do;
 
-        NavMesh.CalculatePath(transform.position, target, NavMesh.GetAreaFromName("walkable"), path);
-
+        if (NavMesh.CalculatePath(this.transform.position, target, NavMesh.GetAreaFromName("walkable"), path))
+            to_do = path.corners[1];
+        else
+            to_do = target;
 
         Vector3 vec_t_m;
         Vector3 vec_my_front;
@@ -43,7 +47,7 @@ public class SteeringAlign : SteeringAbstract
 
         current_rotation = move.current_rotation_speed;
 
-        vec_t_m = path.corners[1] - this.transform.position;
+        vec_t_m = to_do - this.transform.position;
         vec_my_front = this.transform.forward;
 
         desired_rotation = Vector3.SignedAngle(vec_my_front, vec_t_m, Vector3.up);
