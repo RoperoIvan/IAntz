@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.AI;
 public class SteeringArrive : SteeringAbstract
 {
 
@@ -9,9 +9,9 @@ public class SteeringArrive : SteeringAbstract
 	public float time_to_accel = 0.2f;
     public float slow_factor;
     Move move;
-
-	// Use this for initialization
-	void Start () { 
+    NavMeshPath path;
+    // Use this for initialization
+    void Start () { 
 		move = GetComponent<Move>();
 	}
 
@@ -36,11 +36,11 @@ public class SteeringArrive : SteeringAbstract
         Vector3 vec_act;
         Vector3 vec_crt;
         Vector3 vec_fn;
+        NavMesh.CalculatePath(transform.position, target, NavMesh.GetAreaFromName("walkable"), path);
 
-   
 
         vec_act = move.current_velocity;
-        vec_t_m = target - this.transform.position;
+        vec_t_m = path.corners[1] - this.transform.position;
 
 
         if (vec_t_m.magnitude <= min_distance)

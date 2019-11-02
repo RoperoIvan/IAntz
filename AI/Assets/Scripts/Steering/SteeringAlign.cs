@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class SteeringAlign : SteeringAbstract
 {
@@ -12,9 +13,9 @@ public class SteeringAlign : SteeringAbstract
 
 
     Move move;
-
-	// Use this for initialization
-	void Start () {
+    NavMeshPath path;
+    // Use this for initialization
+    void Start () {
 		move = GetComponent<Move>();
 	}
 
@@ -25,16 +26,16 @@ public class SteeringAlign : SteeringAbstract
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
         //DrivetoTarget(move.target.transform.position, priority);
-        
-       
+
     }
     public void DrivetoTarget(Vector3 target, int prio)
     {
-
         float current_rotation;
         float desired_rotation;
         float correct_rotation;
-        
+
+        NavMesh.CalculatePath(transform.position, target, NavMesh.GetAreaFromName("walkable"), path);
+
 
         Vector3 vec_t_m;
         Vector3 vec_my_front;
@@ -42,7 +43,7 @@ public class SteeringAlign : SteeringAbstract
 
         current_rotation = move.current_rotation_speed;
 
-        vec_t_m = target - this.transform.position;
+        vec_t_m = path.corners[1] - this.transform.position;
         vec_my_front = this.transform.forward;
 
         desired_rotation = Vector3.SignedAngle(vec_my_front, vec_t_m, Vector3.up);
