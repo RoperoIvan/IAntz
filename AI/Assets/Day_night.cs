@@ -8,6 +8,9 @@ public class Day_night : MonoBehaviour
     public bool day = true;
     public Text resources_food;
     public Text resources_materials;
+    public Light sun_light;
+    Color color_day = Color.yellow;
+    Color color_night = Color.blue;
     int amount_food = 0;
     int amount_materials = 0;
     bool double_update = false;
@@ -52,5 +55,13 @@ public class Day_night : MonoBehaviour
         day = !day;
         double_update = true;
         _update = true;
+        if(day)
+        {
+            sun_light.color = Color.Lerp(color_night, color_day, 2);
+        }
+        else
+        {
+            sun_light.color = Color.Lerp(color_day, color_night, 2);
+        }
     }
 }
