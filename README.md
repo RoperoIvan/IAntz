@@ -24,6 +24,12 @@ Two students of the UPC/CITM:
 
 In this early version the player only have the possibility to change between two major states in the game, clicking the button that says Day/Night. This will dramatically change the behaviour of the ants making them go to the dorms inside the colony. By clicking it again it will restore the normal day routines of each type of ant.
 
+- WASD: Control de camera
+
+- SCROLL MOUSE: Zoom in-out
+
+- Q/E: Rotate the camera
+
 ## License
 
 MIT License
