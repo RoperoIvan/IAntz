@@ -76,14 +76,14 @@ public class SteeringFollowPath : SteeringAbstract
                         UI.GetComponent<Day_night>().Add_materials(10);
                     }
                     current_ratio = 0.01f;
-
                 }                    
             }
-            else
+            if(actpath.name.Contains("Night") == true)
             {
                 if(current_ratio >= 1)
                 {
                     move.GetAnimator().SetBool("Movement", false);
+                    move.SetMovementVelocity(Vector3.zero, priority);
                 }
             }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
