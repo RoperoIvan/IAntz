@@ -53,8 +53,8 @@ public class SteeringFollowPath : SteeringAbstract
             }
             path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
         }
-           
 
+        bool sleep = false;
         float total_path = actpath.GetDistance();
         Vector3 current_dist = path_point - this.transform.position;
 
@@ -78,18 +78,22 @@ public class SteeringFollowPath : SteeringAbstract
                     current_ratio = 0.01f;
                 }                    
             }
-            if(actpath.name.Contains("Night") == true)
+            path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
+            if (actpath.name.Contains("Night") == true)
             {
                 if(current_ratio >= 1)
                 {
                     move.GetAnimator().SetBool("Movement", false);
                     move.SetMovementVelocity(Vector3.zero, priority);
+                    move.SetRotationVelocity(0, priority);
+                    sleep = true;
                 }
-            }
-            path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
-        }
 
-        align.DrivetoTarget(path_point, priority);
+            }
+            
+        }
+        if (!sleep)
+             align.DrivetoTarget(path_point, priority);
 
 	}
 
