@@ -33,7 +33,7 @@ public class Move : MonoBehaviour {
 	public void AccelerateMovement (Vector3 acceleration, int priority) 
 	{
         movement_velocity[priority] += acceleration;
-        m_Animator.SetBool("Movement", true);
+        
         //current_velocity += acceleration;
     }
 
@@ -52,6 +52,7 @@ public class Move : MonoBehaviour {
     private void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
+        m_Animator.SetBool("Movement", true);
     }
     // Update is called once per frame
     void Update () 
@@ -115,11 +116,6 @@ public class Move : MonoBehaviour {
         for (int i = 0; i < angular_velocity.Length; i++)
         {
             angular_velocity[i] = 0f;
-        }
-
-        if(current_velocity.magnitude == 0)
-        {
-            m_Animator.SetBool("Movement", false);
         }
     }
     public Animator GetAnimator()
