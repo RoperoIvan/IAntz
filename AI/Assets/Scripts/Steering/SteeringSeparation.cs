@@ -5,7 +5,7 @@ public class SteeringSeparation : SteeringAbstract
 {
 
 	public LayerMask mask;
-	public float search_radius = 5.0f;
+	public float search_radius = 2.0f;
 	public AnimationCurve strength;
     public Vector3 vec_res;
 

@@ -7,10 +7,10 @@ public class Move : MonoBehaviour {
 	public GameObject target;
 	public GameObject aim;
 	public Slider arrow;
-	public float max_mov_speed = 5.0f;
+	public float max_mov_speed = 3f;
 	public float max_mov_acceleration = 0.1f;
-	public float max_rot_speed = 10.0f; // in degrees / second
-	public float max_rot_acceleration = 0.1f; // in degrees
+	public float max_rot_speed = 200f; // in degrees / second
+	public float max_rot_acceleration = 100f; // in degrees
     Animator m_Animator;
     [Header("-------- Read Only --------")]
 	public Vector3 current_velocity = Vector3.zero;
@@ -116,5 +116,11 @@ public class Move : MonoBehaviour {
         {
             angular_velocity[i] = 0f;
         }
+
+        if(current_velocity.magnitude == 0)
+        {
+            m_Animator.SetBool("Movement", false);
+        }
     }
+
 }

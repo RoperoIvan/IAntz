@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class SteeringAlign : SteeringAbstract
 {
 
-	public float min_angle = 0.01f;
+	public float min_angle = 1f;
 	public float slow_angle = 10.0f;
 	public float time_to_target = 0.1f;
     public float slow_factor;
