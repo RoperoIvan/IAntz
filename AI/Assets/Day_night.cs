@@ -36,6 +36,11 @@ public class Day_night : MonoBehaviour
             }
             double_update = false;
         }
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     public void Add_food(int food_to_add)
