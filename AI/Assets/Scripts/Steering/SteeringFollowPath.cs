@@ -79,6 +79,13 @@ public class SteeringFollowPath : SteeringAbstract
 
                 }                    
             }
+            else
+            {
+                if(current_ratio >= 1)
+                {
+                    move.GetAnimator().SetBool("Movement", false);
+                }
+            }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
         }
 

@@ -122,5 +122,8 @@ public class Move : MonoBehaviour {
             m_Animator.SetBool("Movement", false);
         }
     }
-
+    public Animator GetAnimator()
+    {
+        return m_Animator;
+    }
 }
