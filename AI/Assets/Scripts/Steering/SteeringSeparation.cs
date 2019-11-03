@@ -37,9 +37,10 @@ public class SteeringSeparation : SteeringAbstract
         foreach (Collider col in nearby_tanks)
         {
             vec_helper = -(col.transform.position - this.transform.position);
+            
             float str = strength.Evaluate(Mathf.Abs(vec_helper.magnitude));
             vec_helper.Normalize();
-            vec_helper *= str;
+            vec_helper *= 0.1f;
             vec_res += vec_helper;
         }
        

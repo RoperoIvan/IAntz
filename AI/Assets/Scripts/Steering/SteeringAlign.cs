@@ -12,6 +12,7 @@ public class SteeringAlign : SteeringAbstract
     public float desired_rotation;
     public Vector3 vec_my_front;
     public Vector3 vec_t_m;
+    public Vector3 to_do;
 
 
 
@@ -38,15 +39,19 @@ public class SteeringAlign : SteeringAbstract
         float current_rotation;
         
         float correct_rotation;
-        Vector3 to_do;
 
-        if (NavMesh.CalculatePath(this.transform.position, target, NavMesh.GetAreaFromName("walkable"), path))
+        to_do = Vector3.zero;
+        if(NavMesh.CalculatePath(this.transform.position, target, NavMesh.GetAreaFromName("walkable"), path))
             to_do = path.corners[1];
-        else
-            to_do = target;
 
-        
-       
+       if (to_do == Vector3.zero)
+       {
+            to_do = target;
+       }
+            
+
+
+
 
 
         current_rotation = move.current_rotation_speed;
@@ -72,6 +77,7 @@ public class SteeringAlign : SteeringAbstract
 
             move.AccelerateRotation(correct_rotation, prio);
             move.AccelerateMovement(this.transform.forward, prio);
+            
 
 
         }
