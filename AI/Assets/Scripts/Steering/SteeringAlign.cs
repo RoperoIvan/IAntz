@@ -30,7 +30,6 @@ public class SteeringAlign : SteeringAbstract
         // TODO 7: Very similar to arrive, but using angular velocities
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
-        //DrivetoTarget(move.target.transform.position, priority);
         if (desired_rotation <= min_angle && desired_rotation >= -min_angle)
             move.SetRotationVelocity(0, priority);
     }

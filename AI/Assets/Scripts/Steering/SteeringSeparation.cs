@@ -43,9 +43,7 @@ public class SteeringSeparation : SteeringAbstract
             vec_helper *= 0.1f;
             vec_res += vec_helper;
         }
-       
-        //vec_res.Normalize();
-        //vec_res *= move.max_mov_acceleration;
+
         if (vec_res != Vector3.zero)
         {
             vec_res += transform.position;

@@ -5,32 +5,30 @@ public class SteeringWander : SteeringAbstract
 {
 
 	public float min_distance = 5f;
-
-	Move move;
+    public float strength = 5f;
+    Move move;
     SteeringAlign align;
-    Vector3 vec_random_destination;
     // Use this for initialization
-    float random_angle;
+    float random_angle = Random.Range(-359, 359);
 
     void Start()
     {
         move = GetComponent<Move>();
         align = GetComponent<SteeringAlign>();        
-        random_angle = Random.Range(-359, 359);
     }
 
     void Update()
     {
-        Vector3 vec_circle = move.current_velocity;
-        vec_circle.Normalize();
-        vec_circle *= min_distance;
-        Vector3 vec_displacement = new Vector3(0, -1);
-        vec_displacement *= 5;
+        Vector3 vec_vel = move.current_velocity;
+        vec_vel.Normalize();
+        vec_vel *= min_distance;
+        Vector3 vec_change_trajectory = new Vector3(0, -1);
+        vec_change_trajectory *= strength;
         random_angle = Random.Range(-359, 359);
-        vec_displacement.x = Mathf.Cos(random_angle) * vec_displacement.magnitude;
-        vec_displacement.y = Mathf.Sin(random_angle) * vec_displacement.magnitude;     
-        Vector3 vec_wander_force = vec_circle + vec_displacement;
-        align.DrivetoTarget(vec_wander_force, priority);
+        vec_change_trajectory.x = Mathf.Cos(random_angle) * vec_change_trajectory.magnitude;
+        vec_change_trajectory.y = Mathf.Sin(random_angle) * vec_change_trajectory.magnitude;     
+        Vector3 vec_wander_result = vec_vel + vec_change_trajectory;
+        align.DrivetoTarget(vec_wander_result, priority);
     }
     
     void OnDrawGizmosSelected() 

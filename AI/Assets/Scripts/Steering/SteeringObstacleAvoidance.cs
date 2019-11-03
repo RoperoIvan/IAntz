@@ -57,7 +57,6 @@ public class SteeringObstacleAvoidance : SteeringAbstract
         }
     }
     
-    //new Vector3(hit.point.x, transform.position.y, hit.point.z) + hit.normal* avoid_distance;
     void OnDrawGizmosSelected() 
 	{
 		if(move && this.isActiveAndEnabled)
