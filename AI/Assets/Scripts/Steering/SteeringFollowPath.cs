@@ -67,7 +67,7 @@ public class SteeringFollowPath : SteeringAbstract
             {
                 if (current_ratio >= 1)
                 {
-                    if (type == 1)
+                    if (type == 2)
                     {
                         UI.GetComponent<Day_night>().Add_food(10);
                     }
