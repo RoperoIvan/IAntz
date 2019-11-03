@@ -71,10 +71,13 @@ public class SteeringFollowPath : SteeringAbstract
                     {
                         UI.GetComponent<Day_night>().Add_food(10);
                     }
+                    if (type == 0)
+                    {
+                        UI.GetComponent<Day_night>().Add_materials(10);
+                    }
                     current_ratio = 0.01f;
 
-                }
-                    
+                }                    
             }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
         }
