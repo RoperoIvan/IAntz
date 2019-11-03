@@ -521,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -599,7 +599,7 @@ PrefabInstance:
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
@@ -989,7 +989,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &158849939
 PrefabInstance:
@@ -1041,7 +1041,7 @@ PrefabInstance:
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
@@ -2110,7 +2110,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Path_day
       value: 
-      objectReference: {fileID: 1033710092}
+      objectReference: {fileID: 1179343626}
     - target: {fileID: 1218897346893479707, guid: e43bc597540f1544985e4dbf3df1c54b,
         type: 3}
       propertyPath: Path_night
@@ -2120,7 +2120,7 @@ PrefabInstance:
         type: 3}
       propertyPath: curve_day
       value: 
-      objectReference: {fileID: 1033710093}
+      objectReference: {fileID: 1179343627}
     - target: {fileID: 1218897346893479707, guid: e43bc597540f1544985e4dbf3df1c54b,
         type: 3}
       propertyPath: curve_night
@@ -2407,7 +2407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2670,7 +2670,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &560987733 stripped
 Transform:
@@ -2878,7 +2878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3032,7 +3032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4720,7 +4720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5213,15 +5213,15 @@ MonoBehaviour:
   closed: 1
   points:
   - controlType: 2
-    positionLocal: {x: -41.33662, y: 0, z: 10.203495}
-    controlFirstLocal: {x: 30.923601, y: 0, z: 8.995707}
-    controlSecondLocal: {x: 44.21539, y: 0.05030466, z: 0}
+    positionLocal: {x: -46.372448, y: 0, z: 10.203495}
+    controlFirstLocal: {x: 40.674137, y: 0.759331, z: 8.995707}
+    controlSecondLocal: {x: 49.81212, y: 0.05030466, z: 0}
     pointTransform: {fileID: 0}
     curve: {fileID: 1033710093}
     fieldsValues: []
   - controlType: 2
     positionLocal: {x: -15.592948, y: 0, z: 45.7951}
-    controlFirstLocal: {x: -4.312392, y: 0, z: -0.053710938}
+    controlFirstLocal: {x: -4.9084215, y: 0, z: -0.053710938}
     controlSecondLocal: {x: 6.3620405, y: 0, z: 19.187397}
     pointTransform: {fileID: 0}
     curve: {fileID: 1033710093}
@@ -5243,7 +5243,7 @@ MonoBehaviour:
   - controlType: 2
     positionLocal: {x: -24.587692, y: 0, z: 48.577614}
     controlFirstLocal: {x: -13.104614, y: 0, z: 15.297115}
-    controlSecondLocal: {x: 5.861023, y: 0, z: -12.044159}
+    controlSecondLocal: {x: 5.3019257, y: 0, z: -12.044159}
     pointTransform: {fileID: 0}
     curve: {fileID: 1033710093}
     fieldsValues: []
@@ -5459,7 +5459,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040142008
 GameObject:
@@ -5650,6 +5650,191 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 24967657}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1047535968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047535971}
+  - component: {fileID: 1047535970}
+  - component: {fileID: 1047535969}
+  m_Layer: 0
+  m_Name: BGC_Worker_Day2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1047535969
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047535968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d20671ad38ded4fa2362df353b9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHandles: 1
+  hidden: 0
+  parent: {fileID: 0}
+  ccName: 
+  fields: 1
+  mathType: 0
+  sectionParts: 10
+  optimizeStraightLines: 0
+  tolerance: 0.2
+  usePositionToCalculateTangents: 0
+  updateMode: 0
+  rendererForUpdateCheck: {fileID: 0}
+  mathChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BansheeGz.BGSpline.Components.BGCcMath+MathChangedEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  spheresScale: 1
+  spheresColor: {r: 1, g: 1, b: 1, a: 1}
+  spheresCount: 100
+--- !u!114 &1047535970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047535968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70f079e2a6bf364e8185b765fbe61c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    hideHandles: 0
+    newPointDistance: 2
+    showCurve: 1
+    showCurveMode: 1
+    showCurveOption: 0
+    sections: 20
+    showPointMenu: 1
+    showTangents: 0
+    tangentsSize: 0.7
+    tangentsColor: {r: 1, g: 1, b: 1, a: 1}
+    tangentsPerSection: 1
+    controlType: 2
+    vRay: 0
+    lineColor: {r: 1, g: 0, b: 0, a: 1}
+    restrictGizmoz: 
+    showPointControlType: 1
+    showPointPosition: 1
+    showHandles: 1
+    handlesType: 0
+    handlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 1
+      PlanesScale: 1
+      Alpha: 1
+    showLabels: 1
+    labelColor: {r: 1, g: 1, b: 1, a: 1}
+    showPositions: 0
+    labelColorSelected: {r: 0, g: 1, b: 0, a: 1}
+    showSpheres: 1
+    sphereRadius: 0.1
+    sphereColor: {r: 1, g: 0, b: 0, a: 1}
+    showPointControlPositions: 1
+    showControlHandles: 1
+    controlHandlesType: 0
+    controlHandlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 0.7
+      PlanesScale: 0.7
+      Alpha: 0.7
+    controlHandlesColor: {r: 0, g: 1, b: 1, a: 1}
+    showControlLabels: 1
+    showControlPositions: 0
+    labelControlColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    showTransformField: 0
+    existing: 1
+  mode2D: 0
+  closed: 1
+  points:
+  - controlType: 2
+    positionLocal: {x: -46.051613, y: 0, z: 17.812841}
+    controlFirstLocal: {x: 39.841236, y: 0.57272595, z: -0.29725647}
+    controlSecondLocal: {x: 49.311108, y: 0.9346342, z: -8.360746}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1047535970}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -15.592948, y: 0, z: 45.7951}
+    controlFirstLocal: {x: -4.312392, y: 0, z: -0.053710938}
+    controlSecondLocal: {x: 6.3620405, y: 0, z: 19.187397}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1047535970}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -57.950115, y: 0, z: 89.045944}
+    controlFirstLocal: {x: -0.16993713, y: 0, z: -4.476475}
+    controlSecondLocal: {x: -12.286457, y: 0, z: -5.1559677}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1047535970}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -98.09695, y: 0, z: 74.44628}
+    controlFirstLocal: {x: 24.948517, y: 0, z: 21.904434}
+    controlSecondLocal: {x: -1.3504333, y: 0, z: -15.8111}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1047535970}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -24.587692, y: 0, z: 48.577614}
+    controlFirstLocal: {x: -13.104614, y: 0, z: 15.297115}
+    controlSecondLocal: {x: 5.861023, y: 0, z: -12.044159}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1047535970}
+    fieldsValues: []
+  pointsComponents: []
+  pointsGameObjects: []
+  fields: []
+  snapType: 0
+  snapAxis: 1
+  snapDistance: 10
+  snapLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  snapTriggerInteraction: 0
+  snapToBackFaces: 0
+  snapMonitoring: 0
+  eventMode: 0
+  pointsMode: 0
+  forceChangedEventMode: 0
+--- !u!4 &1047535971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047535968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.7, y: 0, z: 4.6}
+  m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053206763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,7 +5997,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1088116549
 PrefabInstance:
@@ -6097,7 +6282,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Path_day
       value: 
-      objectReference: {fileID: 1033710092}
+      objectReference: {fileID: 1047535969}
     - target: {fileID: 1218897346893479707, guid: e43bc597540f1544985e4dbf3df1c54b,
         type: 3}
       propertyPath: Path_night
@@ -6107,7 +6292,7 @@ PrefabInstance:
         type: 3}
       propertyPath: curve_day
       value: 
-      objectReference: {fileID: 1033710093}
+      objectReference: {fileID: 1047535970}
     - target: {fileID: 1218897346893479707, guid: e43bc597540f1544985e4dbf3df1c54b,
         type: 3}
       propertyPath: curve_night
@@ -6519,6 +6704,191 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1715040655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1179343625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179343628}
+  - component: {fileID: 1179343627}
+  - component: {fileID: 1179343626}
+  m_Layer: 0
+  m_Name: BGC_Worker_Day3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1179343626
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179343625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d20671ad38ded4fa2362df353b9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHandles: 1
+  hidden: 0
+  parent: {fileID: 0}
+  ccName: 
+  fields: 1
+  mathType: 0
+  sectionParts: 10
+  optimizeStraightLines: 0
+  tolerance: 0.2
+  usePositionToCalculateTangents: 0
+  updateMode: 0
+  rendererForUpdateCheck: {fileID: 0}
+  mathChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BansheeGz.BGSpline.Components.BGCcMath+MathChangedEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  spheresScale: 1
+  spheresColor: {r: 1, g: 1, b: 1, a: 1}
+  spheresCount: 100
+--- !u!114 &1179343627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179343625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70f079e2a6bf364e8185b765fbe61c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    hideHandles: 0
+    newPointDistance: 2
+    showCurve: 1
+    showCurveMode: 1
+    showCurveOption: 0
+    sections: 20
+    showPointMenu: 1
+    showTangents: 0
+    tangentsSize: 0.7
+    tangentsColor: {r: 1, g: 1, b: 1, a: 1}
+    tangentsPerSection: 1
+    controlType: 2
+    vRay: 0
+    lineColor: {r: 1, g: 0, b: 0, a: 1}
+    restrictGizmoz: 
+    showPointControlType: 1
+    showPointPosition: 1
+    showHandles: 1
+    handlesType: 0
+    handlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 1
+      PlanesScale: 1
+      Alpha: 1
+    showLabels: 1
+    labelColor: {r: 1, g: 1, b: 1, a: 1}
+    showPositions: 0
+    labelColorSelected: {r: 0, g: 1, b: 0, a: 1}
+    showSpheres: 1
+    sphereRadius: 0.1
+    sphereColor: {r: 1, g: 0, b: 0, a: 1}
+    showPointControlPositions: 1
+    showControlHandles: 1
+    controlHandlesType: 0
+    controlHandlesSettings:
+      RemoveX: 0
+      RemoveY: 0
+      RemoveZ: 0
+      RemoveXZ: 0
+      RemoveXY: 0
+      RemoveYZ: 0
+      AxisScale: 0.7
+      PlanesScale: 0.7
+      Alpha: 0.7
+    controlHandlesColor: {r: 0, g: 1, b: 1, a: 1}
+    showControlLabels: 1
+    showControlPositions: 0
+    labelControlColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    showTransformField: 0
+    existing: 1
+  mode2D: 0
+  closed: 1
+  points:
+  - controlType: 2
+    positionLocal: {x: 3.1687396, y: 0, z: 15.590973}
+    controlFirstLocal: {x: -28.993382, y: 2.4598877, z: -10.059967}
+    controlSecondLocal: {x: -25.397036, y: 0.05030466, z: 0}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1179343627}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -15.592948, y: 0, z: 45.7951}
+    controlFirstLocal: {x: -1.6293173, y: 0, z: -0.053710938}
+    controlSecondLocal: {x: 6.3620405, y: 0, z: 19.187397}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1179343627}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -57.950115, y: 0, z: 89.045944}
+    controlFirstLocal: {x: -0.16993713, y: 0, z: -4.476475}
+    controlSecondLocal: {x: -12.286457, y: 0, z: -5.1559677}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1179343627}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -98.09695, y: 0, z: 74.44628}
+    controlFirstLocal: {x: 24.948517, y: 0, z: 21.904434}
+    controlSecondLocal: {x: -1.3504333, y: 0, z: -15.8111}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1179343627}
+    fieldsValues: []
+  - controlType: 2
+    positionLocal: {x: -24.587692, y: 0, z: 48.577614}
+    controlFirstLocal: {x: -13.104614, y: 0, z: 15.297115}
+    controlSecondLocal: {x: 8.11128, y: 0, z: -12.044159}
+    pointTransform: {fileID: 0}
+    curve: {fileID: 1179343627}
+    fieldsValues: []
+  pointsComponents: []
+  pointsGameObjects: []
+  fields: []
+  snapType: 0
+  snapAxis: 1
+  snapDistance: 10
+  snapLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  snapTriggerInteraction: 0
+  snapToBackFaces: 0
+  snapMonitoring: 0
+  eventMode: 0
+  pointsMode: 0
+  forceChangedEventMode: 0
+--- !u!4 &1179343628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179343625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.7, y: 0, z: 4.6}
+  m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1180027557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9,
@@ -7320,7 +7690,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1291124844 stripped
 Transform:
@@ -7741,7 +8111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8076,7 +8446,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1510321644
 PrefabInstance:
@@ -8492,7 +8862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8853,7 +9223,7 @@ Transform:
   m_LocalScale: {x: 1.3172, y: 1.3172, z: 1.3172}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1656044074
 PrefabInstance:
@@ -9130,7 +9500,7 @@ PrefabInstance:
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 5280619944530773340, guid: 3519a81ef63408847b3db8bd54547d9e,
         type: 3}
@@ -10262,7 +10632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 128935687, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10606,7 +10976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 428530, guid: 84a240cf1c5ef5f4d8ff048828a60d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
