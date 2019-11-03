@@ -9,12 +9,13 @@ public class SteeringWander : SteeringAbstract
     Move move;
     SteeringAlign align;
     // Use this for initialization
-    float random_angle = Random.Range(-359, 359);
+    float random_angle;
 
     void Start()
     {
         move = GetComponent<Move>();
-        align = GetComponent<SteeringAlign>();        
+        align = GetComponent<SteeringAlign>();
+        random_angle = Random.Range(-359, 359);
     }
 
     void Update()
