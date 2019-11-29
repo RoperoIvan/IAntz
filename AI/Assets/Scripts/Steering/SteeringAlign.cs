@@ -12,46 +12,77 @@ public class SteeringAlign : SteeringAbstract
     public float desired_rotation;
     public Vector3 vec_my_front;
     public Vector3 vec_t_m;
-    public Vector3 to_do;
 
-
-
+    Vector3 complete_path_target;
+    Vector3 path_target;
+    int actual_corner;
     Move move;
     NavMeshPath path;
     // Use this for initialization
     void Start () {
 		move = GetComponent<Move>();
-         path = new NavMeshPath();
+        path = new NavMeshPath();
+        //our next point in the path.
+        path_target = Vector3.zero;
+        //the current destination of the current path.
+        complete_path_target = Vector3.zero;
+        //our current corner in the path.
+        actual_corner = 0;
     }
 
 	// Update is called once per frame
 	void Update () 
 	{
-        // TODO 7: Very similar to arrive, but using angular velocities
-        // Find the desired rotation and accelerate to it
-        // Use Vector3.SignedAngle() to find the angle between two directions
         if (desired_rotation <= min_angle && desired_rotation >= -min_angle)
             move.SetRotationVelocity(0, priority);
     }
+
     public void DrivetoTarget(Vector3 target, int prio)
     {
-        float current_rotation;
-        
-        float correct_rotation;
+        if (target != complete_path_target) // If we have a new target to we want to recalculate the path.
+        {
+            complete_path_target = target; // We define which is the new current target.
+            actual_corner = 0; // We reset the corners of the path.
+            // We calculate the new path
+            if (NavMesh.CalculatePath(this.transform.position, complete_path_target, NavMesh.GetAreaFromName("walkable"), path))
+            {
+                //We assign our current path target to the first corner of the new path.
+                path_target = path.corners[actual_corner];
+            }
+            else
+            {
+                path_target = Vector3.zero;
+            }
 
-        to_do = Vector3.zero;
-        if(NavMesh.CalculatePath(this.transform.position, target, NavMesh.GetAreaFromName("walkable"), path))
-            to_do = path.corners[1];
+        }
+        float helper;
+        Vector3 helper_vec;
 
-       if (to_do == Vector3.zero)
-       {
+        // We wanna know the distance between our position and our path_target.
+        helper_vec = path_target - this.transform.position;
+
+        helper = helper_vec.magnitude;
+
+        // If the distance is below 0,5 We go to the next corner.
+        if (helper <= 0.1f && actual_corner < path.corners.Length - 1)
+        {
+            actual_corner++;
+            path_target = path.corners[actual_corner];
+        }
+
+        Vector3 to_do = Vector3.zero;
+        if (path_target == Vector3.zero)
+        {
             to_do = target;
-       }
-            
+        }
+        else
+        {
+            to_do = path_target;
+        }
 
 
-
-
+        float current_rotation;
+        float correct_rotation;
 
         current_rotation = move.current_rotation_speed;
 
@@ -64,20 +95,12 @@ public class SteeringAlign : SteeringAbstract
             move.SetRotationVelocity(0, prio);
         else
         {
-            //if (desired_rotation <= slow_angle && desired_rotation >= -slow_angle)
-            //    slow_factor = desired_rotation / slow_angle;
-            //else
-            //    slow_factor = 1;
-            //desired_rotation *= slow_factor;
-
             correct_rotation = (desired_rotation);
 
             correct_rotation = Mathf.Clamp(correct_rotation, -move.max_rot_acceleration, move.max_rot_acceleration);
 
             move.AccelerateRotation(correct_rotation, prio);
             move.AccelerateMovement(this.transform.forward, prio);
-            
-
 
         }
     }

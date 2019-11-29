@@ -11,10 +11,22 @@ public class SteeringArrive : SteeringAbstract
     Move move;
     NavMeshPath path;
     // Use this for initialization
+
+
+    Vector3 complete_path_target;
+    Vector3 path_target;
+    int actual_corner;
+
     void Start () { 
 		move = GetComponent<Move>();
         path = new NavMeshPath();
-	}
+        //our next point in the path.
+        path_target = Vector3.zero;
+        //the current destination of the current path.
+        complete_path_target = Vector3.zero;
+        //our current corner in the path.
+        actual_corner = 0;
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -28,21 +40,55 @@ public class SteeringArrive : SteeringAbstract
 		if(!move)
 			move = GetComponent<Move>();
 
-        // TODO 3: Find the acceleration to achieve the desired velocity
-        // If we are close enough to the target just stop moving and do nothing else
-        // Calculate the desired acceleration using the velocity we want to achieve and the one we already have
-        // Use time_to_target as the time to transition from the current velocity to the desired velocity
-        // Clamp the desired acceleration and call move.AccelerateMovement()
-        //vector tarjet me;
         Vector3 vec_t_m;
         Vector3 vec_act;
         Vector3 vec_crt;
         Vector3 vec_fn;
-        NavMesh.CalculatePath(transform.position, target, NavMesh.GetAreaFromName("walkable"), path);
+
+        if (target != complete_path_target) // If we have a new target to we want to recalculate the path.
+        {
+            complete_path_target = target; // We define which is the new current target.
+            actual_corner = 0; // We reset the corners of the path.
+            // We calculate the new path
+            if (NavMesh.CalculatePath(this.transform.position, target, NavMesh.GetAreaFromName("walkable"), path))
+            {
+                //We assign our current path target to the first corner of the new path.
+                path_target = path.corners[actual_corner];
+            }
+            else
+            {
+                path_target = Vector3.zero;
+            }
+
+        }
+        float helper;
+        Vector3 helper_vec;
+
+        // We wanna know the distance between our position and our path_target.
+        helper_vec = path_target - this.transform.position;
+
+        helper = helper_vec.magnitude;
+
+        // If the distance is below 0,5 We go to the next corner.
+        if (helper <= 0.1f && actual_corner < path.corners.Length)
+        {
+            actual_corner++;
+            path_target = path.corners[actual_corner];
+        }
+
+        Vector3 to_do = Vector3.zero;
+        if (path_target == Vector3.zero)
+        {
+            to_do = target;
+        }
+        else
+        {
+            to_do = path_target;
+        }
 
 
         vec_act = move.current_velocity;
-        vec_t_m = path.corners[1] - this.transform.position;
+        vec_t_m = to_do - this.transform.position;
 
 
         if (vec_t_m.magnitude <= min_distance)
