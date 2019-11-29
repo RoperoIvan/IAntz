@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 53233189fcaf3d34e8a9fc2e877e2c33
+guid: bbd0ce7556f46694b9cbd19a233818a0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5128138204239938453
+    second: moods_0
+  - first:
+      213: 5492664473581377997
+    second: moods_1
+  - first:
+      213: -2582927845703493393
+    second: moods_2
+  - first:
+      213: -5461805551673402666
+    second: moods_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +105,95 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: moods_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 391
+        width: 238
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae2b7b4f9948224381ca00ccc1c0b04
+      internalID: -5128138204239938453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moods_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 394
+        width: 233
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77840c605fe3afa4db71c1a0bae9c0cc
+      internalID: 5492664473581377997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moods_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 119
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdcf2a35e4604e40a6b522ef8895047
+      internalID: -2582927845703493393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moods_3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 107
+        width: 257
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0845f3a6b8f192847bb87e037e1d7de1
+      internalID: -5461805551673402666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7b6c86f73c35fe84896eadef2a475abe
     internalID: 0
     vertices: []
     indices: 
