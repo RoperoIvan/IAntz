@@ -16,8 +16,8 @@ public class Move : MonoBehaviour {
 	public Vector3 current_velocity = Vector3.zero;
 	public float current_rotation_speed = 0.0f; // degrees
 
-    private Vector3[] movement_velocity = new Vector3[6];
-    private float[] angular_velocity = new float[6];
+    public Vector3[] movement_velocity = new Vector3[6];
+    public float[] angular_velocity = new float[6];
 
     // Methods for behaviours to set / add velocities
     public void SetMovementVelocity (Vector3 velocity, int priority) 
