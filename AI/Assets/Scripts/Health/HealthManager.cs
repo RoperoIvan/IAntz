@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HealthHandler : MonoBehaviour
+public class HealthManager : MonoBehaviour
 {
-    public Sprite[] health;
-    public Image heart;
-    
+    public int health;
+    public int current_health;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +15,6 @@ public class HealthHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        heart.sprite = health[GetComponent<HealthManager>().current_health];
+        
     }
 }
