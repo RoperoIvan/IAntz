@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 namespace AI{
 
-	public class Get_Rocks : ActionTask{
+	public class Get_Resource : ActionTask{
 
         Animator m_Animator;
         public BBParameter<GameObject> my_ant;

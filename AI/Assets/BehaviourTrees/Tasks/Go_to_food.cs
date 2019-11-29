@@ -7,34 +7,37 @@ using UnityEngine.AI;
 
 namespace AI{
 
-	public class Go_to_resource_rock : ActionTask{
+	public class Go_to_food : ActionTask{
 
-        public BBParameter<GameObject> nearby_rock;
-        public BBParameter<bool> on_resource_rock;
+        public BBParameter<GameObject> nearby_food;
+        public BBParameter<bool> on_resource_food;
         public BBParameter<GameObject> my_ant;
 
         public BBParameter<int> my_load;
         SteeringAlign align;
         Move move;
 
-		protected override string OnInit(){
+        protected override string OnInit()
+        {
             align = my_ant.value.GetComponent<SteeringAlign>();
             move = my_ant.value.GetComponent<Move>();
             return null;
-		}
+        }
 
-		protected override void OnExecute(){
-            
-		}
+        protected override void OnExecute()
+        {
 
-		protected override void OnUpdate(){
-            align.DrivetoTarget(nearby_rock.value.transform.position, 3);
-            if (on_resource_rock.value)
+        }
+
+        protected override void OnUpdate()
+        {
+            align.DrivetoTarget(nearby_food.value.transform.position, 3);
+            if (on_resource_food.value)
             {
-                my_load.value = 2;
+                my_load.value = 1;
                 EndAction(true);
             }
-            
+
         }
 
         protected override void OnStop()
@@ -51,7 +54,7 @@ namespace AI{
             }
         }
 
-		protected override void OnPause(){
+        protected override void OnPause(){
 			
 		}
 	}

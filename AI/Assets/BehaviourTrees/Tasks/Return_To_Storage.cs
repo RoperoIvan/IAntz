@@ -15,7 +15,7 @@ namespace AI{
 
         public BBParameter<int> my_load;
 
-
+        Worker_Knowledge my_knowledge;
         SteeringAlign align;
         Move move;
 
@@ -23,6 +23,7 @@ namespace AI{
         {
             align = my_ant.value.GetComponent<SteeringAlign>();
             move = my_ant.value.GetComponent<Move>();
+            my_knowledge = my_ant.value.GetComponent<Worker_Knowledge>();
             return null;
         }
 
@@ -36,6 +37,9 @@ namespace AI{
             align.DrivetoTarget(Storage.value.transform.position, 3);
             if (on_storage.value)
             {
+                my_knowledge.GiveMaterial(my_load.value);
+                my_knowledge.CalculatePriorities();
+                my_load.value = 0; //once we drop our resource we reset it to 0
                 EndAction(true);
             }
 
