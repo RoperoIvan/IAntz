@@ -20,7 +20,7 @@ public class HealthManager : MonoBehaviour
         if (current_health == health)
         {
             Mmanager.current_mood = 0;
-            is_alive = false;
+            is_alive = true;
         }
 
         if (current_health == health / 2)
