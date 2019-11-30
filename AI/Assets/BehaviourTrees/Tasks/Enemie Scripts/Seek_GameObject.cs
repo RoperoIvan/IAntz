@@ -1,42 +1,42 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
-using UnityEngine;
 using System.Collections;
-using UnityEngine.AI;
+using System.Collections.Generic;
+using UnityEngine;
 
 
 namespace AI{
 
-	public class Flee : ActionTask{
-        public BBParameter<GameObject> my_ant;
-        public BBParameter<GameObject> my_enemie;
+	public class Seek_GameObject : ActionTask{
+        public BBParameter<GameObject> To_seek;
+        public BBParameter<GameObject> My_ant;
+
+        public BBParameter<float> d_to_complete;
 
         SteeringAlign align;
         Move move;
 
-        protected override string OnInit(){
-            align = my_ant.value.GetComponent<SteeringAlign>();
-            move = my_ant.value.GetComponent<Move>();
-            return null;
-        }
+		protected override string OnInit(){
+            align = My_ant.value.GetComponent<SteeringAlign>();
+            move = My_ant.value.GetComponent<Move>();
+
+			return null;
+		}
 
 		protected override void OnExecute(){
-			
 		}
 
 		protected override void OnUpdate(){
-            Vector3 dir = my_enemie.value.transform.position - my_ant.value.transform.position;
-            Vector3  dist = dir.normalized;
-            dist = -dist;
+            Vector3 seek_pos = To_seek.value.transform.position - My_ant.value.transform.position;
 
-            if (dir.magnitude >= 20.0f)
+            if (seek_pos.magnitude <= d_to_complete.value)
                 EndAction(true);
             else
-                align.DrivetoTarget(dist,3);
-
-        }
+                align.DrivetoTarget(To_seek.value.transform.position, 3);
+		}
 
 		protected override void OnStop(){
+
             for (int i = 0; i < move.movement_velocity.Length; i++)
             {
                 move.movement_velocity[i] = Vector3.zero;

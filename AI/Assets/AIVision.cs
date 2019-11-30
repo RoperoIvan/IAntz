@@ -30,28 +30,26 @@ public class AIVision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        current_enemy = null;
 		Collider[] colliders = Physics.OverlapSphere(transform.position, frustum.farClipPlane, mask);
-		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(frustum);
 
 		detected_now.Clear();
 
 		foreach(Collider col in colliders)
 		{
-			if(col.gameObject != gameObject && GeometryUtility.TestPlanesAABB(planes, col.bounds))
+			if(col.gameObject != gameObject && GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(frustum), col.bounds))
 			{
 				RaycastHit hit;
 				ray.origin = transform.position;
 				ray.direction = (col.transform.position - transform.position).normalized;
 				ray.origin = ray.GetPoint(frustum.nearClipPlane);
 
-            	if(Physics.Raycast(ray, out hit, frustum.farClipPlane, ray_mask))
-            	{
-					if(hit.collider.gameObject.CompareTag("Visual Emitter"))
-                    {
-                        detected_now.Add(col.gameObject);
-                        if(current_enemy == null)
-                            current_enemy = col.gameObject;
-                    }
+            	if(Physics.Raycast(ray, out hit, frustum.farClipPlane, ray_mask) == false)
+                { 
+                    detected_now.Add(col.gameObject);
+                    if(current_enemy == null)
+                        current_enemy = col.gameObject;
+                    
                 }
 			}
 		}
