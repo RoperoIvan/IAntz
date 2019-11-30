@@ -5,7 +5,7 @@ using BansheeGz.BGSpline.Curve;
 
 public class SteeringFollowPath : SteeringAbstract
 {
-    public GameObject UI;
+    //public GameObject UI;
     Move move;
 	SteeringSeek seek;
     SteeringAlign align;
@@ -13,10 +13,10 @@ public class SteeringFollowPath : SteeringAbstract
     public int type;
     public BGCcMath Path_day;
     public BGCcMath Path_night;
-    BGCcMath actpath;
+    public BGCcMath actpath;
     public BGCurve curve_day;
     public BGCurve curve_night;
-    BGCurve actcurve;
+    public BGCurve actcurve;
     public float ratio_increment = 0.1f;
     public float min_distance = 1.0f;
     public  float current_ratio = 0.0f;
@@ -39,17 +39,17 @@ public class SteeringFollowPath : SteeringAbstract
 	void Update () 
 	{
         
-        if (UI.GetComponent<Day_night>().day)
-        {
-            actpath = Path_day;
-            actcurve = curve_day;
+        //if (UI.GetComponent<Day_night>().day)
+        //{
+        //    actpath = Path_day;
+        //    actcurve = curve_day;
 
-        }
-        else
-        {
-            actpath = Path_night;
-            actcurve = curve_night;
-        }
+        //}
+        //else
+        //{
+        //    actpath = Path_night;
+        //    actcurve = curve_night;
+        //}
         path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
      
 
@@ -70,17 +70,17 @@ public class SteeringFollowPath : SteeringAbstract
                 }                    
             }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
-            if (actpath.name.Contains("Night") == true)
-            {
-                if(current_ratio >= 1)
-                {
-                    move.GetAnimator().SetBool("Movement", false);
-                    move.SetMovementVelocity(Vector3.zero, priority);
-                    move.SetRotationVelocity(0, priority);
-                    sleep = true;
-                }
+            //if (actpath.name.Contains("Night") == true)
+            //{
+            //    if(current_ratio >= 1)
+            //    {
+            //        move.GetAnimator().SetBool("Movement", false);
+            //        move.SetMovementVelocity(Vector3.zero, priority);
+            //        move.SetRotationVelocity(0, priority);
+            //        sleep = true;
+            //    }
 
-            }
+            //}
             
         }
         if (!sleep)

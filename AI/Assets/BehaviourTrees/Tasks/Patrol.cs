@@ -13,7 +13,10 @@ namespace AI{
         public BGCurve curve_day;
         public BGCurve curve_night;
         protected override string OnInit(){
-            
+            agent.gameObject.GetComponent<SteeringFollowPath>().Path_day = Path_day;
+            agent.gameObject.GetComponent<SteeringFollowPath>().Path_night= Path_night;
+            agent.gameObject.GetComponent<SteeringFollowPath>().curve_day = curve_day;
+            agent.gameObject.GetComponent<SteeringFollowPath>().curve_night = curve_night;
             return null;
 		}
 
@@ -23,13 +26,13 @@ namespace AI{
 
             if (daycicle.GetComponent<Day_night>().day)
             {
-                //agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_day;
-               // agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_day;
+                agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_day;
+                agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_day;
             }
             else
             {
-                //agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night;
-                //agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night;
+                agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night;
+                agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night;
             }
             //EndAction(true);
         }
