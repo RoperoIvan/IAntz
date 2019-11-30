@@ -24894,7 +24894,10 @@ MonoBehaviour:
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My
     Ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"My Ant","_id":"655fa84a-f673-4398-80ba-c595e73ed0f2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_current_enemy":{"_propertyPath":"Enemie_Knowledge.My_current_enemy","_name":"My_current_enemy","_id":"f5b91d17-15c4-448a-972a-e9620f6a2a73","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Life":{"_name":"Life","_id":"947f0d47-9f10-4f05-8d17-8ba1ee62e041","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"e8b13964-f613-4a25-96fe-b22a3e02e7a9","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
 --- !u!114 &1505373202790753668
 MonoBehaviour:
