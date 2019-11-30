@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Anthill_Resources : MonoBehaviour
 {
@@ -12,11 +13,20 @@ public class Anthill_Resources : MonoBehaviour
     public int Percent_rocks;
     public int Percent_branches;
 
+    public Text resources_food;
+    public Text resources_rocks;
+    public Text resources_branches;
+
     public int Total_cantity;
     // Start is called before the first frame update
     void Start()
     {
         Total_cantity = Food_cantity + Rocks_cantity + Branches_cantity;
+
+        // UI.
+        resources_food.text = "Food:" + Food_cantity;
+        resources_rocks.text = "Rocks:" + Rocks_cantity;
+        resources_branches.text = "Branches:" + Branches_cantity;
 
     }
 
@@ -32,5 +42,10 @@ public class Anthill_Resources : MonoBehaviour
         Percent_rocks = Total_cantity - Rocks_cantity;
 
         Percent_branches = Total_cantity - Branches_cantity;
+
+        // UI.
+        resources_food.text = "Food:" + Food_cantity;
+        resources_rocks.text = "Rocks:" + Rocks_cantity;
+        resources_branches.text = "Branches:" + Branches_cantity;
     }
 }

@@ -38,21 +38,20 @@ public class SteeringFollowPath : SteeringAbstract
 	// Update is called once per frame
 	void Update () 
 	{
-        if (UI.GetComponent<Day_night>()._update)
+        
+        if (UI.GetComponent<Day_night>().day)
         {
-            if (UI.GetComponent<Day_night>().day)
-            {
-                actpath = Path_day;
-                actcurve = curve_day;
+            actpath = Path_day;
+            actcurve = curve_day;
 
-            }
-            else
-            {
-                actpath = Path_night;
-                actcurve = curve_night;
-            }
-            path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
         }
+        else
+        {
+            actpath = Path_night;
+            actcurve = curve_night;
+        }
+        path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
+     
 
         bool sleep = false;
         float total_path = actpath.GetDistance();
@@ -66,15 +65,7 @@ public class SteeringFollowPath : SteeringAbstract
             if(actcurve.Closed)
             {
                 if (current_ratio >= 1)
-                {
-                    if (type == 2)
-                    {
-                        UI.GetComponent<Day_night>().Add_food(10);
-                    }
-                    if (type == 0)
-                    {
-                        UI.GetComponent<Day_night>().Add_materials(10);
-                    }
+                { 
                     current_ratio = 0.01f;
                 }                    
             }
