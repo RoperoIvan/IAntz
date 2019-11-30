@@ -23,13 +23,13 @@ namespace AI{
 
             if (daycicle.GetComponent<Day_night>().day)
             {
-                agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_day;
-                agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_day;
+                //agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_day;
+               // agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_day;
             }
             else
             {
-                agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night;
-                agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night;
+                //agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night;
+                //agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night;
             }
             //EndAction(true);
         }

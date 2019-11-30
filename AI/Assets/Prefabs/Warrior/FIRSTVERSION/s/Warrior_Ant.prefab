@@ -355,10 +355,8 @@ MonoBehaviour:
   type: 1
   Path_day: {fileID: 0}
   Path_night: {fileID: 0}
-  actpath: {fileID: 0}
   curve_day: {fileID: 0}
   curve_night: {fileID: 0}
-  actcurve: {fileID: 0}
   ratio_increment: 0.1
   min_distance: 4
   current_ratio: 0
@@ -494,7 +492,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   current_health: 4
-  is_alive: 1
 --- !u!114 &5047940765440195136
 MonoBehaviour:
   m_ObjectHideFlags: 0

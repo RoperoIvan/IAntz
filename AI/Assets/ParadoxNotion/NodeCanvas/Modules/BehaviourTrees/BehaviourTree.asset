@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
   m_Name: BehaviourTree
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.3,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","comments":"","nodes":[],"connections":[],"localBlackboard":{"_name":"Local
+  _serializedGraph: '{"version":2.3,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","comments":"","translation":{"x":-810.0,"y":-863.0},"zoomFactor":0.25,"nodes":[],"connections":[],"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}}}'
   _objectReferences: []
   _deserializationFailed: 0
