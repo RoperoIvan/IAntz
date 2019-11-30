@@ -1330,6 +1330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1576262870}
+  - {fileID: 1445933245}
   m_Father: {fileID: 1861319733}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13472,6 +13473,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40cdb1261502c5147946ac48cebac02b, type: 3}
+--- !u!1 &1445933244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445933245}
+  m_Layer: 10
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445933245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445933244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 104380563}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1452924122
 GameObject:
   m_ObjectHideFlags: 0
@@ -13892,6 +13923,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.46383575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019662127063518578, guid: 0da10c113dedcdf4b89a0dc186720c44,
+        type: 3}
+      propertyPath: resource.Array.data[2]
+      value: 
+      objectReference: {fileID: 4900729958252628608, guid: b4197d1c6895394459afffe2e6a650ca,
+        type: 3}
+    - target: {fileID: 5019662127063518578, guid: 0da10c113dedcdf4b89a0dc186720c44,
+        type: 3}
+      propertyPath: resource.Array.data[3]
+      value: 
+      objectReference: {fileID: 8840444072218814751, guid: b4197d1c6895394459afffe2e6a650ca,
+        type: 3}
+    - target: {fileID: 5019662127063518579, guid: 0da10c113dedcdf4b89a0dc186720c44,
+        type: 3}
+      propertyPath: current_resource
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da10c113dedcdf4b89a0dc186720c44, type: 3}
@@ -15346,6 +15394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedBlackboard: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"795cb70a-2036-458f-a465-aac8e7a3ae63","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"my_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"my_ant","_id":"d2a70ad0-c5e6-4fbc-b220-317d31ee5cfb","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_nearest_enemie":{"_propertyPath":"Worker_Knowledge.My_nearest_enemie","_name":"My_nearest_enemie","_id":"d50f25a1-433e-489c-804c-4ac778d8d428","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Bools
     ":{"_name":"Bools ","_id":"590d76a1-7044-4c12-a061-94a52b17d242","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Worker_Knowledge.day","_name":"day","_id":"abd11606-b586-4d1f-9063-bef74421c678","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
@@ -15366,6 +15415,11 @@ MonoBehaviour:
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"sleep_module":{"_propertyPath":"Worker_Knowledge.sleep_module","_name":"sleep_module","_id":"3c67e28d-3f5e-4bff-a6d1-959b8ea62610","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Extra":{"_name":"Extra","_id":"3b5c7be3-9092-4c99-980b-c28980b89bd1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MyLoad":{"_propertyPath":"Worker_Knowledge.my_load","_name":"MyLoad","_id":"e5c5d1b9-70d8-4e97-862c-e433b48cf0f8","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Life
+    vars":{"_name":"Life vars","_id":"4ddec17d-ae90-409c-b004-f1f21fa29dbf","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"0fc763d9-ff11-45cb-999a-539e1e0618bc","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"a71316ef-eb65-4f1f-97a9-b44c1967acf5","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_food":{"_propertyPath":"Worker_Knowledge.current_food","_name":"current_food","_id":"c79fa3b9-ce88-4d75-ab0e-f1d2e8f18f7a","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
 --- !u!114 &1576262854
@@ -15414,8 +15468,13 @@ MonoBehaviour:
   priority_food: 0
   priority_rocks: 0
   priority_branches: 0
+  enemies_layer:
+    serializedVersion: 2
+    m_Bits: 1024
   my_load: 0
   day: 1
+  current_food: 0
+  My_nearest_enemie: {fileID: 1445933244}
   ant_mill: {fileID: 1836016499}
   anthill_resources: {fileID: 117113732}
 --- !u!1001 &1578003662
