@@ -7,43 +7,36 @@ using UnityEngine.AI;
 
 namespace AI{
 
-	public class Go_to_branches : ActionTask{
-
-        public BBParameter<GameObject> nearby_branches;
-        public BBParameter<bool> on_resource_branches;
+	public class Flee : ActionTask{
         public BBParameter<GameObject> my_ant;
+        public BBParameter<GameObject> my_enemie;
 
-
-        public BBParameter<int> my_load;
         SteeringAlign align;
         Move move;
 
-
-        protected override string OnInit()
-        {
+        protected override string OnInit(){
             align = my_ant.value.GetComponent<SteeringAlign>();
             move = my_ant.value.GetComponent<Move>();
             return null;
         }
 
-        protected override void OnExecute()
-        {
+		protected override void OnExecute(){
+			
+		}
 
-        }
+		protected override void OnUpdate(){
+            Vector3 dir = my_enemie.value.transform.position - my_ant.value.transform.position;
+            Vector3  dist = dir.normalized;
+            dist = -dist;
 
-        protected override void OnUpdate()
-        {
-            align.DrivetoTarget(nearby_branches.value.transform.position, 3);
-            if (on_resource_branches.value)
-            {
-                my_load.value = 3;
+            if (dir.magnitude >= 9.0f)
                 EndAction(true);
-            }
+            else
+                align.DrivetoTarget(dist,3);
 
         }
 
-        protected override void OnStop()
-        {
+		protected override void OnStop(){
             for (int i = 0; i < move.movement_velocity.Length; i++)
             {
                 move.movement_velocity[i] = Vector3.zero;
@@ -56,7 +49,7 @@ namespace AI{
             }
         }
 
-        protected override void OnPause(){
+		protected override void OnPause(){
 			
 		}
 	}

@@ -18,14 +18,18 @@ public class Worker_Knowledge : MonoBehaviour
     public int priority_rocks;
     public int priority_branches;
 
+    public LayerMask enemies_layer;
 
     public int my_load; //0 nothing 1 food 2 rocks 3 branches.
 
     public bool day;
 
+    public int current_food;
+
 
     //Colliders
 
+    public GameObject My_nearest_enemie;
 
     public GameObject ant_mill;
 
@@ -86,15 +90,29 @@ public class Worker_Knowledge : MonoBehaviour
         if (Distance_to_smodule.magnitude <= 3.0f)
         {
             on_sleep_module = true;
-        }    
+        }
 
         //Distances --------------------------------------------------------------------------------------------------
-
-       
-
+        current_food = ant_res.Food_cantity;
 
 
+        //Calc of my nearest enemie.
 
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 10.0f, enemies_layer);
+
+        foreach(Collider col in colliders)
+        {
+            if (My_nearest_enemie == null)
+                My_nearest_enemie = col.gameObject;
+            else
+            {
+                Vector3 dist_to_ene = col.gameObject.transform.position - this.transform.position;
+                Vector3 dist_to_my_ene = My_nearest_enemie.transform.position - this.transform.position;
+
+                if (dist_to_my_ene.magnitude > dist_to_ene.magnitude)
+                    My_nearest_enemie = col.gameObject;
+            }
+        }
     }
 
     public void CalculatePriorities()
@@ -114,5 +132,8 @@ public class Worker_Knowledge : MonoBehaviour
 
         if (i == 3)
              ant_res.Branches_cantity += 10;
+
+        if (i == 8)
+            ant_res.Food_cantity -= 10;
     }
 }
