@@ -500,35 +500,35 @@ MonoBehaviour:
   closed: 1
   points:
   - controlType: 2
-    positionLocal: {x: -17.491705, y: 0, z: 45.526543}
+    positionLocal: {x: -17.491707, y: 6.107109, z: 45.526543}
     controlFirstLocal: {x: 1, y: 0, z: 0}
     controlSecondLocal: {x: -1, y: -0, z: -0}
     pointTransform: {fileID: 0}
     curve: {fileID: 26892203}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: 42.52032, y: 0, z: 45.7951}
+    positionLocal: {x: 42.52032, y: 3.7028503, z: 45.7951}
     controlFirstLocal: {x: -12.002405, y: -0, z: -0.0537117}
     controlSecondLocal: {x: 0.22932053, y: 0, z: -21.259333}
     pointTransform: {fileID: 0}
     curve: {fileID: 26892203}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: 43.369995, y: 0, z: -78.459656}
+    positionLocal: {x: 43.369995, y: 3.514618, z: -78.459656}
     controlFirstLocal: {x: -0.16993484, y: -0, z: 24.850954}
     controlSecondLocal: {x: -25.616741, y: 0, z: -1.63163}
     pointTransform: {fileID: 0}
     curve: {fileID: 26892203}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: -81.37259, y: 0, z: -80.23782}
+    positionLocal: {x: -81.37259, y: 2.3090134, z: -80.23782}
     controlFirstLocal: {x: 24.948517, y: -0, z: 0.35563353}
     controlSecondLocal: {x: -1.3504333, y: 0, z: 26.338188}
     pointTransform: {fileID: 0}
     curve: {fileID: 26892203}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: -80.805176, y: 0, z: 44.575867}
+    positionLocal: {x: -80.805176, y: 3.1397552, z: 44.575867}
     controlFirstLocal: {x: -0.11348266, y: -0, z: -24.962738}
     controlSecondLocal: {x: 25.654068, y: 0, z: 1.841095}
     pointTransform: {fileID: 0}
@@ -654,7 +654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40166496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.3, y: 0.34, z: -33.3}
+  m_LocalPosition: {x: -95, y: 0.34, z: -33.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 104380563}
@@ -2351,35 +2351,35 @@ MonoBehaviour:
   closed: 1
   points:
   - controlType: 2
-    positionLocal: {x: -17.491705, y: 0, z: 45.526543}
+    positionLocal: {x: -17.491703, y: 2.4050088, z: 45.526543}
     controlFirstLocal: {x: 1, y: 0, z: 0}
     controlSecondLocal: {x: -1, y: -0, z: -0}
     pointTransform: {fileID: 0}
     curve: {fileID: 274092297}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: 42.52032, y: 0, z: 45.7951}
+    positionLocal: {x: 42.52032, y: 2.0566003, z: 45.7951}
     controlFirstLocal: {x: -12.002405, y: -0, z: -0.0537117}
     controlSecondLocal: {x: 0.22932053, y: 0, z: -21.259333}
     pointTransform: {fileID: 0}
     curve: {fileID: 274092297}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: 43.369995, y: 0, z: -78.459656}
+    positionLocal: {x: 43.37, y: 1.4852357, z: -78.459656}
     controlFirstLocal: {x: -0.16993484, y: -0, z: 24.850954}
     controlSecondLocal: {x: -25.616741, y: 0, z: -1.63163}
     pointTransform: {fileID: 0}
     curve: {fileID: 274092297}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: -81.37259, y: 0, z: -80.23782}
+    positionLocal: {x: -81.37258, y: 2.5309064, z: -80.23782}
     controlFirstLocal: {x: 24.948517, y: -0, z: 0.35563353}
     controlSecondLocal: {x: -1.3504333, y: 0, z: 26.338188}
     pointTransform: {fileID: 0}
     curve: {fileID: 274092297}
     fieldsValues: []
   - controlType: 2
-    positionLocal: {x: -80.805176, y: 0, z: 44.575867}
+    positionLocal: {x: -80.80518, y: 3.032922, z: 44.575867}
     controlFirstLocal: {x: -0.11348266, y: -0, z: -24.962738}
     controlSecondLocal: {x: 25.654068, y: 0, z: 1.841095}
     pointTransform: {fileID: 0}
@@ -4205,7 +4205,7 @@ Transform:
   m_Children:
   - {fileID: 1212766669}
   m_Father: {fileID: 2128761314}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &475819477
 PrefabInstance:
@@ -5761,7 +5761,7 @@ Transform:
   m_LocalScale: {x: 3.9421, y: 3.9421, z: 3.9421}
   m_Children: []
   m_Father: {fileID: 2128761314}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &637411252
 PrefabInstance:
@@ -7723,6 +7723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemie_Ant_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781574696731914653, guid: a043dd160d272774a8468011a79d35b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6781574696731914639, guid: a043dd160d272774a8468011a79d35b1,
         type: 3}
@@ -12698,7 +12703,7 @@ Transform:
   - {fileID: 1452263401}
   - {fileID: 6781574697643844745}
   m_Father: {fileID: 2128761314}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1305568807 stripped
 Transform:
@@ -21626,6 +21631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1848189727}
+  - {fileID: 5047940766853398639}
   - {fileID: 1298175063}
   - {fileID: 464121938}
   - {fileID: 631473230}
@@ -25172,6 +25178,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemie_Ant
       objectReference: {fileID: 0}
+    - target: {fileID: 1641034832845249035, guid: 45f960251c8a5e542b71c1d6128bb5f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1641034832845249049, guid: 45f960251c8a5e542b71c1d6128bb5f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25185,7 +25196,7 @@ PrefabInstance:
     - target: {fileID: 1641034832845249049, guid: 45f960251c8a5e542b71c1d6128bb5f4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.760236
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 1641034832845249049, guid: 45f960251c8a5e542b71c1d6128bb5f4,
         type: 3}
@@ -25242,6 +25253,27 @@ PrefabInstance:
       propertyPath: My_spawn
       value: 
       objectReference: {fileID: 1212766668}
+    - target: {fileID: 1641034832845249032, guid: 45f960251c8a5e542b71c1d6128bb5f4,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"ebb3d68b-d32e-4945-8440-8d8ce30f41f8","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Queen":{"_propertyPath":"Enemie_Knowledge.Queen","_name":"Queen","_id":"0ad30cc9-0785-4e59-8134-b3671713846d","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My
+        Ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"My Ant","_id":"655fa84a-f673-4398-80ba-c595e73ed0f2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_current_enemy":{"_propertyPath":"Enemie_Knowledge.My_current_enemy","_name":"My_current_enemy","_id":"f5b91d17-15c4-448a-972a-e9620f6a2a73","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Life":{"_name":"Life","_id":"947f0d47-9f10-4f05-8d17-8ba1ee62e041","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"e8b13964-f613-4a25-96fe-b22a3e02e7a9","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"2d03bbea-8104-4d0e-958f-af82e1d35c62","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Bools":{"_name":"Bools","_id":"e15b4f42-c3aa-4259-8a83-533ba2fdb515","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Enemie_Knowledge.day","_name":"day","_id":"ca825895-2d56-4737-b4c6-91de23f7b519","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"My_spawn":{"_propertyPath":"Enemie_Knowledge.My_spawn","_name":"My_spawn","_id":"0b0307a8-d69d-4839-993b-7aeb30e39f08","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641034832845249038, guid: 45f960251c8a5e542b71c1d6128bb5f4,
+        type: 3}
+      propertyPath: mask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45f960251c8a5e542b71c1d6128bb5f4, type: 3}
 --- !u!4 &1505373202790753682 stripped
@@ -25250,6 +25282,105 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 153694751272779659}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2908710850236313029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2128761314}
+    m_Modifications:
+    - target: {fileID: 7948908844714454480, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_Name
+      value: Warrior_Ant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 58.97903
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.163442
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.740786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0041729817
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9961996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06753918
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.05484054
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -7.7070003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 173.63701
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.90900004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948908844714454437, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: Path_day
+      value: 
+      objectReference: {fileID: 274092296}
+    - target: {fileID: 7948908844714454437, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: Path_night
+      value: 
+      objectReference: {fileID: 26892202}
+    - target: {fileID: 7948908844714454437, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: curve_day
+      value: 
+      objectReference: {fileID: 274092297}
+    - target: {fileID: 7948908844714454437, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: curve_night
+      value: 
+      objectReference: {fileID: 26892203}
+    - target: {fileID: 2908710849022348627, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: Where_to_rest
+      value: 
+      objectReference: {fileID: 995033396}
+    - target: {fileID: 2908710849022348627, guid: d45ecd7be5e5d45478b91f21e2473f18,
+        type: 3}
+      propertyPath: resources
+      value: 
+      objectReference: {fileID: 117113732}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d45ecd7be5e5d45478b91f21e2473f18, type: 3}
 --- !u!1001 &4067411515963305225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25381,6 +25512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160128666883579384, guid: c4a5668cd0086e045ad6d119aa6d844a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9160128666883579370, guid: c4a5668cd0086e045ad6d119aa6d844a,
         type: 3}
@@ -25716,6 +25852,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5019662126694686932}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &5047940766853398639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7948908844714454442, guid: d45ecd7be5e5d45478b91f21e2473f18,
+    type: 3}
+  m_PrefabInstance: {fileID: 2908710850236313029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5196690577086799110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25877,6 +26019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemie_Ant_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424242295470752695, guid: 8b62feaa6fe0fce4b81dec5f8d464379,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1424242295470752677, guid: 8b62feaa6fe0fce4b81dec5f8d464379,
         type: 3}

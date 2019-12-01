@@ -7,6 +7,8 @@ namespace NodeCanvas.Tasks.Conditions
 
     public class IsEnemyDead : ConditionTask
     {
+        public BBParameter<GameObject> my_ant;
+        public BBParameter<GameObject> my_enemie;
         protected override string OnInit()
         {
             
@@ -16,7 +18,7 @@ namespace NodeCanvas.Tasks.Conditions
         protected override bool OnCheck()
         {
             bool ret = false;
-            if (agent.gameObject.GetComponent<PheromonesSecrete>().enemy.GetComponent<HealthManager>().current_health <= 0 || !agent.gameObject.GetComponent<PheromonesSecrete>().enemy)
+            if (my_enemie.value.GetComponent<HealthManager>().current_health <= 0 || my_enemie.value == null)
             {
                 //agent.gameObject.GetComponent<PheromonesSecrete>().enemy;
                 ret = true;           

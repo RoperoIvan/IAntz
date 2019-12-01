@@ -41,19 +41,19 @@ public class SteeringAlign : SteeringAbstract
     {
         if (target != complete_path_target) // If we have a new target to we want to recalculate the path.
         {
-            Debug.Log("New Path Adquired");
+            //Debug.Log("New Path Adquired");
             complete_path_target = target; // We define which is the new current target.
             actual_corner = 0; // We reset the corners of the path.
             // We calculate the new path
             if (NavMesh.CalculatePath(this.transform.position, complete_path_target, NavMesh.GetAreaFromName("walkable"), path))
             {
                 //We assign our current path target to the first corner of the new path.
-                Debug.Log("Path correctly calculated");
+                //Debug.Log("Path correctly calculated");
                 path_target = path.corners[actual_corner];
             }
             else
             {
-                Debug.Log("Path was not calculated");
+                //Debug.Log("Path was not calculated");
                 path_target = Vector3.zero;
             }
 
@@ -69,7 +69,7 @@ public class SteeringAlign : SteeringAbstract
         // If the distance is below 0,5 We go to the next corner.
         if (helper <= 0.3f && actual_corner < path.corners.Length - 1)
         {
-            Debug.Log("New Corner Adquired");
+            //Debug.Log("New Corner Adquired");
             actual_corner++;
             path_target = path.corners[actual_corner];
         }

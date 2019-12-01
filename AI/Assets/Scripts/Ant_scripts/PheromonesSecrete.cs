@@ -15,6 +15,6 @@ public class PheromonesSecrete : MonoBehaviour
     void Update()
     {
         //if(GetComponent<AIVision>().current_enemy != null)
-            enemy = GetComponent<AIVision>().current_enemy;
+            enemy = GetComponent<Warrior_knowledge>().My_current_enemy;
     }
 }
