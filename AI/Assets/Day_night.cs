@@ -22,23 +22,33 @@ public class Day_night : MonoBehaviour
         {
             Application.Quit();
         }
+        if (sun_light.transform.position.y <= 65f && sun_light.transform.position.y >= -144f)
+        {
+            //sun_light.color = Color.Lerp(color_night, color_day, 2);
+            //Debug.Log("The Sun rises again my childs, Praise the sun");
+            day = false;
+        }
+        else if(sun_light.transform.position.y <= 300f && sun_light.transform.position.y >= 86f)
+        {
+            day = true;
+        }
     }
 
 
     public void Daynight()
     {
 
-        day = !day;
+        //day = !day;
    
-        if(day)
-        {
-            sun_light.color = Color.Lerp(color_night, color_day, 2);
-            Debug.Log("The Sun rises again my childs, Praise the sun");
-        }
-        else
-        {
-            sun_light.color = Color.Lerp(color_day, color_night, 2);
-            Debug.Log("The night devoures the world, let the darkness be one with you");
-        }
+        //if(day)
+        //{
+        //    sun_light.color = Color.Lerp(color_night, color_day, 2);
+        //    Debug.Log("The Sun rises again my childs, Praise the sun");
+        //}
+        //else
+        //{
+        //    sun_light.color = Color.Lerp(color_day, color_night, 2);
+        //    Debug.Log("The night devoures the world, let the darkness be one with you");
+        //}
     }
 }
