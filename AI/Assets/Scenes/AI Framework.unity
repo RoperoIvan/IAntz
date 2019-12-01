@@ -1657,6 +1657,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 159117262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &196933663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8024119723606196381, guid: a043dd160d272774a8468011a79d35b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 683270721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &196933664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196933663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &208337171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336,
@@ -1952,6 +1970,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 798229682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &276920662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114412637108573339, guid: fe155ff7e28fb4c489b850d10aa78210,
+    type: 3}
+  m_PrefabInstance: {fileID: 1552673741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &276920663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276920662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &279422471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2824,6 +2860,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1248315283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &402666462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114412637108573339, guid: fe155ff7e28fb4c489b850d10aa78210,
+    type: 3}
+  m_PrefabInstance: {fileID: 5159888008428557454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &402666463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402666462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &409662310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5721,6 +5775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemie_Ant_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024119723606196381, guid: a043dd160d272774a8468011a79d35b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024119723606196367, guid: a043dd160d272774a8468011a79d35b1,
         type: 3}
@@ -14972,6 +15031,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warrior_Ant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114412637108573339, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114412637108573409, guid: fe155ff7e28fb4c489b850d10aa78210,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15057,6 +15121,11 @@ PrefabInstance:
       propertyPath: resources
       value: 
       objectReference: {fileID: 117113732}
+    - target: {fileID: 114412637108573413, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe155ff7e28fb4c489b850d10aa78210, type: 3}
 --- !u!1001 &1557814313
@@ -18853,6 +18922,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+--- !u!1 &1910435424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9160128666883579384, guid: c4a5668cd0086e045ad6d119aa6d844a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4230635312395286451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910435425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910435424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1928056077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9,
@@ -20401,6 +20488,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+--- !u!1 &2038375482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121866018381731845, guid: ad54e48e056d71141aea06ac755d215d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3303363653383339397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038375483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038375482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2039983135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25027,6 +25132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemie_Ant
       objectReference: {fileID: 0}
+    - target: {fileID: 4121866018381731845, guid: ad54e48e056d71141aea06ac755d215d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4121866018381731863, guid: ad54e48e056d71141aea06ac755d215d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25186,6 +25296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health
       objectReference: {fileID: 0}
+    - target: {fileID: 114412637108573409, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 224181464333548622, guid: fe155ff7e28fb4c489b850d10aa78210,
         type: 3}
       propertyPath: UI
@@ -25210,11 +25325,6 @@ PrefabInstance:
         type: 3}
       propertyPath: curve_night
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114412637108573409, guid: fe155ff7e28fb4c489b850d10aa78210,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe155ff7e28fb4c489b850d10aa78210, type: 3}
@@ -25593,6 +25703,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warrior_Ant
       objectReference: {fileID: 0}
+    - target: {fileID: 114412637108573339, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114412637108573409, guid: fe155ff7e28fb4c489b850d10aa78210,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25678,6 +25793,16 @@ PrefabInstance:
       propertyPath: resources
       value: 
       objectReference: {fileID: 117113732}
+    - target: {fileID: 5159888009646781464, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: enemies_layer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412637108573413, guid: fe155ff7e28fb4c489b850d10aa78210,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe155ff7e28fb4c489b850d10aa78210, type: 3}
 --- !u!1001 &5196690577086799110
