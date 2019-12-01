@@ -13,6 +13,7 @@ namespace AI{
 
         SteeringAlign align;
         Move move;
+        Vector3 enemie_pos;
 
         protected override string OnInit(){
             align = my_ant.value.GetComponent<SteeringAlign>();
@@ -21,11 +22,12 @@ namespace AI{
         }
 
 		protected override void OnExecute(){
+            enemie_pos = my_enemie.value.transform.position;
 			
 		}
 
 		protected override void OnUpdate(){
-            Vector3 dir = my_enemie.value.transform.position - my_ant.value.transform.position;
+            Vector3 dir = enemie_pos - my_ant.value.transform.position;
             Vector3  dist = dir.normalized;
             dist = -dist;
 

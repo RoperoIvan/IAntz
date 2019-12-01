@@ -31,7 +31,6 @@ public class SteeringFollowPath : SteeringAbstract
         align = GetComponent<SteeringAlign>();
         actpath = Path_day;
         actcurve = curve_day;
-        // TODO 1: Calculate the closest point from the tank to the curve
         path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
 	}
 	
@@ -39,21 +38,8 @@ public class SteeringFollowPath : SteeringAbstract
 	void Update () 
 	{
         
-        //if (UI.GetComponent<Day_night>().day)
-        //{
-        //    actpath = Path_day;
-        //    actcurve = curve_day;
-
-        //}
-        //else
-        //{
-        //    actpath = Path_night;
-        //    actcurve = curve_night;
-        //}
         path_point = actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
      
-
-        bool sleep = false;
         float total_path = actpath.GetDistance();
         Vector3 current_dist = path_point - this.transform.position;
 
@@ -70,21 +56,10 @@ public class SteeringFollowPath : SteeringAbstract
                 }                    
             }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);
-            //if (actpath.name.Contains("Night") == true)
-            //{
-            //    if(current_ratio >= 1)
-            //    {
-            //        move.GetAnimator().SetBool("Movement", false);
-            //        move.SetMovementVelocity(Vector3.zero, priority);
-            //        move.SetRotationVelocity(0, priority);
-            //        sleep = true;
-            //    }
-
-            //}
+            path_point.y = this.gameObject.transform.position.y;
             
         }
-        if (!sleep)
-             align.DrivetoTarget(path_point, priority);
+        align.DrivetoTarget(path_point, priority);
 
 	}
 
