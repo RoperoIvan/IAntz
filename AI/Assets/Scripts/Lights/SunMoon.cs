@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class SunMoon : MonoBehaviour
 {
-    public Transform sun_tr;
-    public int rotation_scale;
-    public Light sun;
+    public Light sunlight;
+    public int cicle_strength = 12;
     private void Start()
     {
-        rotation_scale = 12;
     }
     private void Update()
     {
-        sun_tr.Rotate(rotation_scale * Time.deltaTime, 0, 0);
+        sunlight.transform.RotateAround(Vector3.zero, Vector3.right, cicle_strength * Time.deltaTime);
+        sunlight.transform.LookAt(Vector3.zero);      
     }
 }
