@@ -4,24 +4,15 @@ using UnityEngine;
 
 public class SunMoon : MonoBehaviour
 {
-    public GameObject UI;
-    
-
-    // Start is called before the first frame update
-    void Start()
+    public Transform sun_tr;
+    public int rotation_scale;
+    public Light sun;
+    private void Start()
     {
-        
+        rotation_scale = 12;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(!UI.GetComponent<Day_night>().day)
-        {
-           
-        }
-        else
-        {
-        }
+        sun_tr.Rotate(rotation_scale * Time.deltaTime, 0, 0);
     }
 }
