@@ -5,7 +5,7 @@ using UnityEngine;
 public class SunMoon : MonoBehaviour
 {
     public Light sunlight;
-    public int cicle_strength = 12;
+    public float cicle_strength = 0.1f;
     private void Start()
     {
     }

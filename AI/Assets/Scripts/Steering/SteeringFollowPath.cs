@@ -52,7 +52,7 @@ public class SteeringFollowPath : SteeringAbstract
             {
                 if (current_ratio >= 1)
                 { 
-                    current_ratio = 0.01f;
+                    current_ratio = 0.05f;
                 }                    
             }
             path_point = actpath.CalcPositionByDistanceRatio(current_ratio);

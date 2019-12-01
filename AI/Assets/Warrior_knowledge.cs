@@ -50,7 +50,7 @@ public class Warrior_knowledge : MonoBehaviour
         Vector3 dist_to_mod = Where_to_rest.transform.position - this.transform.position;
 
 
-        if (dist_to_mod.magnitude < 3.0f)
+        if (dist_to_mod.magnitude < 6.0f)
             on_sleep_module = true;
 
        

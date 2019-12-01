@@ -15,6 +15,7 @@ namespace NodeCanvas.Tasks.Conditions{
                 ret = true;
 
             return ret;
+            //return false;
 		}
 	}
 }

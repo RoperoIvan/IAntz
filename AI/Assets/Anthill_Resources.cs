@@ -17,6 +17,11 @@ public class Anthill_Resources : MonoBehaviour
     public Text resources_rocks;
     public Text resources_branches;
 
+
+    public GameObject you_lose_canvas;
+
+    public GameObject queen;
+
     public int Total_cantity;
     // Start is called before the first frame update
     void Start()
@@ -47,5 +52,10 @@ public class Anthill_Resources : MonoBehaviour
         resources_food.text = "Food:" + Food_cantity;
         resources_rocks.text = "Rocks:" + Rocks_cantity;
         resources_branches.text = "Branches:" + Branches_cantity;
+
+        if (queen.GetComponent<HealthManager>().current_health == 0)
+        {
+            you_lose_canvas.SetActive(true);
+        }
     }
 }
