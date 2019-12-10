@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   min_distance: 0.1
-  time_to_target: 0.25
+  strength: 5
 --- !u!114 &7988441316693649393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  cancer: 0
+  vec_res: {x: 0, y: 0, z: 0}
 --- !u!114 &7988441316693649399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   max_seconds_prediction: 0
+  target: {fileID: 0}
 --- !u!114 &7988441316693649397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,12 +221,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 0
-  Path: {fileID: 0}
+  type: 0
+  Path_day: {fileID: 0}
+  Path_night: {fileID: 0}
+  actpath: {fileID: 0}
+  curve_day: {fileID: 0}
+  curve_night: {fileID: 0}
+  actcurve: {fileID: 0}
   ratio_increment: 0.1
   min_distance: 1
   current_ratio: 0
   current_path_pos: 0
-  cancer: 0
 --- !u!114 &7988441316693648392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +249,9 @@ MonoBehaviour:
   slow_angle: 10
   time_to_target: 0.1
   slow_factor: 0
-  cancer: 0
+  desired_rotation: 0
+  vec_my_front: {x: 0, y: 0, z: 0}
+  vec_t_m: {x: 0, y: 0, z: 0}
 --- !u!114 &2091671761912225595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +273,20 @@ MonoBehaviour:
   max_rot_acceleration: 0.1
   current_velocity: {x: 0, y: 0, z: 0}
   current_rotation_speed: 0
+  movement_velocity:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  angular_velocity:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!1 &5616273183912205160
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5616273183912205160}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.44, z: -5.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3145220919233711334}

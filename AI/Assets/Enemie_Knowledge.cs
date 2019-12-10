@@ -10,6 +10,8 @@ public class Enemie_Knowledge : MonoBehaviour
     public GameObject My_current_enemy;
     public GameObject enemi_anthill;
     public GameObject My_spawn;
+
+    public GameObject Notonmywatch;
     
     public bool day;
     
@@ -30,7 +32,8 @@ public class Enemie_Knowledge : MonoBehaviour
     {
         day = life_cycle.day;
 
-        My_current_enemy = null;
-        My_current_enemy = my_vision.current_enemy;
+        My_current_enemy = Notonmywatch;
+        if (my_vision.current_enemy != null)
+            My_current_enemy = my_vision.current_enemy;
     }
 }

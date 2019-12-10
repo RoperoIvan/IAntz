@@ -4,9 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AI{
+namespace IAntz{
 
-	public class Enemie_sight : ActionTask{
+	public class Enemie_disapered : ActionTask{
         public BBParameter<GameObject> my_enemie;
         public BBParameter<GameObject> Notonmywatch;
 
@@ -19,9 +19,9 @@ namespace AI{
 		}
 
 		protected override void OnUpdate(){
-            if (my_enemie.value != Notonmywatch.value)
+            if (my_enemie.value == Notonmywatch.value)
                 EndAction(true);
-		}
+        }
 
 		protected override void OnStop(){
 			
