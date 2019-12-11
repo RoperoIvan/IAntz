@@ -25,6 +25,15 @@ public class Warrior_knowledge : MonoBehaviour
     public bool day;
     private Day_night life_cycle;
     AIVision my_vision;
+
+
+    // Target and move to a position.
+
+    public GameObject My_target;
+    public bool Should_i_go = false;
+    public Vector3 target_pos_ind;
+    public bool im_selected = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +42,9 @@ public class Warrior_knowledge : MonoBehaviour
         detected = new List<GameObject>();
         detected_now = new List<GameObject>();
         my_vision = this.GetComponent<AIVision>();
+
+        My_target.SetActive(false);
+        target_pos_ind = My_target.transform.position;
     }
 
     // Update is called once per frame
@@ -53,7 +65,36 @@ public class Warrior_knowledge : MonoBehaviour
         if (dist_to_mod.magnitude < 6.0f)
             on_sleep_module = true;
 
-       
+
+
+        // TARGET THINKS -------------------------------------------------
+
+        // All this we want that only the selected warrior ant is doing (my head just crashed).
+        if (im_selected == true)
+        {
+            // We set the target on:
+            if (Input.GetKeyDown("r"))
+            {
+
+                My_target.SetActive(true);
+                Should_i_go = true;
+            }
+
+            // We set the target off:
+            if (Input.GetKeyDown("f"))
+            {
+                //target_pos_ind = this.transform.position;
+                My_target.SetActive(false);
+                Should_i_go = false;
+            }
+
+        }
+
+        // We only change the position if its active. 
+        if (My_target.gameObject.activeSelf == true)
+            My_target.transform.position = target_pos_ind;
+
+
     }
     void OnDrawGizmosSelected()
     {
