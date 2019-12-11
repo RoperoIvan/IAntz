@@ -26,6 +26,8 @@ public class Warrior_knowledge : MonoBehaviour
     private Day_night life_cycle;
     AIVision my_vision;
 
+    public GameObject Notonmywatch;
+
 
     // Target and move to a position.
 
@@ -51,8 +53,8 @@ public class Warrior_knowledge : MonoBehaviour
     void Update()
     {
 
-        My_current_enemy = null;
-        My_current_enemy = my_vision.current_enemy;
+        //My_current_enemy = null;
+        //My_current_enemy = my_vision.current_enemy;
         day = life_cycle.day;
 
         current_food = res.Food_cantity;
@@ -75,7 +77,6 @@ public class Warrior_knowledge : MonoBehaviour
             // We set the target on:
             if (Input.GetKeyDown("r"))
             {
-
                 My_target.SetActive(true);
                 Should_i_go = true;
             }
@@ -83,7 +84,6 @@ public class Warrior_knowledge : MonoBehaviour
             // We set the target off:
             if (Input.GetKeyDown("f"))
             {
-                //target_pos_ind = this.transform.position;
                 My_target.SetActive(false);
                 Should_i_go = false;
             }
@@ -95,6 +95,9 @@ public class Warrior_knowledge : MonoBehaviour
             My_target.transform.position = target_pos_ind;
 
 
+        My_current_enemy = Notonmywatch;
+        if (my_vision.current_enemy != null)
+            My_current_enemy = my_vision.current_enemy;
     }
     void OnDrawGizmosSelected()
     {

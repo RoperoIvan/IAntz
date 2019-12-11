@@ -2503,7 +2503,7 @@ Transform:
   - {fileID: 1110216072}
   - {fileID: 2036314340}
   m_Father: {fileID: 1861319733}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &107344191 stripped
 Transform:
@@ -6962,12 +6962,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4121866018339989071}
-  - {fileID: 1575754440}
   - {fileID: 51203938}
   - {fileID: 1696347239}
   - {fileID: 754388588}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &347161788
 PrefabInstance:
@@ -12692,7 +12691,7 @@ PrefabInstance:
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
@@ -12968,7 +12967,7 @@ Transform:
   - {fileID: 1335136288}
   - {fileID: 338745734}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &675245189
 PrefabInstance:
@@ -20709,7 +20708,7 @@ Transform:
   - {fileID: 229957315}
   - {fileID: 1516621264}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040142008
 GameObject:
@@ -22950,7 +22949,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1096045620
 PrefabInstance:
@@ -26010,7 +26009,7 @@ Transform:
   - {fileID: 1260564092}
   - {fileID: 1029006782}
   m_Father: {fileID: 1861319733}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223740614
 GameObject:
@@ -28928,7 +28927,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 346556703}
+    m_TransformParent: {fileID: 1430366859}
     m_Modifications:
     - target: {fileID: 137496, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_Name
@@ -28940,15 +28939,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 187.48492
+      value: 192.77786
       objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -28.50725
+      value: -7.493296
       objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1036.5128
+      value: 962.5343
       objectReference: {fileID: 0}
     - target: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
       propertyPath: m_LocalRotation.x
@@ -30700,12 +30699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430366858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.06332, y: 3.693297, z: 32.278496}
+  m_LocalPosition: {x: -46.76332, y: 3.693297, z: 33.978497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 117113733}
-  m_Father: {fileID: 1861319733}
-  m_RootOrder: 2
+  - {fileID: 1575754440}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1430756999 stripped
 Transform:
@@ -32217,6 +32217,7 @@ MonoBehaviour:
   player_detected: 0
   detection_radius: 20
   day: 0
+  Notonmywatch: {fileID: 0}
   My_target: {fileID: 0}
   Should_i_go: 0
   target_pos_ind: {x: 0, y: 0, z: 0}
@@ -33417,7 +33418,7 @@ Transform:
   - {fileID: 61583189}
   - {fileID: 1591525556}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1525462151 stripped
 Transform:
@@ -33529,7 +33530,7 @@ Transform:
   - {fileID: 1489829739}
   - {fileID: 1567810832}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1532602567
 PrefabInstance:
@@ -35114,7 +35115,7 @@ PrefabInstance:
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
@@ -35925,7 +35926,7 @@ PrefabInstance:
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2876181294794095649, guid: 164a1609f816fdb429ea09aed5cc4372,
         type: 3}
@@ -39184,7 +39185,7 @@ Transform:
   - {fileID: 1899297443}
   - {fileID: 6546707859280944832}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1776148497 stripped
 Transform:
@@ -42073,7 +42074,6 @@ Transform:
   m_Children:
   - {fileID: 79883319}
   - {fileID: 481133636}
-  - {fileID: 1430366859}
   - {fileID: 104380563}
   - {fileID: 2128761314}
   - {fileID: 1222543661}
@@ -51552,7 +51552,7 @@ Transform:
   - {fileID: 464121938}
   - {fileID: 631473230}
   m_Father: {fileID: 1861319733}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2137423041
 PrefabInstance:
@@ -55443,6 +55443,32 @@ PrefabInstance:
       propertyPath: curve_night
       value: 
       objectReference: {fileID: 1516621266}
+    - target: {fileID: 1976322447416092386, guid: 664cb1c6aafd3bd4e93933ad4c5b95b9,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"is_alive":{"_propertyPath":"HealthManager.is_alive","_name":"is_alive","_id":"58385244-5514-41d6-9057-9cc4076b5ba0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"can_hit":{"_name":"can_hit","_id":"1f99d9a4-364c-419c-b28f-c92c84f62b1d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"14bdf29c-b191-4cde-8763-0d4b07236c22","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"day":{"_propertyPath":"Warrior_knowledge.day","_name":"day","_id":"58a117a7-0a0d-48f1-adc5-5b8bb8bc540b","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"MyAnt":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"MyAnt","_id":"76607b68-7aea-44ad-97ed-7b329e82ac76","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_current_enemy":{"_propertyPath":"Warrior_knowledge.My_current_enemy","_name":"My_current_enemy","_id":"108b8609-dbb1-4d75-9e8d-6e423f1bbe3d","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Path_day":{"_propertyPath":"SteeringFollowPath.Path_day","_name":"Path_day","_id":"0d5ec1e3-e439-4c8b-a25a-afaea96e0278","$type":"NodeCanvas.Framework.Variable`1[[BansheeGz.BGSpline.Components.BGCcMath,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Path_night":{"_propertyPath":"SteeringFollowPath.Path_night","_name":"Path_night","_id":"4eee1a4c-ce60-4302-abb6-30c09cf2d456","$type":"NodeCanvas.Framework.Variable`1[[BansheeGz.BGSpline.Components.BGCcMath,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"curve_day":{"_propertyPath":"SteeringFollowPath.curve_day","_name":"curve_day","_id":"409a418b-a3ef-4f10-92be-b2c8a1ec3e2c","$type":"NodeCanvas.Framework.Variable`1[[BansheeGz.BGSpline.Curve.BGCurve,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"curve_night":{"_propertyPath":"SteeringFollowPath.curve_night","_name":"curve_night","_id":"23ca48bb-04e7-4335-94ae-0f59b418869a","$type":"NodeCanvas.Framework.Variable`1[[BansheeGz.BGSpline.Curve.BGCurve,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Where_to_rest":{"_propertyPath":"Warrior_knowledge.Where_to_rest","_name":"Where_to_rest","_id":"86f3cacf-2a84-408d-84b6-99a8240cdd2d","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"on_sleep_module":{"_propertyPath":"Warrior_knowledge.on_sleep_module","_name":"on_sleep_module","_id":"5e082ef6-5251-4fa3-936d-0e24ff129d5e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"My_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"My_ant","_id":"e08fd4d2-9a7b-490c-814d-7cb9823d4b10","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"current_food":{"_propertyPath":"Warrior_knowledge.current_food","_name":"current_food","_id":"802a6845-6dda-4814-ab29-d8cd5d4013af","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"3452f6ea-ef64-4d71-afb2-7811ffc565f1","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Target":{"_name":"Target","_id":"2bbfd95b-d560-4787-a6bd-f8c961f6df09","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Should_i_go":{"_propertyPath":"Warrior_knowledge.Should_i_go","_name":"Should_i_go","_id":"4ca382e4-5d7c-4b20-a786-2945016198f3","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"My_target":{"_propertyPath":"Warrior_knowledge.My_target","_name":"My_target","_id":"698e532f-262b-4615-bad8-d3d75b5318a8","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Enemie
+        Game objects":{"_name":"Enemie Game objects","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Notonmywatch":{"_propertyPath":"Warrior_knowledge.Notonmywatch","_name":"Notonmywatch","_id":"6441ae30-6edb-45e9-85b4-a155093cc2f0","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 6728568793120556653, guid: 664cb1c6aafd3bd4e93933ad4c5b95b9,
         type: 3}
       propertyPath: Where_to_rest
@@ -55458,6 +55484,11 @@ PrefabInstance:
       propertyPath: enemies_layer.m_Bits
       value: 1024
       objectReference: {fileID: 0}
+    - target: {fileID: 6728568793120556653, guid: 664cb1c6aafd3bd4e93933ad4c5b95b9,
+        type: 3}
+      propertyPath: Notonmywatch
+      value: 
+      objectReference: {fileID: 1575754437}
     - target: {fileID: 1976322446224310018, guid: 664cb1c6aafd3bd4e93933ad4c5b95b9,
         type: 3}
       propertyPath: m_Layer
