@@ -29,6 +29,7 @@ namespace AI{
         protected override void OnExecute()
         {
             agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 1;
+            agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 0;
             timer = Time.time;
         }
 
@@ -38,6 +39,7 @@ namespace AI{
             if(time_now - timer >= 2)
             {
                 agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 2;
+                agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 2;
                 align.DrivetoTarget(nearby_branches.value.transform.position, 3);
                 if (on_resource_branches.value)
                 {

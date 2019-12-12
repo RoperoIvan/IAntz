@@ -13,7 +13,7 @@ public class Anthill_Resources : MonoBehaviour
     public int Percent_rocks = 1;
     public int Percent_branches = 1;
 
-    public int Priority_food = 1;
+    public int Priority_food = 3;
     public int Priority_rocks = 1;
     public int Priority_branches = 1;
 
