@@ -16,6 +16,7 @@ namespace AI{
         public BBParameter<int> my_load;
         SteeringAlign align;
         Move move;
+        float timer;
 
         protected override string OnInit()
         {
@@ -26,18 +27,26 @@ namespace AI{
 
         protected override void OnExecute()
         {
-
+            agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 1;
+            agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 0;
+            timer = Time.time;
         }
 
         protected override void OnUpdate()
         {
-            align.DrivetoTarget(nearby_food.value.transform.position, 3);
-            if (on_resource_food.value)
+            float time_now = Time.time;
+            if (time_now - timer >= 2)
             {
-                my_load.value = 1;
-                EndAction(true);
+                agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 2;
+                agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 1;
+                align.DrivetoTarget(nearby_food.value.transform.position, 3);
+                if (on_resource_food.value)
+                {
+                    agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 0;
+                    my_load.value = 1;
+                    EndAction(true);
+                }
             }
-
         }
 
         protected override void OnStop()
