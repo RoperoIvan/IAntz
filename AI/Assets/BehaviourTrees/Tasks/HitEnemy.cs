@@ -15,6 +15,7 @@ namespace AI{
 
 		protected override void OnExecute(){
             time_start = Time.time;
+           
             //EndAction(true);
         }
 
@@ -29,8 +30,8 @@ namespace AI{
         }
 
 		protected override void OnStop(){
-			
-		}
+            //agent.gameObject.GetComponent<AttackManager>().current_attack = 0;
+        }
 
 		protected override void OnPause(){
 			
