@@ -11,7 +11,9 @@ public class SunMoon : MonoBehaviour
     }
     private void Update()
     {
-        sunlight.transform.RotateAround(Vector3.zero, Vector3.right, cicle_strength * Time.deltaTime);
+        if(!GameObject.Find("Anthill Resources").GetComponent<DayManager>().next_day)
+            sunlight.transform.RotateAround(Vector3.zero, Vector3.right, cicle_strength * Time.deltaTime);
+
         sunlight.transform.LookAt(Vector3.zero);      
     }
 }
