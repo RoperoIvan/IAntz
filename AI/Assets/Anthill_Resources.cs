@@ -55,15 +55,48 @@ public class Anthill_Resources : MonoBehaviour
     public int Wood_c_2;
     public int Wood_c_3;
 
+
+    // Base Caps:
+    public int Cap_food_basic;
+    public int Cap_food_advanced;
+    public int Cap_food_end;
+
+    public int Actual_food_storage_lvl;
+
+    public int Af_cap = 0;
+
+    public int Cap_wood_basic;
+    public int Cap_wood_advanced;
+    public int Cap_wood_end;
+
+    public int Actual_wood_storage_lvl;
+
+    public int Aw_cap = 0;
+
+    public int Cap_rock_basic;
+    public int Cap_rock_advanced;
+    public int Cap_rock_end;
+
+    public int Actual_rock_storage_lvl;
+
+    public int Ar_cap = 0;
+
+    // Upgrade buttons.
+
     // Start is called before the first frame update
     void Start()
     {
         Total_cantity = Food_cantity + Rocks_cantity + Branches_cantity;
 
+        Af_cap = Cap_food_basic;
+        Aw_cap = Cap_wood_basic;
+        Ar_cap = Cap_rock_basic;
+
         // UI.
-        resources_food.text = "Food:" + Food_cantity;
-        resources_rocks.text = "Rocks:" + Rocks_cantity;
-        resources_branches.text = "Branches:" + Branches_cantity;
+        resources_food.text = "Food: " + Food_cantity + "/" + Af_cap;
+        resources_rocks.text = "Rocks: " + Rocks_cantity + "/" + Ar_cap;
+        resources_branches.text = "Branches:" + Branches_cantity + "/" + Aw_cap;
+
         CalculatePriorities();
     }
 
@@ -97,15 +130,16 @@ public class Anthill_Resources : MonoBehaviour
 
 
         // UI.
-        resources_food.text = "Food:" + Food_cantity;
-        resources_rocks.text = "Rocks:" + Rocks_cantity;
-        resources_branches.text = "Branches:" + Branches_cantity;
+        resources_food.text = "Food: " + Food_cantity + "/" + Af_cap;
+        resources_rocks.text = "Rocks: " + Rocks_cantity + "/" + Ar_cap;
+        resources_branches.text = "Branches:" + Branches_cantity + "/" + Aw_cap;
 
         if (queen.GetComponent<HealthManager>().current_health == 0)
         {
             you_lose_canvas.SetActive(true);
         }
 
+        CapResources();
         CheckResources();
     }
 
@@ -205,4 +239,226 @@ public class Anthill_Resources : MonoBehaviour
             }
         }
     }
+
+    private void CapResources()
+    {
+        if (Food_cantity >= Af_cap)
+        {
+            Food_cantity = Af_cap;
+        }
+
+        if (Branches_cantity >= Aw_cap)
+        {
+            Branches_cantity = Aw_cap;
+        }
+
+        if (Rocks_cantity >= Ar_cap)
+        {
+            Rocks_cantity = Ar_cap;
+        }
+    }
+
+    public void UpgradeFoodStorage()
+    {
+        //this var is used to dont double upgrade.
+        bool upgraded = false;
+
+ 
+        // Resources needed to upgrade to tier 2;
+        int cantity_to_upgrade_to_tier_2_f = 30;
+        int cantity_to_upgrade_to_tier_2_w = 30;
+        int cantity_to_upgrade_to_tier_2_r = 30;
+        bool can_we_upgrade_lvl_2 = false; ;
+
+        // Resources needed to upgrade to tier 3;
+        int cantity_to_upgrade_to_tier_3_f = 40;
+        int cantity_to_upgrade_to_tier_3_w = 40;
+        int cantity_to_upgrade_to_tier_3_r = 40;
+        bool can_we_upgrade_lvl_3 = false;
+
+        //First we need to chech the multiple resources to see if we can upgrade;
+        if (cantity_to_upgrade_to_tier_2_f <= Food_cantity && cantity_to_upgrade_to_tier_2_w <= Branches_cantity && cantity_to_upgrade_to_tier_2_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_2 = true;
+        }
+
+        if (cantity_to_upgrade_to_tier_3_f <= Food_cantity && cantity_to_upgrade_to_tier_3_w <= Branches_cantity && cantity_to_upgrade_to_tier_3_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_3 = true;
+        }
+
+
+        //If we wanna use other type of resources we need to put new variables;
+
+        if (Actual_food_storage_lvl == 0)
+        {
+            if (can_we_upgrade_lvl_2)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_2_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_2_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_2_r;
+
+                // Then we upgrade the storage.
+                Af_cap = Cap_food_advanced;
+                upgraded = true;
+                Actual_food_storage_lvl = 1;
+            }
+        }
+
+        if (Actual_food_storage_lvl == 1 && upgraded == false)
+        {
+            if (can_we_upgrade_lvl_3)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_3_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_3_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_3_r;
+
+                // Then we upgrade the storage.
+                Af_cap = Cap_food_end;
+                upgraded = true;
+                Actual_food_storage_lvl = 2;
+            }
+
+        }
+        
+    }
+
+    public void UpgradeWoodStorage()
+    {
+        //this var is used to dont double upgrade.
+        bool upgraded = false;
+
+
+        // Resources needed to upgrade to tier 2;
+        int cantity_to_upgrade_to_tier_2_f = 30;
+        int cantity_to_upgrade_to_tier_2_w = 30;
+        int cantity_to_upgrade_to_tier_2_r = 30;
+        bool can_we_upgrade_lvl_2 = false; ;
+
+        // Resources needed to upgrade to tier 3;
+        int cantity_to_upgrade_to_tier_3_f = 40;
+        int cantity_to_upgrade_to_tier_3_w = 40;
+        int cantity_to_upgrade_to_tier_3_r = 40;
+        bool can_we_upgrade_lvl_3 = false;
+
+        //First we need to chech the multiple resources to see if we can upgrade;
+        if (cantity_to_upgrade_to_tier_2_f <= Food_cantity && cantity_to_upgrade_to_tier_2_w <= Branches_cantity && cantity_to_upgrade_to_tier_2_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_2 = true;
+        }
+
+        if (cantity_to_upgrade_to_tier_3_f <= Food_cantity && cantity_to_upgrade_to_tier_3_w <= Branches_cantity && cantity_to_upgrade_to_tier_3_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_3 = true;
+        }
+
+
+        //If we wanna use other type of resources we need to put new variables;
+
+        if (Actual_wood_storage_lvl == 0)
+        {
+            if (can_we_upgrade_lvl_2)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_2_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_2_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_2_r;
+
+                // Then we upgrade the storage.
+                Aw_cap = Cap_food_advanced;
+                upgraded = true;
+                Actual_wood_storage_lvl = 1;
+            }
+        }
+
+        if (Actual_wood_storage_lvl == 1 && upgraded == false)
+        {
+            if (can_we_upgrade_lvl_3)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_3_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_3_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_3_r;
+
+                // Then we upgrade the storage.
+                Aw_cap = Cap_food_end;
+                upgraded = true;
+                Actual_wood_storage_lvl = 2;
+            }
+
+        }
+
+    }
+
+    public void UpgradeRockStorage()
+    {
+        //this var is used to dont double upgrade.
+        bool upgraded = false;
+
+
+        // Resources needed to upgrade to tier 2;
+        int cantity_to_upgrade_to_tier_2_f = 30;
+        int cantity_to_upgrade_to_tier_2_w = 30;
+        int cantity_to_upgrade_to_tier_2_r = 30;
+        bool can_we_upgrade_lvl_2 = false; ;
+
+        // Resources needed to upgrade to tier 3;
+        int cantity_to_upgrade_to_tier_3_f = 40;
+        int cantity_to_upgrade_to_tier_3_w = 40;
+        int cantity_to_upgrade_to_tier_3_r = 40;
+        bool can_we_upgrade_lvl_3 = false;
+
+        //First we need to chech the multiple resources to see if we can upgrade;
+        if (cantity_to_upgrade_to_tier_2_f <= Food_cantity && cantity_to_upgrade_to_tier_2_w <= Branches_cantity && cantity_to_upgrade_to_tier_2_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_2 = true;
+        }
+
+        if (cantity_to_upgrade_to_tier_3_f <= Food_cantity && cantity_to_upgrade_to_tier_3_w <= Branches_cantity && cantity_to_upgrade_to_tier_3_r <= Rocks_cantity)
+        {
+            can_we_upgrade_lvl_3 = true;
+        }
+
+
+        //If we wanna use other type of resources we need to put new variables;
+
+        if (Actual_rock_storage_lvl == 0)
+        {
+            if (can_we_upgrade_lvl_2)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_2_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_2_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_2_r;
+
+                // Then we upgrade the storage.
+                Ar_cap = Cap_food_advanced;
+                upgraded = true;
+                Actual_rock_storage_lvl = 1;
+            }
+        }
+
+        if (Actual_rock_storage_lvl == 1 && upgraded == false)
+        {
+            if (can_we_upgrade_lvl_3)
+            {
+                //first we substract the resources , once we know we have more than that.
+                Food_cantity -= cantity_to_upgrade_to_tier_3_f;
+                Branches_cantity -= cantity_to_upgrade_to_tier_3_w;
+                Rocks_cantity -= cantity_to_upgrade_to_tier_3_r;
+
+                // Then we upgrade the storage.
+                Ar_cap = Cap_food_end;
+                upgraded = true;
+                Actual_rock_storage_lvl = 2;
+            }
+
+        }
+
+    }
+
+
+
 }
