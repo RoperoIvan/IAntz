@@ -62,11 +62,10 @@ public class EventManager : MonoBehaviour
 
             case 3: //Attack Enemies
                 Debug.Log("Raid");
-                GetComponent<LostFood>().WastingFood();
+                spawn.GetComponent<SpawnEnemies>().Clicked();
                 break;
             default:
-                Debug.Log("This shouldn't happen, something has to be really REALLY broke.");
-                spawn.GetComponent<SpawnEnemies>().Clicked();
+                Debug.Log("This shouldn't happen, something has to be really REALLY broke.");               
                 break;
         }
         Debug.Log("HOLITA");
