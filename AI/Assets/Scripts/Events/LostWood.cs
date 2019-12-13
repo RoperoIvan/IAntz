@@ -22,9 +22,19 @@ public class LostWood : MonoBehaviour
 
     public void WastingWood()
     {//TODO: Put condition for level of storage
-        int wasted_food;
-        waste_percentage = Random.Range(5, 21);
-        wasted_food = (waste_percentage * GetComponent<Anthill_Resources>().Branches_cantity) / 100;
-        GetComponent<Anthill_Resources>().Branches_cantity -= wasted_food;
+        int act_l = GetComponent<Anthill_Resources>().Actual_wood_storage_lvl;
+        int rand_ = Random.Range(1, 4);
+
+        if (act_l >= rand_)
+        {
+            Debug.Log("The storage was protected" + rand_);
+        }
+        else
+        {
+            int wasted_food;
+            waste_percentage = Random.Range(5, 21);
+            wasted_food = (waste_percentage * GetComponent<Anthill_Resources>().Branches_cantity) / 100;
+            GetComponent<Anthill_Resources>().Branches_cantity -= wasted_food;
+        }
     }
 }
