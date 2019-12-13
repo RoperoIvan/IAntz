@@ -35703,7 +35703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 0.1
+  cicle_strength: 20
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:
@@ -68101,6 +68101,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 832003362}
     m_Modifications:
+    - target: {fileID: 7818756669890520352, guid: c9477a38381939f46b76df93c4467326,
+        type: 3}
+      propertyPath: m_Name
+      value: Queen_Ant
+      objectReference: {fileID: 0}
     - target: {fileID: 2278857499238196964, guid: c9477a38381939f46b76df93c4467326,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -68175,11 +68180,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.33926958
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818756669890520352, guid: c9477a38381939f46b76df93c4467326,
-        type: 3}
-      propertyPath: m_Name
-      value: Queen_Ant
       objectReference: {fileID: 0}
     - target: {fileID: 3653628565085144075, guid: c9477a38381939f46b76df93c4467326,
         type: 3}
@@ -68395,7 +68395,7 @@ PrefabInstance:
     - target: {fileID: 7324341508170348199, guid: a156b7e4d06d56947b4edd8b3f341d29,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7324341508170348213, guid: a156b7e4d06d56947b4edd8b3f341d29,
         type: 3}
