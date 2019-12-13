@@ -32,8 +32,11 @@ namespace AI{
             if (seek_pos.magnitude <= d_to_complete.value)
                 EndAction(true);
             else
+            {
                 align.DrivetoTarget(To_seek.value.transform.position, 3);
-		}
+                agent.gameObject.GetComponent<AttackManager>().current_attack = 1;
+            }
+        }
 
 		protected override void OnStop(){
 

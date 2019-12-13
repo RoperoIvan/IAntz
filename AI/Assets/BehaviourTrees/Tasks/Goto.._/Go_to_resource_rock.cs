@@ -25,7 +25,7 @@ namespace AI{
 		}
 
 		protected override void OnExecute(){
-            agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 1;
+            agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 0;
             agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 0;
             timer = Time.time;
         }
@@ -38,12 +38,13 @@ namespace AI{
                 agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 3;
                 align.DrivetoTarget(nearby_rock.value.transform.position, 3);
                 if (on_resource_rock.value)
-                {
-                    agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 0;
+                {                   
                     my_load.value = 2;
                     EndAction(true);
                 }
             }
+            else
+                agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 1;
         }
 
         protected override void OnStop()

@@ -19,6 +19,6 @@ public class ChangingResourceHandler : MonoBehaviour
     void Update()
     {
         changing_resource__state_img.sprite = change_resource_state[GetComponent<ChangingResourceManager>().current_resource_state];
-        changing_resource__state_img.sprite = change_resource_state[GetComponent<ChangingResourceManager>().current_wanted_resource];
+        changing_resource_img.sprite = change_resource[GetComponent<ChangingResourceManager>().current_wanted_resource];
     }
 }
