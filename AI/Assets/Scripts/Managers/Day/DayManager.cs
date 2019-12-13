@@ -19,7 +19,7 @@ public class DayManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!this.GetComponent<Day_night>().day)
+        if(!this.GetComponent<Day_night>().day && days_until_winter >= 0)
         {            
             next_day = true;
             NextDay.SetActive(true);

@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1704973159966297871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1704973159966297870}
+  - component: {fileID: 1704973159966297869}
+  - component: {fileID: 1704973159966297868}
+  - component: {fileID: 1704973159966297859}
+  - component: {fileID: 1704973159966297856}
+  - component: {fileID: 1704973159966297857}
+  - component: {fileID: 1704973159966297858}
+  - component: {fileID: 1704973159966297883}
+  - component: {fileID: 1704973159966297860}
+  - component: {fileID: 1704973159966297861}
+  - component: {fileID: 1704973159966297862}
+  - component: {fileID: 1704973159966297863}
+  m_Layer: 0
+  m_Name: Anthill Resources
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1704973159966297870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.06332, y: -3.693297, z: -32.278496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704973159966297869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb58ae5b7c79864a9c67a981152a5ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Food_cantity: 20
+  Rocks_cantity: 0
+  Branches_cantity: 10
+  Percent_food: 0
+  Percent_rocks: 0
+  Percent_branches: 0
+  Priority_food: 3
+  Priority_rocks: 1
+  Priority_branches: 1
+  resources_food: {fileID: 0}
+  resources_rocks: {fileID: 0}
+  resources_branches: {fileID: 0}
+  you_lose_canvas: {fileID: 0}
+  queen: {fileID: 0}
+  Total_cantity: 0
+  Rock_b_1: {fileID: 0}
+  Rock_b_2: {fileID: 0}
+  Rock_b_3: {fileID: 0}
+  Food_b_1: {fileID: 0}
+  Food_b_2: {fileID: 0}
+  Food_b_3: {fileID: 0}
+  Wood_b_1: {fileID: 0}
+  Wood_b_2: {fileID: 0}
+  Wood_b_3: {fileID: 0}
+  Rock_c_1: 100
+  Rock_c_2: 200
+  Rock_c_3: 300
+  Food_c_1: 100
+  Food_c_2: 200
+  Food_c_3: 300
+  Wood_c_1: 100
+  Wood_c_2: 200
+  Wood_c_3: 300
+--- !u!114 &1704973159966297868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd747185558b84aa649236a4900988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: 1
+  sun_light: {fileID: 0}
+--- !u!114 &1704973159966297859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5c25ce02760fa47b225346c4c9bcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: {fileID: 0}
+  worker: {fileID: 0}
+--- !u!114 &1704973159966297856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da977f221af77d4fac45a24b026862d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  D_Food: {fileID: 0}
+  last_index: 0
+--- !u!114 &1704973159966297857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff4e423c86236940a6a46aebc0a6af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  D_Rocks: {fileID: 0}
+  last_index: 0
+--- !u!114 &1704973159966297858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146510e034718ac4292eea37177599ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  D_Wood: {fileID: 0}
+  last_index: 0
+--- !u!114 &1704973159966297883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4563788e6faa0a446b9084291e950086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next_day: 0
+  sun_light: {fileID: 0}
+  NextDay: {fileID: 0}
+  Text: {fileID: 0}
+  days_until_winter: 1
+--- !u!114 &1704973159966297860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52fa09a77e657045b4a9ae9bf3f9952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waste_percentage: 0
+--- !u!114 &1704973159966297861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c22699030eb0740af128c547c4f30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waste_percentage: 0
+--- !u!114 &1704973159966297862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5141135aace494f8a50fc2a9f0d373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waste_percentage: 0
+--- !u!114 &1704973159966297863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704973159966297871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f46ca8ce6ed4ae4b88792e30a961514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  have_been_attacked: 0
+  lets_calculate_event: 0
+  spawn: {fileID: 0}
