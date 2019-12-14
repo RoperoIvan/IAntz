@@ -48,7 +48,7 @@ namespace IAntz{
             float r_w = Random.value;
 
             largo *= r_h;
-            ancho *= r_h;
+            ancho *= r_w;
 
             Vector3 rand_final;
             rand_final.x = largo;

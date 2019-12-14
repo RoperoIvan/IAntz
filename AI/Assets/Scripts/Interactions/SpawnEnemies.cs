@@ -29,6 +29,7 @@ public class SpawnEnemies : MonoBehaviour
                 enemies_spawned++;
             }          
             clicked = false;
+            enemies_spawned = 0;
         }
 
 
