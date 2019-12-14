@@ -9243,7 +9243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &346556703
 Transform:
   m_ObjectHideFlags: 0
@@ -35917,7 +35917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 30
+  cicle_strength: 4
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:

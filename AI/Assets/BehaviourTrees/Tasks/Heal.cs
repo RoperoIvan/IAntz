@@ -34,7 +34,7 @@ namespace AI{
                 if (my_current_health.value < my_total_health.value)
                 {
                     my_current_health.value += 1;
-                    my_knowledge.GiveMaterial(8); // eight means that we are taking food.
+                    //my_knowledge.GiveMaterial(8); // eight means that we are taking food.
                 }
                   
 

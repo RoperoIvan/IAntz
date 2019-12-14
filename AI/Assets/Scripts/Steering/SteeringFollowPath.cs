@@ -59,8 +59,8 @@ public class SteeringFollowPath : SteeringAbstract
             path_point.y = this.gameObject.transform.position.y;
             
         }
-        Debug.Log("next_point is:" + path_point);
-        Debug.Log("my_globalpos is:" + transform.position);
+       // Debug.Log("next_point is:" + path_point);
+       // Debug.Log("my_globalpos is:" + transform.position);
         align.DrivetoTarget(path_point, priority);
 
 	}
