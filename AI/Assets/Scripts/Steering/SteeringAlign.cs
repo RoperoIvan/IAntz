@@ -100,13 +100,14 @@ public class SteeringAlign : SteeringAbstract
         else
         {
             correct_rotation = (desired_rotation);
-
+            Debug.Log("im_enetering_here " + this.gameObject);
             correct_rotation = Mathf.Clamp(correct_rotation, -move.max_rot_acceleration, move.max_rot_acceleration);
 
             move.AccelerateRotation(correct_rotation, prio);
-            move.AccelerateMovement(this.transform.forward, prio);
+            //move.AccelerateMovement(this.transform.forward, prio);
 
         }
+        move.AccelerateMovement(this.transform.forward, prio);
     }
 
     void OnDrawGizmosSelected()

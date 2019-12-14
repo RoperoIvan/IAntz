@@ -42,7 +42,7 @@ public class SteeringFollowPath : SteeringAbstract
      
         float total_path = actpath.GetDistance();
         Vector3 current_dist = path_point - this.transform.position;
-
+        
         if (current_dist.magnitude <= min_distance)
         {
             actpath.CalcPositionByClosestPoint(this.transform.position, out current_path_pos);
@@ -59,6 +59,8 @@ public class SteeringFollowPath : SteeringAbstract
             path_point.y = this.gameObject.transform.position.y;
             
         }
+        Debug.Log("next_point is:" + path_point);
+        Debug.Log("my_globalpos is:" + transform.position);
         align.DrivetoTarget(path_point, priority);
 
 	}

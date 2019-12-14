@@ -29,8 +29,8 @@ namespace AI{
             }
             else
             {
-                agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night.value;
-                agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night.value;
+               // agent.gameObject.GetComponent<SteeringFollowPath>().actcurve = curve_night.value;
+               // agent.gameObject.GetComponent<SteeringFollowPath>().actpath = Path_night.value;
             }
             //EndAction(true);
         }

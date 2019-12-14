@@ -21,7 +21,7 @@ namespace AI{
 		protected override void OnExecute(){
             enemie_health = my_current_enemie.value.GetComponent<HealthManager>(); //We do it here cause we wanna always know which enemie we are fighting;
             Vector3 dist = my_current_enemie.value.transform.position - my_ant.value.transform.position;
-            agent.gameObject.GetComponent<AttackManager>().current_attack = 1;
+           // agent.gameObject.GetComponent<AttackManager>().current_attack = 1;
             if (dist.magnitude <= 4.0f)
             {
                 enemie_health.current_health -= 1;
@@ -33,11 +33,13 @@ namespace AI{
             float time_now = Time.time;
             if (time_now - timer >= CDR.value)
             {
-                agent.gameObject.GetComponent<AttackManager>().current_attack = 0;
+                // agent.gameObject.GetComponent<AttackManager>().current_attack = 0;
                 EndAction(true);
             }
             else
-                agent.gameObject.GetComponent<AttackManager>().current_attack = 2;
+            {
+            }
+              //  agent.gameObject.GetComponent<AttackManager>().current_attack = 2;
         }
 
 		protected override void OnStop(){
