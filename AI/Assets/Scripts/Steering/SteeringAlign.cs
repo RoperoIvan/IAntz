@@ -107,7 +107,9 @@ public class SteeringAlign : SteeringAbstract
             //move.AccelerateMovement(this.transform.forward, prio);
 
         }
-        move.AccelerateMovement(this.transform.forward, prio);
+        vec_t_m.Normalize();
+        vec_t_m *= move.max_mov_acceleration;
+        move.AccelerateMovement(vec_t_m, prio);
     }
 
     void OnDrawGizmosSelected()

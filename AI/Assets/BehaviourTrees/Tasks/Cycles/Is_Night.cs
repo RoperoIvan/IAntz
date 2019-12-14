@@ -16,7 +16,11 @@ namespace AI{
 
         protected override void OnExecute()
         {
-
+            if (day.value == true)
+            {
+                EndAction(false);
+            }
+            
         }
 
         protected override void OnUpdate()

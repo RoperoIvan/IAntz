@@ -83,6 +83,13 @@ public class Anthill_Resources : MonoBehaviour
 
     // Upgrade buttons.
 
+
+    // Ant counts:
+    public int worker_count;
+    public int warrior_count;
+
+
+   
     // Start is called before the first frame update
     void Start()
     {
