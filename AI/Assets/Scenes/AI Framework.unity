@@ -1316,7 +1316,7 @@ PrefabInstance:
     - target: {fileID: 5865114141701319774, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5865114141701319716, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
@@ -2852,7 +2852,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -9165,6 +9165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9354,7 +9359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &346556703
 Transform:
   m_ObjectHideFlags: 0
@@ -10446,6 +10451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -11842,6 +11852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12401,7 +12416,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -13040,6 +13055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -18057,7 +18077,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -18177,7 +18197,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -22247,6 +22267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24645,6 +24670,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25179,6 +25209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemie_Ant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311216062373781637, guid: 4122ff7dca705964682637164b9c7081,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1311216062373781655, guid: 4122ff7dca705964682637164b9c7081,
         type: 3}
@@ -26202,6 +26237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27093,6 +27133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -28076,7 +28121,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -33503,6 +33548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34404,6 +34454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemie_Ant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311216062373781637, guid: 4122ff7dca705964682637164b9c7081,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1311216062373781655, guid: 4122ff7dca705964682637164b9c7081,
         type: 3}
@@ -36320,7 +36375,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -36517,6 +36572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -38342,7 +38402,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -38836,7 +38896,7 @@ PrefabInstance:
     - target: {fileID: 5865114141701319774, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5865114141701319716, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
@@ -39092,6 +39152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -40404,7 +40469,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -42169,6 +42234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42347,6 +42417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemie_Ant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1311216062373781637, guid: 4122ff7dca705964682637164b9c7081,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1311216062373781655, guid: 4122ff7dca705964682637164b9c7081,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42445,7 +42520,7 @@ PrefabInstance:
     - target: {fileID: 5865114141701319774, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5865114141701319716, guid: c21003f0931b6a84badc10d7d5edfc52,
         type: 3}
@@ -42559,7 +42634,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -44222,6 +44297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -52012,6 +52092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55112,7 +55197,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -57254,7 +57339,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -58362,6 +58447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59324,7 +59414,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569324, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -64410,6 +64500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WorkerAnt_with_BTs 1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
