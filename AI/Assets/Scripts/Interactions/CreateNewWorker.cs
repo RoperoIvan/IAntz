@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CreateNewWorker : MonoBehaviour
 {
+    // Para el gollim del futuro, tanto aqui como en el del worker lo que tendras que hacer es meter varios tipos y con un random pillar el que quieras.
     public GameObject resource_zone;
     public GameObject resources;
     GameObject new_obj;
