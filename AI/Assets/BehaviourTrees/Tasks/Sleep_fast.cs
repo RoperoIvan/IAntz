@@ -5,24 +5,30 @@ using System.Collections;
 using UnityEngine.AI;
 
 
-namespace AI{
+namespace IAntz{
 
-	public class Go_to_sleep : ActionTask{
-
+	public class Sleep_fast : ActionTask{
         public BBParameter<GameObject> my_sleep_module;
         public BBParameter<bool> on_sleep_module;
         public BBParameter<GameObject> my_ant;
 
+        public BBParameter<int> my_load;
+
+
+        Worker_Knowledge my_knowledge;
         SteeringAlign align;
         Move move;
         Vector3 helper;
-        protected override string OnInit(){
+        protected override string OnInit()
+        {
             align = my_ant.value.GetComponent<SteeringAlign>();
             move = my_ant.value.GetComponent<Move>();
+            my_knowledge = my_ant.value.GetComponent<Worker_Knowledge>();
             return null;
         }
 
-		protected override void OnExecute(){
+        protected override void OnExecute()
+        {
             Collider to_work;
             Bounds to_w;
             Vector3 mA;
@@ -54,17 +60,22 @@ namespace AI{
             mI.y = my_ant.value.transform.position.y;
 
             helper = mI;
+            my_ant.value.transform.position = helper;
+
+
+            my_knowledge.GiveMaterial(my_load.value);
+            my_knowledge.CalculatePriorities();
+            my_load.value = 0; //once we drop our resource we reset it to 0
+            EndAction(true);
+
         }
 
-		protected override void OnUpdate(){
-            align.DrivetoTarget(helper, 3);
-            if (on_sleep_module.value)
-            {
-                EndAction(true);
-            }
+        protected override void OnUpdate()
+        {
         }
 
-		protected override void OnStop(){
+        protected override void OnStop()
+        {
             for (int i = 0; i < move.movement_velocity.Length; i++)
             {
                 move.movement_velocity[i] = Vector3.zero;
@@ -77,7 +88,7 @@ namespace AI{
             }
         }
 
-		protected override void OnPause(){
+        protected override void OnPause(){
 			
 		}
 	}

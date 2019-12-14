@@ -35703,7 +35703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 20
+  cicle_strength: 10
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:

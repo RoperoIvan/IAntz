@@ -134,6 +134,6 @@ public class Worker_Knowledge : MonoBehaviour
              ant_res.Branches_cantity += 10;
 
         if (i == 8)
-            ant_res.Food_cantity -= 10;
+            ant_res.Food_cantity -= 5;
     }
 }
