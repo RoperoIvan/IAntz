@@ -79,8 +79,8 @@ public class ScoreManager : MonoBehaviour
         int rocks = resources.GetComponent<Anthill_Resources>().Rocks_cantity;
         int wood = resources.GetComponent<Anthill_Resources>().Branches_cantity;
         int total_score = CalculateTotalScore(food, rocks, wood);
-        score_text.GetComponent<Text>().text = "Total food gained : " + food + "\n" + "Total Rocks gained: " + rocks + "\n" +
-            "Total wood gained : " + wood + "\n" + "Total ants in the anthill: " + total_ants + "\n" + "Total score: " + total_score;
+        score_text.GetComponent<Text>().text = "Total food gained : " + food + " X 3"  +"\n" + "Total Rocks gained: " + rocks + " X 2" + "\n" +
+            "Total wood gained : " + wood + " X 2" + "\n" + "Total ants in the anthill: " + total_ants + " X 20" + "\n" + "Total score: " + total_score;
     }
 
     int CalculateTotalScore(int t_food, int t_rocks, int t_wood)

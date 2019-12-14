@@ -21,10 +21,6 @@ public class EventManager : MonoBehaviour
             CalculateEvent();
             lets_calculate_event = true;
         }
-        //if(lets_calculate_event)
-        //{
-            
-        //}
     }
 
     public void CalculateEvent()
@@ -68,6 +64,5 @@ public class EventManager : MonoBehaviour
                 Debug.Log("This shouldn't happen, something has to be really REALLY broke.");               
                 break;
         }
-        Debug.Log("HOLITA");
     }
 }

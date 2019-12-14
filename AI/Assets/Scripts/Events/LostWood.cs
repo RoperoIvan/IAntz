@@ -5,6 +5,7 @@ using UnityEngine;
 public class LostWood : MonoBehaviour
 {
     public int waste_percentage;
+    public bool is_wasted = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class LostWood : MonoBehaviour
         }
         else
         {
+            is_wasted = true;
             int wasted_food;
             waste_percentage = Random.Range(5, 21);
             wasted_food = (waste_percentage * GetComponent<Anthill_Resources>().Branches_cantity) / 100;
