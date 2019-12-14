@@ -4023,6 +4023,8 @@ MonoBehaviour:
   Cap_rock_end: 150
   Actual_rock_storage_lvl: 0
   Ar_cap: 0
+  worker_count: 0
+  warrior_count: 0
 --- !u!114 &117113735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74777,7 +74779,7 @@ PrefabInstance:
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.831505
+      value: -154.3
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -74859,6 +74861,11 @@ PrefabInstance:
       propertyPath: anthill_resources
       value: 
       objectReference: {fileID: 117113732}
+    - target: {fileID: 7465709539201304780, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
 --- !u!1 &7818756671385382099 stripped
