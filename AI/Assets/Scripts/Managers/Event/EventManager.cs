@@ -32,10 +32,9 @@ public class EventManager : MonoBehaviour
     {
         int there_is_event;
         there_is_event = Random.Range(0, 2);
-         if(there_is_event != 0)
-        {
-            ChooseEvent();
-        }
+        
+        ChooseEvent();
+        
     }
 
     public void ChooseEvent()
@@ -44,7 +43,7 @@ public class EventManager : MonoBehaviour
         if (have_been_attacked)
             max_events = Random.Range(0, 3);
         else
-            max_events = Random.Range(0, 4);
+            max_events = Random.Range(0, 3);
 
         switch(max_events)
         {
@@ -60,32 +59,19 @@ public class EventManager : MonoBehaviour
                 Debug.Log("Wasting Wood");
                 GetComponent<LostWood>().WastingWood();
                 break;
-
-            case 3: //Attack Enemies
-                Debug.Log("Raid");
-                int random_spawn = Random.Range(0, 4);
-                switch(random_spawn)
-                {
-                    case 0:
-                        spawn_up.GetComponent<SpawnEnemies>().Clicked();
-                        break;
-                    case 1:
-                        spawn_down.GetComponent<SpawnEnemies>().Clicked();
-                        break;
-                    case 2:
-                        spawn_left.GetComponent<SpawnEnemies>().Clicked();
-                        break;
-                    case 3:
-                        spawn_right.GetComponent<SpawnEnemies>().Clicked();
-                        break;
-                    default:
-                        Debug.Log("This should never happen.");
-                        break;
-                }                
-                break;
             default:
                 Debug.Log("This shouldn't happen, something has to be really REALLY broke.");               
                 break;
         }
+
+        Debug.Log("Raid");
+
+        spawn_up.GetComponent<SpawnEnemies>().Clicked();
+
+        spawn_down.GetComponent<SpawnEnemies>().Clicked();
+
+        spawn_left.GetComponent<SpawnEnemies>().Clicked();
+
+        spawn_right.GetComponent<SpawnEnemies>().Clicked();
     }
 }

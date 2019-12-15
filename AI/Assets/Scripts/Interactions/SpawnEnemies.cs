@@ -10,16 +10,21 @@ public class SpawnEnemies : MonoBehaviour
     public float offset = 1.5f;
     public bool clicked = false;
     public int localization = 0; // 0: up/down 1: left/right
-    public int number_enemies = 1;
+    public int number_enemies = 2;
     public bool is_spawned = false;
+
+    public GameObject which_day;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
     void Update()
-    {      
+    {
+        number_enemies = (6 - which_day.GetComponent<DayManager>().days_until_winter);
         if(clicked)
         {
             switch(localization)

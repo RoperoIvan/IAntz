@@ -14,7 +14,7 @@ namespace IAntz{
 		}
 
 		protected override void OnExecute(){
-            if (current_life.value == total_life)
+            if (current_life.value >= total_life)
                 EndAction(true);
             else
                 EndAction(false);
