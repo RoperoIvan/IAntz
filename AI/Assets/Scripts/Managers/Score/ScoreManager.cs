@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class ScoreManager : MonoBehaviour
 {
     public GameObject resources;
@@ -92,10 +94,11 @@ public class ScoreManager : MonoBehaviour
 
     public void PlayAgainClicked()
     {
-        final = false;
-        score_panel.SetActive(false);
-        full_win = false;
-        resources.GetComponent<DayManager>().days_until_winter = 9;
+        //final = false;
+        //score_panel.SetActive(false);
+        //full_win = false;
+        //resources.GetComponent<DayManager>().days_until_winter = 9;
         //Restart game code HERE
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
     }
 }
