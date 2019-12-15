@@ -15121,6 +15121,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 711394541}
+  - {fileID: 2118759520}
+  - {fileID: 681553427}
+  - {fileID: 2049361991}
   - {fileID: 1518828858}
   m_Father: {fileID: 1774537853}
   m_RootOrder: 1
@@ -16586,6 +16589,157 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2053290725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &670474487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567151898}
+    m_Modifications:
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_Name
+      value: WorkerAnt_BTS_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.233599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_food
+      value: 
+      objectReference: {fileID: 842652529}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_rocks
+      value: 
+      objectReference: {fileID: 798864218}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_branch
+      value: 
+      objectReference: {fileID: 486728946}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: sleep_module
+      value: 
+      objectReference: {fileID: 782765310}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: ant_mill
+      value: 
+      objectReference: {fileID: 338745733}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: anthill_resources
+      value: 
+      objectReference: {fileID: 117113732}
+    - target: {fileID: 7465709539201304780, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"795cb70a-2036-458f-a465-aac8e7a3ae63","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant","_id":"d2a70ad0-c5e6-4fbc-b220-317d31ee5cfb","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_nearest_enemie":{"_propertyPath":"Worker_Knowledge.My_nearest_enemie","_name":"My_nearest_enemie","_id":"d50f25a1-433e-489c-804c-4ac778d8d428","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Bools
+        ":{"_name":"Bools ","_id":"590d76a1-7044-4c12-a061-94a52b17d242","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Worker_Knowledge.day","_name":"day","_id":"abd11606-b586-4d1f-9063-bef74421c678","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_rock":{"_propertyPath":"Worker_Knowledge.on_resource_rock","_name":"on_resource_rock","_id":"9576c962-2c0a-4fc6-898d-1d5ccd71a73f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_storage":{"_propertyPath":"Worker_Knowledge.on_storage","_name":"on_storage","_id":"1595b843-54c2-49cd-a087-886b6a4bf869","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_food":{"_propertyPath":"Worker_Knowledge.on_resource_food","_name":"on_resource_food","_id":"c2e69598-82c1-4e82-be74-b134461f1bb4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_branches":{"_propertyPath":"Worker_Knowledge.on_resource_branches","_name":"on_resource_branches","_id":"4cd7ada8-147e-4092-a6e8-58280d49aa3d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_sleep_module":{"_propertyPath":"Worker_Knowledge.on_sleep_module","_name":"on_sleep_module","_id":"ebc51195-61ab-4ac7-b28c-6d8d37c71057","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Priorities":{"_name":"Priorities","_id":"99300c2b-a98b-401a-9d3e-ea1b92f2111d","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"priority_food":{"_propertyPath":"Worker_Knowledge.priority_food","_name":"priority_food","_id":"24038a55-4f07-4eb5-aa88-38aa58157227","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_rocks":{"_propertyPath":"Worker_Knowledge.priority_rocks","_name":"priority_rocks","_id":"ae0142e1-bfd3-49be-bcdf-67c2759aba6b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_branches":{"_propertyPath":"Worker_Knowledge.priority_branches","_name":"priority_branches","_id":"01825f7c-297f-4aed-afef-7d860aebe242","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Locations":{"_name":"Locations","_id":"ca68027e-3547-4271-9b53-ced27e12e660","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_rocks":{"_propertyPath":"Worker_Knowledge.resource_rocks","_name":"resource_rocks","_id":"ec158ce8-f963-432c-ab1f-25a2927959d2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ant_mill":{"_propertyPath":"Worker_Knowledge.ant_mill","_name":"ant_mill","_id":"dfceece6-f627-4b9d-a162-22a345fac3ac","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_branch":{"_propertyPath":"Worker_Knowledge.resource_branch","_name":"resource_branch","_id":"614d3c6c-2858-4353-8930-6a3cc01bece2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_food":{"_propertyPath":"Worker_Knowledge.resource_food","_name":"resource_food","_id":"2ede5c8a-b835-4654-af18-0d9d871870e9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"sleep_module":{"_propertyPath":"Worker_Knowledge.sleep_module","_name":"sleep_module","_id":"3c67e28d-3f5e-4bff-a6d1-959b8ea62610","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Extra":{"_name":"Extra","_id":"3b5c7be3-9092-4c99-980b-c28980b89bd1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MyLoad":{"_propertyPath":"Worker_Knowledge.my_load","_name":"MyLoad","_id":"e5c5d1b9-70d8-4e97-862c-e433b48cf0f8","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Life
+        vars":{"_name":"Life vars","_id":"4ddec17d-ae90-409c-b004-f1f21fa29dbf","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"0fc763d9-ff11-45cb-999a-539e1e0618bc","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"a71316ef-eb65-4f1f-97a9-b44c1967acf5","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_food":{"_propertyPath":"Worker_Knowledge.current_food","_name":"current_food","_id":"c79fa3b9-ce88-4d75-ab0e-f1d2e8f18f7a","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e4294f2a498ae934f83c7538c37ec957, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
 --- !u!1001 &673101044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17040,6 +17194,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+--- !u!1 &681553426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1704340089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &681553427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1704340089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &681553428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681553426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &681553429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681553426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &683270721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22957,7 +23147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e02e4a745d7544b943654c2330e188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pop_up: {fileID: 1415943994}
+  pop_up: {fileID: 1735205948}
   clip: {fileID: 942868672}
 --- !u!65 &942868669
 BoxCollider:
@@ -23113,6 +23303,157 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &944793569
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567151898}
+    m_Modifications:
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_Name
+      value: WorkerAnt_BTS_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.233599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_food
+      value: 
+      objectReference: {fileID: 1533232061}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_rocks
+      value: 
+      objectReference: {fileID: 798864218}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_branch
+      value: 
+      objectReference: {fileID: 463768672}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: sleep_module
+      value: 
+      objectReference: {fileID: 1048834134}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: ant_mill
+      value: 
+      objectReference: {fileID: 832114550}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: anthill_resources
+      value: 
+      objectReference: {fileID: 117113732}
+    - target: {fileID: 7465709539201304780, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"795cb70a-2036-458f-a465-aac8e7a3ae63","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant","_id":"d2a70ad0-c5e6-4fbc-b220-317d31ee5cfb","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_nearest_enemie":{"_propertyPath":"Worker_Knowledge.My_nearest_enemie","_name":"My_nearest_enemie","_id":"d50f25a1-433e-489c-804c-4ac778d8d428","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Bools
+        ":{"_name":"Bools ","_id":"590d76a1-7044-4c12-a061-94a52b17d242","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Worker_Knowledge.day","_name":"day","_id":"abd11606-b586-4d1f-9063-bef74421c678","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_rock":{"_propertyPath":"Worker_Knowledge.on_resource_rock","_name":"on_resource_rock","_id":"9576c962-2c0a-4fc6-898d-1d5ccd71a73f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_storage":{"_propertyPath":"Worker_Knowledge.on_storage","_name":"on_storage","_id":"1595b843-54c2-49cd-a087-886b6a4bf869","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_food":{"_propertyPath":"Worker_Knowledge.on_resource_food","_name":"on_resource_food","_id":"c2e69598-82c1-4e82-be74-b134461f1bb4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_branches":{"_propertyPath":"Worker_Knowledge.on_resource_branches","_name":"on_resource_branches","_id":"4cd7ada8-147e-4092-a6e8-58280d49aa3d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_sleep_module":{"_propertyPath":"Worker_Knowledge.on_sleep_module","_name":"on_sleep_module","_id":"ebc51195-61ab-4ac7-b28c-6d8d37c71057","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Priorities":{"_name":"Priorities","_id":"99300c2b-a98b-401a-9d3e-ea1b92f2111d","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"priority_food":{"_propertyPath":"Worker_Knowledge.priority_food","_name":"priority_food","_id":"24038a55-4f07-4eb5-aa88-38aa58157227","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_rocks":{"_propertyPath":"Worker_Knowledge.priority_rocks","_name":"priority_rocks","_id":"ae0142e1-bfd3-49be-bcdf-67c2759aba6b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_branches":{"_propertyPath":"Worker_Knowledge.priority_branches","_name":"priority_branches","_id":"01825f7c-297f-4aed-afef-7d860aebe242","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Locations":{"_name":"Locations","_id":"ca68027e-3547-4271-9b53-ced27e12e660","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_rocks":{"_propertyPath":"Worker_Knowledge.resource_rocks","_name":"resource_rocks","_id":"ec158ce8-f963-432c-ab1f-25a2927959d2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ant_mill":{"_propertyPath":"Worker_Knowledge.ant_mill","_name":"ant_mill","_id":"dfceece6-f627-4b9d-a162-22a345fac3ac","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_branch":{"_propertyPath":"Worker_Knowledge.resource_branch","_name":"resource_branch","_id":"614d3c6c-2858-4353-8930-6a3cc01bece2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_food":{"_propertyPath":"Worker_Knowledge.resource_food","_name":"resource_food","_id":"2ede5c8a-b835-4654-af18-0d9d871870e9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"sleep_module":{"_propertyPath":"Worker_Knowledge.sleep_module","_name":"sleep_module","_id":"3c67e28d-3f5e-4bff-a6d1-959b8ea62610","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Extra":{"_name":"Extra","_id":"3b5c7be3-9092-4c99-980b-c28980b89bd1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MyLoad":{"_propertyPath":"Worker_Knowledge.my_load","_name":"MyLoad","_id":"e5c5d1b9-70d8-4e97-862c-e433b48cf0f8","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Life
+        vars":{"_name":"Life vars","_id":"4ddec17d-ae90-409c-b004-f1f21fa29dbf","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"0fc763d9-ff11-45cb-999a-539e1e0618bc","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"a71316ef-eb65-4f1f-97a9-b44c1967acf5","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_food":{"_propertyPath":"Worker_Knowledge.current_food","_name":"current_food","_id":"c79fa3b9-ce88-4d75-ab0e-f1d2e8f18f7a","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e4294f2a498ae934f83c7538c37ec957, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
 --- !u!1001 &947145505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39416,7 +39757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 21
+  cicle_strength: 0.1
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:
@@ -43839,7 +44180,7 @@ Transform:
   - {fileID: 2125986891}
   - {fileID: 1127221873}
   m_Father: {fileID: 567151898}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1519823377
 PrefabInstance:
@@ -49814,6 +50155,157 @@ Transform:
   m_Father: {fileID: 832003362}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 61.987003, z: 0}
+--- !u!1001 &1704340089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567151898}
+    m_Modifications:
+    - target: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_Name
+      value: WorkerAnt_BTS_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.233599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_food
+      value: 
+      objectReference: {fileID: 356659333}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_rocks
+      value: 
+      objectReference: {fileID: 1597546754}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: resource_branch
+      value: 
+      objectReference: {fileID: 486728946}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: sleep_module
+      value: 
+      objectReference: {fileID: 782765310}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: ant_mill
+      value: 
+      objectReference: {fileID: 1335136287}
+    - target: {fileID: 7465709539201304772, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: anthill_resources
+      value: 
+      objectReference: {fileID: 117113732}
+    - target: {fileID: 7465709539201304780, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"795cb70a-2036-458f-a465-aac8e7a3ae63","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant","_id":"d2a70ad0-c5e6-4fbc-b220-317d31ee5cfb","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_nearest_enemie":{"_propertyPath":"Worker_Knowledge.My_nearest_enemie","_name":"My_nearest_enemie","_id":"d50f25a1-433e-489c-804c-4ac778d8d428","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Bools
+        ":{"_name":"Bools ","_id":"590d76a1-7044-4c12-a061-94a52b17d242","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Worker_Knowledge.day","_name":"day","_id":"abd11606-b586-4d1f-9063-bef74421c678","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_rock":{"_propertyPath":"Worker_Knowledge.on_resource_rock","_name":"on_resource_rock","_id":"9576c962-2c0a-4fc6-898d-1d5ccd71a73f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_storage":{"_propertyPath":"Worker_Knowledge.on_storage","_name":"on_storage","_id":"1595b843-54c2-49cd-a087-886b6a4bf869","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_food":{"_propertyPath":"Worker_Knowledge.on_resource_food","_name":"on_resource_food","_id":"c2e69598-82c1-4e82-be74-b134461f1bb4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_branches":{"_propertyPath":"Worker_Knowledge.on_resource_branches","_name":"on_resource_branches","_id":"4cd7ada8-147e-4092-a6e8-58280d49aa3d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_sleep_module":{"_propertyPath":"Worker_Knowledge.on_sleep_module","_name":"on_sleep_module","_id":"ebc51195-61ab-4ac7-b28c-6d8d37c71057","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Priorities":{"_name":"Priorities","_id":"99300c2b-a98b-401a-9d3e-ea1b92f2111d","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"priority_food":{"_propertyPath":"Worker_Knowledge.priority_food","_name":"priority_food","_id":"24038a55-4f07-4eb5-aa88-38aa58157227","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_rocks":{"_propertyPath":"Worker_Knowledge.priority_rocks","_name":"priority_rocks","_id":"ae0142e1-bfd3-49be-bcdf-67c2759aba6b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_branches":{"_propertyPath":"Worker_Knowledge.priority_branches","_name":"priority_branches","_id":"01825f7c-297f-4aed-afef-7d860aebe242","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Locations":{"_name":"Locations","_id":"ca68027e-3547-4271-9b53-ced27e12e660","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_rocks":{"_propertyPath":"Worker_Knowledge.resource_rocks","_name":"resource_rocks","_id":"ec158ce8-f963-432c-ab1f-25a2927959d2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ant_mill":{"_propertyPath":"Worker_Knowledge.ant_mill","_name":"ant_mill","_id":"dfceece6-f627-4b9d-a162-22a345fac3ac","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_branch":{"_propertyPath":"Worker_Knowledge.resource_branch","_name":"resource_branch","_id":"614d3c6c-2858-4353-8930-6a3cc01bece2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_food":{"_propertyPath":"Worker_Knowledge.resource_food","_name":"resource_food","_id":"2ede5c8a-b835-4654-af18-0d9d871870e9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"sleep_module":{"_propertyPath":"Worker_Knowledge.sleep_module","_name":"sleep_module","_id":"3c67e28d-3f5e-4bff-a6d1-959b8ea62610","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Extra":{"_name":"Extra","_id":"3b5c7be3-9092-4c99-980b-c28980b89bd1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MyLoad":{"_propertyPath":"Worker_Knowledge.my_load","_name":"MyLoad","_id":"e5c5d1b9-70d8-4e97-862c-e433b48cf0f8","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Life
+        vars":{"_name":"Life vars","_id":"4ddec17d-ae90-409c-b004-f1f21fa29dbf","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"0fc763d9-ff11-45cb-999a-539e1e0618bc","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"a71316ef-eb65-4f1f-97a9-b44c1967acf5","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_food":{"_propertyPath":"Worker_Knowledge.current_food","_name":"current_food","_id":"c79fa3b9-ce88-4d75-ab0e-f1d2e8f18f7a","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e4294f2a498ae934f83c7538c37ec957, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
 --- !u!4 &1708462173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464626, guid: 8e29574f61c003a45a3cc9a571582336,
@@ -50441,6 +50933,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1735205948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 191098173158593998, guid: 8e7939cc12e63c7409533987ac268ce3,
+    type: 3}
+  m_PrefabInstance: {fileID: 291453212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735490651
 GameObject:
   m_ObjectHideFlags: 0
@@ -60362,6 +60860,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2048594910}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2049361990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 670474487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2049361991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 670474487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2049361992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049361990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2049361993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049361990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2053290725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65518,6 +66052,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 354249255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2118759519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304793, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 944793569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2118759520 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
+    type: 3}
+  m_PrefabInstance: {fileID: 944793569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118759521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118759519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2118759522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118759519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2122987130
 GameObject:
   m_ObjectHideFlags: 0
@@ -69568,7 +70138,7 @@ PrefabInstance:
     - target: {fileID: 1311216062373781637, guid: 4122ff7dca705964682637164b9c7081,
         type: 3}
       propertyPath: m_Name
-      value: Enemie_Ant
+      value: Enemie_Ant_prefab
       objectReference: {fileID: 0}
     - target: {fileID: 1311216062373781637, guid: 4122ff7dca705964682637164b9c7081,
         type: 3}
@@ -69650,6 +70220,11 @@ PrefabInstance:
       propertyPath: Notonmywatch
       value: 
       objectReference: {fileID: 1575754437}
+    - target: {fileID: 1311216062373781643, guid: 4122ff7dca705964682637164b9c7081,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4122ff7dca705964682637164b9c7081, type: 3}
 --- !u!1001 &3303363653383339397
@@ -72845,7 +73420,7 @@ PrefabInstance:
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: m_Name
-      value: Warrior_Ant_test
+      value: Warrior_Ant_prefab
       objectReference: {fileID: 0}
     - target: {fileID: 6423967407839569366, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
@@ -72962,6 +73537,11 @@ PrefabInstance:
       propertyPath: My_current_enemy
       value: 
       objectReference: {fileID: 1575754437}
+    - target: {fileID: 6423967407839569313, guid: 26eedab68d1a53d4583c47df333e36fc,
+        type: 3}
+      propertyPath: max_mov_speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7392807517357899668, guid: 26eedab68d1a53d4583c47df333e36fc,
         type: 3}
       propertyPath: clip
@@ -72984,7 +73564,7 @@ PrefabInstance:
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -154.3
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
@@ -72994,7 +73574,7 @@ PrefabInstance:
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0999994
+      value: -37.5
       objectReference: {fileID: 0}
     - target: {fileID: 7465709539201304792, guid: da89b1f39e1843945ba520aad83b2cff,
         type: 3}
