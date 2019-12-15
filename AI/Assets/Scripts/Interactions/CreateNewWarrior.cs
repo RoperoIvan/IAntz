@@ -54,6 +54,7 @@ public class CreateNewWarrior : MonoBehaviour
                 new_obj = GameObject.Instantiate(resource_zone, ori_pos, Quaternion.identity);
                 resources.GetComponent<Anthill_Resources>().Food_cantity -= 30;
                 resources.GetComponent<Anthill_Resources>().Branches_cantity -= 20;
+                new_obj.SetActive(true);
             }
             clicked = false;
         }

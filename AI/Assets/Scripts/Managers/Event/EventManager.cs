@@ -65,13 +65,24 @@ public class EventManager : MonoBehaviour
         }
 
         Debug.Log("Raid");
-
-        spawn_up.GetComponent<SpawnEnemies>().Clicked();
-
-        spawn_down.GetComponent<SpawnEnemies>().Clicked();
-
-        spawn_left.GetComponent<SpawnEnemies>().Clicked();
-
-        spawn_right.GetComponent<SpawnEnemies>().Clicked();
+        int random_spawn = Random.Range(0, 4);
+        switch (random_spawn)
+        {
+            case 0:
+                spawn_up.GetComponent<SpawnEnemies>().Clicked();
+                break;
+            case 1:
+                spawn_down.GetComponent<SpawnEnemies>().Clicked();
+                break;
+            case 2:
+                spawn_left.GetComponent<SpawnEnemies>().Clicked();
+                break;
+            case 3:
+                spawn_right.GetComponent<SpawnEnemies>().Clicked();
+                break;
+            default:
+                Debug.Log("This should never happen.");
+                break;
+        }
     }
 }

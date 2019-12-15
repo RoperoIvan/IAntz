@@ -24,7 +24,7 @@ public class SpawnEnemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        number_enemies = (6 - which_day.GetComponent<DayManager>().days_until_winter);
+        number_enemies = (6 - which_day.GetComponent<DayManager>().days_until_winter)*2;
         if(clicked)
         {
             switch(localization)
