@@ -9,6 +9,8 @@ public class SunMoon : MonoBehaviour
     public GameObject resources;
     private void Start()
     {
+        Vector3 day_pos = new Vector3(0f, 128.2342f, -295.3641f);
+        sunlight.transform.position = day_pos;
     }
     private void Update()
     {
