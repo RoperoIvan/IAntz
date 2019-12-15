@@ -113,9 +113,9 @@ public class Anthill_Resources : MonoBehaviour
 
         //first we calculate the original costs.
 
-        how_much_for_food_upgrade.text = "F:" + 0 + "\n" + "R:" + 30 + "\n" + "W:" + 70;
-        how_much_for_wood_upgrade.text = "F:" + 30 + "\n" + "R:" + 00 + "\n" + "W:" + 70;
-        how_much_for_rock_upgrade.text = "F:" + 10 + "\n" + "R:" + 20 + "\n" + "W:" + 70;
+        how_much_for_food_upgrade.text = "F:" + 0 + "\n" + "W:" + 10 + "\n" + "R:" + 40;
+        how_much_for_wood_upgrade.text = "F:" + 10 + "\n" + "W:" + 0 + "\n" + "R:" + 40;
+        how_much_for_rock_upgrade.text = "F:" + 10 + "\n" + "W:" + 10 + "\n" + "R:" + 40;
 
         how_much_for_food_upgrade.fontSize = 8;
         how_much_for_rock_upgrade.fontSize = 8;
@@ -291,14 +291,14 @@ public class Anthill_Resources : MonoBehaviour
  
         // Resources needed to upgrade to tier 2;
         int cantity_to_upgrade_to_tier_2_f = 0;
-        int cantity_to_upgrade_to_tier_2_w = 30;
-        int cantity_to_upgrade_to_tier_2_r = 70;
+        int cantity_to_upgrade_to_tier_2_w = 10;
+        int cantity_to_upgrade_to_tier_2_r = 40;
         bool can_we_upgrade_lvl_2 = false; ;
 
         // Resources needed to upgrade to tier 3;
-        int cantity_to_upgrade_to_tier_3_f = 40;
-        int cantity_to_upgrade_to_tier_3_w = 80;
-        int cantity_to_upgrade_to_tier_3_r = 150;
+        int cantity_to_upgrade_to_tier_3_f = 0;
+        int cantity_to_upgrade_to_tier_3_w = 30;
+        int cantity_to_upgrade_to_tier_3_r = 70;
         bool can_we_upgrade_lvl_3 = false;
 
         //First we need to chech the multiple resources to see if we can upgrade;
@@ -366,15 +366,15 @@ public class Anthill_Resources : MonoBehaviour
 
 
         // Resources needed to upgrade to tier 2;
-        int cantity_to_upgrade_to_tier_2_f = 30;
+        int cantity_to_upgrade_to_tier_2_f = 10;
         int cantity_to_upgrade_to_tier_2_w = 0;
-        int cantity_to_upgrade_to_tier_2_r = 70;
+        int cantity_to_upgrade_to_tier_2_r = 40;
         bool can_we_upgrade_lvl_2 = false; ;
 
         // Resources needed to upgrade to tier 3;
-        int cantity_to_upgrade_to_tier_3_f = 60;
+        int cantity_to_upgrade_to_tier_3_f = 30;
         int cantity_to_upgrade_to_tier_3_w = 0;
-        int cantity_to_upgrade_to_tier_3_r = 150;
+        int cantity_to_upgrade_to_tier_3_r = 70;
         bool can_we_upgrade_lvl_3 = false;
 
         //First we need to chech the multiple resources to see if we can upgrade;
@@ -443,14 +443,14 @@ public class Anthill_Resources : MonoBehaviour
 
         // Resources needed to upgrade to tier 2;
         int cantity_to_upgrade_to_tier_2_f = 10;
-        int cantity_to_upgrade_to_tier_2_w = 20;
-        int cantity_to_upgrade_to_tier_2_r = 70;
+        int cantity_to_upgrade_to_tier_2_w = 10;
+        int cantity_to_upgrade_to_tier_2_r = 40;
         bool can_we_upgrade_lvl_2 = false; ;
 
         // Resources needed to upgrade to tier 3;
-        int cantity_to_upgrade_to_tier_3_f = 30;
-        int cantity_to_upgrade_to_tier_3_w = 40;
-        int cantity_to_upgrade_to_tier_3_r = 150;
+        int cantity_to_upgrade_to_tier_3_f = 10;
+        int cantity_to_upgrade_to_tier_3_w = 20;
+        int cantity_to_upgrade_to_tier_3_r = 70;
         bool can_we_upgrade_lvl_3 = false;
 
         //First we need to chech the multiple resources to see if we can upgrade;

@@ -3078,7 +3078,7 @@ PrefabInstance:
     - target: {fileID: 7169966186742544408, guid: cc49b180144b9c7408497f7953d1a1ee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayAgainClicked
+      value: ContinueClicked
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc49b180144b9c7408497f7953d1a1ee, type: 3}
@@ -4930,7 +4930,7 @@ MonoBehaviour:
   Percent_food: 0
   Percent_rocks: 0
   Percent_branches: 0
-  Priority_food: 3
+  Priority_food: 1
   Priority_rocks: 1
   Priority_branches: 1
   resources_food: {fileID: 1033319296}
@@ -10106,6 +10106,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e29574f61c003a45a3cc9a571582336, type: 3}
+--- !u!1 &288604559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288604560}
+  - component: {fileID: 288604562}
+  - component: {fileID: 288604561}
+  m_Layer: 0
+  m_Name: Resources (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &288604560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288604559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543867686}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1902, y: 272}
+  m_SizeDelta: {x: 700, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &288604561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288604559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 60
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Goal: Food x200 Rocks x 150 Wood x130'
+--- !u!222 &288604562
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288604559}
+  m_CullTransparentMesh: 0
 --- !u!1001 &289241510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18764,6 +18843,7 @@ RectTransform:
   - {fileID: 1498989991}
   - {fileID: 1905843146}
   - {fileID: 1284524049}
+  - {fileID: 288604560}
   m_Father: {fileID: 1223740615}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35913,7 +35993,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -38519,7 +38599,7 @@ PrefabInstance:
     - target: {fileID: 7015059377241540407, guid: 3640a009eab3f3c4d8f8bc47675c1b3c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.000012488443
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7015059377241540407, guid: 3640a009eab3f3c4d8f8bc47675c1b3c,
         type: 3}
@@ -38564,12 +38644,12 @@ PrefabInstance:
     - target: {fileID: 7015059377241540407, guid: 3640a009eab3f3c4d8f8bc47675c1b3c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250.99997
+      value: -97
       objectReference: {fileID: 0}
     - target: {fileID: 7015059377241540407, guid: 3640a009eab3f3c4d8f8bc47675c1b3c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 89
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 7015059377241540407, guid: 3640a009eab3f3c4d8f8bc47675c1b3c,
         type: 3}
@@ -47020,7 +47100,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -51237,7 +51317,7 @@ PrefabInstance:
 
         - 30 x Food
 
-        - 20 x Rocks'
+        - 20 x Wood'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7939cc12e63c7409533987ac268ce3, type: 3}
@@ -66281,7 +66361,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -80193,7 +80273,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}

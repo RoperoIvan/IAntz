@@ -43,7 +43,7 @@ public class CreateNewWarrior : MonoBehaviour
 
         if (clicked)
         {
-            if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 30 && resources.GetComponent<Anthill_Resources>().Branches_cantity >= 20)
+            if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 20 && resources.GetComponent<Anthill_Resources>().Branches_cantity >= 10)
             { 
                 clip.Play();
                 Vector3 ori_pos;
@@ -52,8 +52,8 @@ public class CreateNewWarrior : MonoBehaviour
                 ori_pos.z = Spawn_pos.transform.position.z;
 
                 new_obj = GameObject.Instantiate(resource_zone, ori_pos, Quaternion.identity);
-                resources.GetComponent<Anthill_Resources>().Food_cantity -= 30;
-                resources.GetComponent<Anthill_Resources>().Branches_cantity -= 20;
+                resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
+                resources.GetComponent<Anthill_Resources>().Branches_cantity -= 10;
                 new_obj.SetActive(true);
             }
             clicked = false;

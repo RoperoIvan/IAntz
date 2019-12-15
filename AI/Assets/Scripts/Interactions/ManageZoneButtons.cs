@@ -15,13 +15,13 @@ public class ManageZoneButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<Anthill_Resources>().Food_cantity >= 40)
+        if (GetComponent<Anthill_Resources>().Food_cantity >= 20)
         {
             worker.interactable = true;
         }
         else
             worker.interactable = false;
-        if (GetComponent<Anthill_Resources>().Food_cantity >= 30 && GetComponent<Anthill_Resources>().Branches_cantity >= 20)
+        if (GetComponent<Anthill_Resources>().Food_cantity >= 20 && GetComponent<Anthill_Resources>().Branches_cantity >= 10)
         {
             warrior.interactable = true;
         }
