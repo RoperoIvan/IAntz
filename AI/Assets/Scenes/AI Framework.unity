@@ -1110,6 +1110,11 @@ PrefabInstance:
       propertyPath: score_panel
       value: 
       objectReference: {fileID: 541412412}
+    - target: {fileID: 2540546684749852671, guid: 894f2bcf0afafbf4382b48ee6bbbab8f,
+        type: 3}
+      propertyPath: clip_lose
+      value: 
+      objectReference: {fileID: 459638789}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 894f2bcf0afafbf4382b48ee6bbbab8f, type: 3}
 --- !u!1001 &54082305
@@ -4176,7 +4181,7 @@ MonoBehaviour:
   sun_light: {fileID: 1262632479}
   NextDay: {fileID: 146858479}
   Text: {fileID: 1031462204}
-  days_until_winter: 20
+  days_until_winter: 1
 --- !u!82 &117113745
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12935,6 +12940,108 @@ PrefabInstance:
       objectReference: {fileID: 117113732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
+--- !u!1 &459638788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2540546684749852669, guid: 894f2bcf0afafbf4382b48ee6bbbab8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 52969965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &459638789
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459638788}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c257dc3b6a8c983409c83d07d6301faf, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.21
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &462583947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19070,6 +19177,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7465709539635088437}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &711394566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711394540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &711394567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711394540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &714567613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 114526032, guid: f0b038078591d7441bbc6586bbc421d2,
@@ -41220,7 +41351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 0.1
+  cicle_strength: 20.1
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:
@@ -52120,7 +52251,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 52969965}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 459638788}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08e8a132da7eec54f900ef423029ed43, type: 3}
@@ -76862,6 +76993,53 @@ PrefabInstance:
       propertyPath: max_mov_speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"GameObjects":{"_name":"GameObjects","_id":"795cb70a-2036-458f-a465-aac8e7a3ae63","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant":{"_propertyPath":"UnityEngine.Component.gameObject","_name":"m   ant_res
+        = anthill_resources.GetComponent<Anthill_Resources>();         life_cycle
+        = anthill_resources.GetComponent<Day_night>();y_ant","_id":"d2a70ad0-c5e6-4fbc-b220-317d31ee5cfb","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"My_nearest_enemie":{"_propertyPath":"Worker_Knowledge.My_nearest_enemie","_name":"My_nearest_enemie","_id":"d50f25a1-433e-489c-804c-4ac778d8d428","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Bools
+        ":{"_name":"Bools ","_id":"590d76a1-7044-4c12-a061-94a52b17d242","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"day":{"_propertyPath":"Worker_Knowledge.day","_name":"day","_id":"abd11606-b586-4d1f-9063-bef74421c678","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_rock":{"_propertyPath":"Worker_Knowledge.on_resource_rock","_name":"on_resource_rock","_id":"9576c962-2c0a-4fc6-898d-1d5ccd71a73f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_storage":{"_propertyPath":"Worker_Knowledge.on_storage","_name":"on_storage","_id":"1595b843-54c2-49cd-a087-886b6a4bf869","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_food":{"_propertyPath":"Worker_Knowledge.on_resource_food","_name":"on_resource_food","_id":"c2e69598-82c1-4e82-be74-b134461f1bb4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_resource_branches":{"_propertyPath":"Worker_Knowledge.on_resource_branches","_name":"on_resource_branches","_id":"4cd7ada8-147e-4092-a6e8-58280d49aa3d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"on_sleep_module":{"_propertyPath":"Worker_Knowledge.on_sleep_module","_name":"on_sleep_module","_id":"ebc51195-61ab-4ac7-b28c-6d8d37c71057","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Priorities":{"_name":"Priorities","_id":"99300c2b-a98b-401a-9d3e-ea1b92f2111d","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"priority_food":{"_propertyPath":"Worker_Knowledge.priority_food","_name":"priority_food","_id":"24038a55-4f07-4eb5-aa88-38aa58157227","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_rocks":{"_propertyPath":"Worker_Knowledge.priority_rocks","_name":"priority_rocks","_id":"ae0142e1-bfd3-49be-bcdf-67c2759aba6b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"priority_branches":{"_propertyPath":"Worker_Knowledge.priority_branches","_name":"priority_branches","_id":"01825f7c-297f-4aed-afef-7d860aebe242","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Locations":{"_name":"Locations","_id":"ca68027e-3547-4271-9b53-ced27e12e660","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_rocks":{"_propertyPath":"Worker_Knowledge.resource_rocks","_name":"resource_rocks","_id":"ec158ce8-f963-432c-ab1f-25a2927959d2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ant_mill":{"_propertyPath":"Worker_Knowledge.ant_mill","_name":"ant_mill","_id":"dfceece6-f627-4b9d-a162-22a345fac3ac","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_branch":{"_propertyPath":"Worker_Knowledge.resource_branch","_name":"resource_branch","_id":"614d3c6c-2858-4353-8930-6a3cc01bece2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"resource_food":{"_propertyPath":"Worker_Knowledge.resource_food","_name":"resource_food","_id":"2ede5c8a-b835-4654-af18-0d9d871870e9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"sleep_module":{"_propertyPath":"Worker_Knowledge.sleep_module","_name":"sleep_module","_id":"3c67e28d-3f5e-4bff-a6d1-959b8ea62610","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Extra":{"_name":"Extra","_id":"3b5c7be3-9092-4c99-980b-c28980b89bd1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"MyLoad":{"_propertyPath":"Worker_Knowledge.my_load","_name":"MyLoad","_id":"e5c5d1b9-70d8-4e97-862c-e433b48cf0f8","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Life
+        vars":{"_name":"Life vars","_id":"4ddec17d-ae90-409c-b004-f1f21fa29dbf","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.Framework.VariableSeperator,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"health":{"_propertyPath":"HealthManager.health","_name":"health","_id":"0fc763d9-ff11-45cb-999a-539e1e0618bc","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_health":{"_propertyPath":"HealthManager.current_health","_name":"current_health","_id":"a71316ef-eb65-4f1f-97a9-b44c1967acf5","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"current_food":{"_propertyPath":"Worker_Knowledge.current_food","_name":"current_food","_id":"c79fa3b9-ce88-4d75-ab0e-f1d2e8f18f7a","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465709539201304774, guid: da89b1f39e1843945ba520aad83b2cff,
+        type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e4294f2a498ae934f83c7538c37ec957, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da89b1f39e1843945ba520aad83b2cff, type: 3}
 --- !u!1 &7818756671385382099 stripped

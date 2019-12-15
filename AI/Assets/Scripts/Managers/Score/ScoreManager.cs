@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject final_lose_panel;
     public GameObject score_panel;
     public GameObject score_text;
+    public AudioSource clip_lose;
     bool final = false;
     //int current_day;
     // Start is called before the first frame update
@@ -28,7 +29,6 @@ public class ScoreManager : MonoBehaviour
         if (resources.GetComponent<DayManager>().days_until_winter < 0 && final == false)
         {
             final = true;
-            Debug.Log("HEHEHEHE");
             CheckWinCondition();
             DisplayFinalPanel();
         }
@@ -58,8 +58,9 @@ public class ScoreManager : MonoBehaviour
         {
             final_lose_panel.SetActive(true);
             Debug.Log("FAIL");
-
+            clip_lose.Play();
         }
+        
     }
 
     public void ContinueClicked()
