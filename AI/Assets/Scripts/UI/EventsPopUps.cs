@@ -10,7 +10,10 @@ public class EventsPopUps : MonoBehaviour
     public GameObject wood_text;
     public GameObject raid_text;
     public GameObject resources;
-    public GameObject spawn;
+    public GameObject spawn_up;
+    public GameObject spawn_down;
+    public GameObject spawn_left;
+    public GameObject spawn_right;
     public float timer = 5.0f;
     bool countdown = false;
     // Start is called before the first frame update
@@ -43,10 +46,28 @@ public class EventsPopUps : MonoBehaviour
             resources.GetComponent<LostRocks>().is_wasted = false;
             countdown = true;
         }
-        if (spawn.GetComponent<SpawnEnemies>().clicked)
+        if (spawn_up.GetComponent<SpawnEnemies>().is_spawned)
         {
             raid_text.SetActive(true);
-            spawn.GetComponent<SpawnEnemies>().clicked = false;
+            spawn_up.GetComponent<SpawnEnemies>().is_spawned = false;
+            countdown = true;
+        }
+        if (spawn_down.GetComponent<SpawnEnemies>().is_spawned)
+        {
+            raid_text.SetActive(true);
+            spawn_down.GetComponent<SpawnEnemies>().is_spawned = false;
+            countdown = true;
+        }
+        if (spawn_left.GetComponent<SpawnEnemies>().is_spawned)
+        {
+            raid_text.SetActive(true);
+            spawn_left.GetComponent<SpawnEnemies>().is_spawned = false;
+            countdown = true;
+        }
+        if (spawn_right.GetComponent<SpawnEnemies>().is_spawned)
+        {
+            raid_text.SetActive(true);
+            spawn_right.GetComponent<SpawnEnemies>().is_spawned = false;
             countdown = true;
         }
         if (countdown)
@@ -56,7 +77,7 @@ public class EventsPopUps : MonoBehaviour
     void CountDown()
     {
         timer -= Time.deltaTime;
-        if (timer < 0 && resources.GetComponent<LostFood>().is_wasted == false && resources.GetComponent<LostWood>().is_wasted == false && spawn.GetComponent<SpawnEnemies>().clicked == false)
+        if (timer < 0 && resources.GetComponent<LostFood>().is_wasted == false && resources.GetComponent<LostWood>().is_wasted == false && spawn_up.GetComponent<SpawnEnemies>().is_spawned == false && spawn_down.GetComponent<SpawnEnemies>().is_spawned == false && spawn_left.GetComponent<SpawnEnemies>().is_spawned == false && spawn_right.GetComponent<SpawnEnemies>().is_spawned == false)
         {
             food_text.SetActive(false);
             wood_text.SetActive(false);
