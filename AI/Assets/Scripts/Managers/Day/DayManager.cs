@@ -10,6 +10,7 @@ public class DayManager : MonoBehaviour
     public GameObject NextDay;
     public GameObject Text;
     public int days_until_winter = 9;
+    public AudioSource clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class DayManager : MonoBehaviour
             NextDay.SetActive(true);
             Text.GetComponent<Text>().text = days_until_winter + " days until winter comes";
         }
+        if (next_day)
+            clip.Play();
     }
 
     public void GoToNextDay()

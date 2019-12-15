@@ -9,6 +9,7 @@ public class SpawnEnemies : MonoBehaviour
     private int enemies_spawned = 0;
     public float offset = 1.5f;
     public bool clicked = false;
+    public GameObject pop_up;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +31,19 @@ public class SpawnEnemies : MonoBehaviour
             }          
             clicked = false;
             enemies_spawned = 0;
+            Invoke("ShowInfo", 2);
         }
 
-
+        
     }
 
     public void Clicked()
     {
         clicked = true;
+        pop_up.SetActive(true);
+    }
+    void ShowInfo()
+    {
+        pop_up.SetActive(false);
     }
 }
