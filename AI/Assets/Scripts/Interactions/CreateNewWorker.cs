@@ -47,11 +47,11 @@ public class CreateNewWorker : MonoBehaviour
 
         if (clicked)
         {
-            if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 20)
+            if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 40)
             {
                 clip.Play();
                 SelectAle();
-                resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
+                resources.GetComponent<Anthill_Resources>().Food_cantity -= 40;
             }
             clicked = false;
         }

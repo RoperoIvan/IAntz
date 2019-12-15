@@ -31,6 +31,8 @@ namespace AI{
             agent.gameObject.GetComponent<ChangingResourceManager>().current_resource_state = 0;
             agent.gameObject.GetComponent<ChangingResourceManager>().current_wanted_resource = 0;
             timer = Time.time;
+            if (my_load.value != 0)
+                EndAction(true);
         }
 
         protected override void OnUpdate()

@@ -1008,6 +1008,21 @@ PrefabInstance:
       propertyPath: clip_lose
       value: 
       objectReference: {fileID: 459638789}
+    - target: {fileID: 2540546684749852671, guid: 894f2bcf0afafbf4382b48ee6bbbab8f,
+        type: 3}
+      propertyPath: win_food
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2540546684749852671, guid: 894f2bcf0afafbf4382b48ee6bbbab8f,
+        type: 3}
+      propertyPath: win_rocks
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2540546684749852671, guid: 894f2bcf0afafbf4382b48ee6bbbab8f,
+        type: 3}
+      propertyPath: win_wood
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 894f2bcf0afafbf4382b48ee6bbbab8f, type: 3}
 --- !u!1001 &54082305
@@ -3922,19 +3937,19 @@ MonoBehaviour:
   Wood_c_1: 100
   Wood_c_2: 200
   Wood_c_3: 300
-  Cap_food_basic: 50
-  Cap_food_advanced: 100
-  Cap_food_end: 150
+  Cap_food_basic: 100
+  Cap_food_advanced: 500
+  Cap_food_end: 2000
   Actual_food_storage_lvl: 0
   Af_cap: 0
-  Cap_wood_basic: 50
-  Cap_wood_advanced: 100
-  Cap_wood_end: 150
+  Cap_wood_basic: 100
+  Cap_wood_advanced: 500
+  Cap_wood_end: 2000
   Actual_wood_storage_lvl: 0
   Aw_cap: 0
-  Cap_rock_basic: 50
-  Cap_rock_advanced: 100
-  Cap_rock_end: 150
+  Cap_rock_basic: 100
+  Cap_rock_advanced: 500
+  Cap_rock_end: 2000
   Actual_rock_storage_lvl: 0
   Ar_cap: 0
   how_much_for_food_upgrade: {fileID: 167827209}
@@ -28760,7 +28775,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -31827,9 +31842,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Cost to create a worker ant:
 
-        - 50 x Wood
-
-        - 30 x Rocks'
+        - 40 x Food'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7939cc12e63c7409533987ac268ce3, type: 3}
@@ -38261,7 +38274,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -40288,7 +40301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunlight: {fileID: 1262632479}
-  cicle_strength: 5
+  cicle_strength: 0.6
   resources: {fileID: 117113732}
 --- !u!114 &1391056268
 MonoBehaviour:
@@ -41925,9 +41938,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Cost to create a warrior ant:
 
-        - 50 x Food
+        - 30 x Food
 
-        - 30 x Rocks'
+        - 20 x Rocks'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7939cc12e63c7409533987ac268ce3, type: 3}
@@ -54043,7 +54056,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
@@ -65995,7 +66008,7 @@ PrefabInstance:
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7243268571339885678, guid: 92edb21d9c5d654498842d1b4e75c8d1,
         type: 3}

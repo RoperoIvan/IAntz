@@ -125,13 +125,13 @@ public class Worker_Knowledge : MonoBehaviour
     public void GiveMaterial(int i)
     {
         if (i == 1)
-             ant_res.Food_cantity += 10;
+             ant_res.Food_cantity += 20;
 
         if (i == 2)
-             ant_res.Rocks_cantity += 10;
+             ant_res.Rocks_cantity += 20;
 
         if (i == 3)
-             ant_res.Branches_cantity += 10;
+             ant_res.Branches_cantity += 20;
 
         if (i == 8)
             ant_res.Food_cantity -= 5;
