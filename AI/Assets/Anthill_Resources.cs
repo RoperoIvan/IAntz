@@ -81,6 +81,11 @@ public class Anthill_Resources : MonoBehaviour
 
     public int Ar_cap = 0;
 
+    public Text how_much_for_food_upgrade;
+    public Text how_much_for_wood_upgrade;
+    public Text how_much_for_rock_upgrade;
+
+
     // Upgrade sound.
     public AudioSource clip;
     public AudioSource clip_error;
@@ -88,7 +93,7 @@ public class Anthill_Resources : MonoBehaviour
     public int worker_count;
     public int warrior_count;
 
-
+    
    
     // Start is called before the first frame update
     void Start()
@@ -105,6 +110,17 @@ public class Anthill_Resources : MonoBehaviour
         resources_branches.text = "Branches:" + Branches_cantity + "/" + Aw_cap;
 
         CalculatePriorities();
+
+        //first we calculate the original costs.
+
+        how_much_for_food_upgrade.text = "F:" + 30 + "\n" + "R:" + 30 + "\n" + "W:" + 30;
+        how_much_for_wood_upgrade.text = "F:" + 30 + "\n" + "R:" + 30 + "\n" + "W:" + 30;
+        how_much_for_rock_upgrade.text = "F:" + 30 + "\n" + "R:" + 30 + "\n" + "W:" + 30;
+
+        how_much_for_food_upgrade.fontSize = 8;
+        how_much_for_rock_upgrade.fontSize = 8;
+        how_much_for_wood_upgrade.fontSize = 8;
+
     }
 
     // Update is called once per frame
@@ -312,6 +328,8 @@ public class Anthill_Resources : MonoBehaviour
                 Actual_food_storage_lvl = 1;
 
                 clip.Play();
+                how_much_for_food_upgrade.text = "F:" + cantity_to_upgrade_to_tier_3_f + "\n" + "R:" + cantity_to_upgrade_to_tier_3_r + "\n" + "W:" + cantity_to_upgrade_to_tier_3_w;
+               
             }
         }
 
@@ -385,6 +403,9 @@ public class Anthill_Resources : MonoBehaviour
                 upgraded = true;
                 Actual_wood_storage_lvl = 1;
                 clip.Play();
+
+                how_much_for_wood_upgrade.text = "F:" + cantity_to_upgrade_to_tier_3_f + "\n" + "R:" + cantity_to_upgrade_to_tier_3_r + "\n" + "W:" + cantity_to_upgrade_to_tier_3_w;
+
             }
         }
 
@@ -458,6 +479,9 @@ public class Anthill_Resources : MonoBehaviour
                 upgraded = true;
                 Actual_rock_storage_lvl = 1;
                 clip.Play();
+
+                how_much_for_rock_upgrade.text = "F:" + cantity_to_upgrade_to_tier_3_f + "\n" + "R:" + cantity_to_upgrade_to_tier_3_r + "\n" + "W:" + cantity_to_upgrade_to_tier_3_w;
+
             }
         }
 
