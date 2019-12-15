@@ -6,11 +6,14 @@ public class CreateNewWarrior : MonoBehaviour
 {
     public GameObject resource_zone;
     public GameObject resources;
+    public GameObject Spawn_pos;
+
+
     GameObject new_obj;
     bool clicked;
     Vector3 mouse_offset;
     float mouse_z_pos;
-    bool set = false;
+    bool set = true;
     public AudioSource clip;
 
     public void Start()
@@ -18,24 +21,40 @@ public class CreateNewWarrior : MonoBehaviour
     }
     public void Update()
     {
+        //if (clicked)
+        //{
+        //    set = false;
+        //    PutZone(Input.mousePosition);
+        //    mouse_z_pos = Camera.main.WorldToScreenPoint(new_obj.transform.position).z;
+        //    mouse_offset = new_obj.transform.position - MouseInWorld();
+        //    clip.Play();
+        //}
+
+        //if (!set)
+        //{
+        //    new_obj.transform.position = MouseInWorld() - mouse_offset;
+        //    if (Input.GetButtonDown("Fire1"))
+        //    {
+        //        set = true;
+        //        resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
+
+        //    }         
+        //}
+
         if (clicked)
         {
-            set = false;
-            PutZone(Input.mousePosition);
-            mouse_z_pos = Camera.main.WorldToScreenPoint(new_obj.transform.position).z;
-            mouse_offset = new_obj.transform.position - MouseInWorld();
-            clip.Play();
-        }
-
-        if (!set)
-        {
-            new_obj.transform.position = MouseInWorld() - mouse_offset;
-            if (Input.GetButtonDown("Fire1"))
+            if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 20)
             {
-                set = true;
+                clip.Play();
+                Vector3 ori_pos;
+                ori_pos.x = Spawn_pos.transform.position.x;
+                ori_pos.y = resource_zone.transform.position.y;
+                ori_pos.z = Spawn_pos.transform.position.z;
+
+                new_obj = GameObject.Instantiate(resource_zone, ori_pos, Quaternion.identity);
                 resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
-                
-            }         
+            }
+            clicked = false;
         }
     }
     private Vector3 MouseInWorld()
