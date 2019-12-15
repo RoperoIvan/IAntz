@@ -12,6 +12,8 @@ public class CreateNewWorker : MonoBehaviour
     Vector3 mouse_offset;
     float mouse_z_pos;
     bool set = false;
+    public AudioSource clip;
+
     public void Start()
     {
     }
@@ -23,6 +25,7 @@ public class CreateNewWorker : MonoBehaviour
             PutZone(Input.mousePosition);
             mouse_z_pos = Camera.main.WorldToScreenPoint(new_obj.transform.position).z;
             mouse_offset = new_obj.transform.position - MouseInWorld();
+            clip.Play();
         }
 
         if (!set)
@@ -32,6 +35,7 @@ public class CreateNewWorker : MonoBehaviour
             {
                 set = true;
                 resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
+                
             }
         }
     }

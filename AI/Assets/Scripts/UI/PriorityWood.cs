@@ -8,6 +8,8 @@ public class PriorityWood : MonoBehaviour
     public Dropdown D_Wood;
     public int last_index = 0;
     List<string> prio_wood = new List<string>() { "Wood: 1", "Wood: 2", "Wood: 3" };
+    public AudioSource clip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +31,6 @@ public class PriorityWood : MonoBehaviour
         this.GetComponent<Anthill_Resources>().Priority_branches = (index + 1);
         last_index = (index + 1);
         this.GetComponent<Anthill_Resources>().CalculatePriorities();
+        clip.Play();
     }
 }

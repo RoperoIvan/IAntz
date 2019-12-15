@@ -81,9 +81,9 @@ public class Anthill_Resources : MonoBehaviour
 
     public int Ar_cap = 0;
 
-    // Upgrade buttons.
-
-
+    // Upgrade sound.
+    public AudioSource clip;
+    public AudioSource clip_error;
     // Ant counts:
     public int worker_count;
     public int warrior_count;
@@ -310,6 +310,8 @@ public class Anthill_Resources : MonoBehaviour
                 Af_cap = Cap_food_advanced;
                 upgraded = true;
                 Actual_food_storage_lvl = 1;
+
+                clip.Play();
             }
         }
 
@@ -326,10 +328,15 @@ public class Anthill_Resources : MonoBehaviour
                 Af_cap = Cap_food_end;
                 upgraded = true;
                 Actual_food_storage_lvl = 2;
+                clip.Play();
             }
 
         }
-        
+        if (!can_we_upgrade_lvl_2)
+            clip_error.Play();
+
+        if (!can_we_upgrade_lvl_3 && can_we_upgrade_lvl_2) //TODO: Solve this
+            clip_error.Play();
     }
 
     public void UpgradeWoodStorage()
@@ -377,6 +384,7 @@ public class Anthill_Resources : MonoBehaviour
                 Aw_cap = Cap_food_advanced;
                 upgraded = true;
                 Actual_wood_storage_lvl = 1;
+                clip.Play();
             }
         }
 
@@ -393,10 +401,15 @@ public class Anthill_Resources : MonoBehaviour
                 Aw_cap = Cap_food_end;
                 upgraded = true;
                 Actual_wood_storage_lvl = 2;
+                clip.Play();
             }
 
         }
+        if (!can_we_upgrade_lvl_2)
+            clip_error.Play();
 
+        if (!can_we_upgrade_lvl_3 && can_we_upgrade_lvl_2)
+            clip_error.Play();
     }
 
     public void UpgradeRockStorage()
@@ -444,6 +457,7 @@ public class Anthill_Resources : MonoBehaviour
                 Ar_cap = Cap_food_advanced;
                 upgraded = true;
                 Actual_rock_storage_lvl = 1;
+                clip.Play();
             }
         }
 
@@ -460,10 +474,15 @@ public class Anthill_Resources : MonoBehaviour
                 Ar_cap = Cap_food_end;
                 upgraded = true;
                 Actual_rock_storage_lvl = 2;
+                clip.Play();
             }
 
         }
+        if (!can_we_upgrade_lvl_2)
+            clip_error.Play();
 
+        if (!can_we_upgrade_lvl_3 && can_we_upgrade_lvl_2)
+            clip_error.Play();
     }
 
 
