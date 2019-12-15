@@ -10,7 +10,7 @@ public class SpawnEnemies : MonoBehaviour
     public float offset = 1.5f;
     public bool clicked = false;
     public int localization = 0; // 0: up/down 1: left/right
-    public int number_enemies = 4;
+    public int number_enemies = 1;
     public bool is_spawned = false;
     // Start is called before the first frame update
     void Start()
@@ -30,9 +30,10 @@ public class SpawnEnemies : MonoBehaviour
                         GameObject enemy;
                         enemy = GameObject.Instantiate(enemy_ant, this.transform.position, Quaternion.identity);
                         Vector3 tmp_pos = enemy.transform.position;
-                        tmp_pos.x += offset * enemies_spawned;
+                        tmp_pos.x += offset * (enemies_spawned +1) ;
                         enemy.transform.position = tmp_pos;
                         enemies_spawned++;
+                        enemy.SetActive(true);
                     }                    
                     break;
                 case 1:
@@ -41,9 +42,10 @@ public class SpawnEnemies : MonoBehaviour
                         GameObject enemy;
                         enemy = GameObject.Instantiate(enemy_ant, this.transform.position, Quaternion.identity);
                         Vector3 tmp_pos = enemy.transform.position;
-                        tmp_pos.z += offset * enemies_spawned;
+                        tmp_pos.z += offset * (enemies_spawned + 1);
                         enemy.transform.position = tmp_pos;
                         enemies_spawned++;
+                        enemy.SetActive(true);
                     }
                     break;                
                 default:
