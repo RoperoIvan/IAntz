@@ -6,6 +6,7 @@ public class Warrior_knowledge : MonoBehaviour
 {
     public GameObject Where_to_rest;
     public bool on_sleep_module = false;
+    public AudioSource clip;
 
     public int current_food;
 

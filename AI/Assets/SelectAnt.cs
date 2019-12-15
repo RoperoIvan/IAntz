@@ -6,6 +6,7 @@ public class SelectAnt : MonoBehaviour
 {
     public LayerMask mask;
     public int mouse_button = 0;
+    public AudioSource clip;
 
     public GameObject my_ant;
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class SelectAnt : MonoBehaviour
                 foreach (Collider coll in colliders)
                 {
                     my_ant = coll.gameObject;
+                    clip.Play();
                 }
                 //Then the new ant will be told that is selected.
                 my_ant.GetComponent<Warrior_knowledge>().im_selected = true;

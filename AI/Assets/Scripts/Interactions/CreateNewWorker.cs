@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class CreateNewWorker : MonoBehaviour
 {
-    // Para el gollim del futuro, tanto aqui como en el del worker lo que tendras que hacer es meter varios tipos y con un random pillar el que quieras.
     public GameObject resource_zone;
+    public GameObject resource_zone_2;
+    public GameObject resource_zone_3;
+    public GameObject resource_zone_4;
+
+
     public GameObject resources;
     public GameObject Spawn_pos;
 
@@ -46,12 +50,7 @@ public class CreateNewWorker : MonoBehaviour
             if (resources.GetComponent<Anthill_Resources>().Food_cantity >= 20)
             {
                 clip.Play();
-                Vector3 ori_pos;
-                ori_pos.x = Spawn_pos.transform.position.x;
-                ori_pos.y = resource_zone.transform.position.y;
-                ori_pos.z = Spawn_pos.transform.position.z;
-
-                new_obj = GameObject.Instantiate(resource_zone, ori_pos, Quaternion.identity);
+                SelectAle();
                 resources.GetComponent<Anthill_Resources>().Food_cantity -= 20;
             }
             clicked = false;
@@ -80,6 +79,50 @@ public class CreateNewWorker : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(mouse_pos);
         Physics.Raycast(ray, out hit, r_length);
         return hit;
+    }
+
+    public void SelectAle()
+    {
+        Vector3 ori_pos;
+        int randd = Random.Range(0, 4);
+
+        if (randd == 0)
+        {
+            ori_pos.x = Spawn_pos.transform.position.x;
+            ori_pos.y = resource_zone.transform.position.y;
+            ori_pos.z = Spawn_pos.transform.position.z;
+
+            new_obj = GameObject.Instantiate(resource_zone, ori_pos, Quaternion.identity);
+        }
+        if (randd == 1)
+        {
+            ori_pos.x = Spawn_pos.transform.position.x;
+            ori_pos.y = resource_zone_2.transform.position.y;
+            ori_pos.z = Spawn_pos.transform.position.z;
+
+            new_obj = GameObject.Instantiate(resource_zone_2, ori_pos, Quaternion.identity);
+        }
+
+        if (randd == 2)
+        {
+            ori_pos.x = Spawn_pos.transform.position.x;
+            ori_pos.y = resource_zone_3.transform.position.y;
+            ori_pos.z = Spawn_pos.transform.position.z;
+
+            new_obj = GameObject.Instantiate(resource_zone_3, ori_pos, Quaternion.identity);
+        }
+
+        if (randd == 3)
+        {
+            ori_pos.x = Spawn_pos.transform.position.x;
+            ori_pos.y = resource_zone_4.transform.position.y;
+            ori_pos.z = Spawn_pos.transform.position.z;
+
+            new_obj = GameObject.Instantiate(resource_zone_4, ori_pos, Quaternion.identity);
+        }
+
+        new_obj.SetActive(true);
+        
     }
 
 }

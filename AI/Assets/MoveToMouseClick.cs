@@ -7,6 +7,7 @@ public class MoveToMouseClick : MonoBehaviour {
 	public LayerMask mask;
 	public int mouse_button = 0;
     public bool selected;
+    public AudioSource clip;
 
     public GameObject my_ant;
     private Warrior_knowledge my_knowledge;
@@ -29,6 +30,7 @@ public class MoveToMouseClick : MonoBehaviour {
                 {
                     transform.position = hit.point;
                     my_knowledge.target_pos_ind = transform.position;
+                    //clip.Play();
                 }
             }
 				
