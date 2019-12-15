@@ -9,7 +9,9 @@ public class SpawnEnemies : MonoBehaviour
     private int enemies_spawned = 0;
     public float offset = 1.5f;
     public bool clicked = false;
-    public GameObject pop_up;
+    public int localization = 0; // 0: up/down 1: left/right
+    public int number_enemies = 4;
+    public bool is_spawned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,33 +19,45 @@ public class SpawnEnemies : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {      
         if(clicked)
         {
-            while(enemies_spawned != 4)
+            switch(localization)
             {
-                GameObject enemy;
-                enemy = GameObject.Instantiate(enemy_ant, this.transform.position, Quaternion.identity);
-                Vector3 tmp_pos = enemy.transform.position;
-                tmp_pos.x += offset * enemies_spawned;
-                enemy.transform.position = tmp_pos;
-                enemies_spawned++;
-            }          
+                case 0:
+                    while (enemies_spawned != number_enemies)
+                    {
+                        GameObject enemy;
+                        enemy = GameObject.Instantiate(enemy_ant, this.transform.position, Quaternion.identity);
+                        Vector3 tmp_pos = enemy.transform.position;
+                        tmp_pos.x += offset * enemies_spawned;
+                        enemy.transform.position = tmp_pos;
+                        enemies_spawned++;
+                    }                    
+                    break;
+                case 1:
+                    while (enemies_spawned != number_enemies)
+                    {
+                        GameObject enemy;
+                        enemy = GameObject.Instantiate(enemy_ant, this.transform.position, Quaternion.identity);
+                        Vector3 tmp_pos = enemy.transform.position;
+                        tmp_pos.z += offset * enemies_spawned;
+                        enemy.transform.position = tmp_pos;
+                        enemies_spawned++;
+                    }
+                    break;                
+                default:
+                    Debug.Log("This spawn doesn't exist");
+                    break;
+            }
             clicked = false;
+            is_spawned = true;
             enemies_spawned = 0;
-            Invoke("ShowInfo", 2);
         }
-
-        
     }
 
     public void Clicked()
     {
-        clicked = true;
-        pop_up.SetActive(true);
-    }
-    void ShowInfo()
-    {
-        pop_up.SetActive(false);
+        clicked = true;        
     }
 }

@@ -6,7 +6,10 @@ public class EventManager : MonoBehaviour
 {
     public bool have_been_attacked = false;
     public bool lets_calculate_event = false;
-    public GameObject spawn;
+    public GameObject spawn_up;
+    public GameObject spawn_down;
+    public GameObject spawn_left;
+    public GameObject spawn_right;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,8 @@ public class EventManager : MonoBehaviour
             CalculateEvent();
             lets_calculate_event = true;
         }
+        if (Input.GetKeyDown("m"))
+            ChooseEvent();
     }
 
     public void CalculateEvent()
@@ -58,7 +63,25 @@ public class EventManager : MonoBehaviour
 
             case 3: //Attack Enemies
                 Debug.Log("Raid");
-                spawn.GetComponent<SpawnEnemies>().Clicked();
+                int random_spawn = Random.Range(0, 4);
+                switch(random_spawn)
+                {
+                    case 0:
+                        spawn_up.GetComponent<SpawnEnemies>().Clicked();
+                        break;
+                    case 1:
+                        spawn_down.GetComponent<SpawnEnemies>().Clicked();
+                        break;
+                    case 2:
+                        spawn_left.GetComponent<SpawnEnemies>().Clicked();
+                        break;
+                    case 3:
+                        spawn_right.GetComponent<SpawnEnemies>().Clicked();
+                        break;
+                    default:
+                        Debug.Log("This should never happen.");
+                        break;
+                }                
                 break;
             default:
                 Debug.Log("This shouldn't happen, something has to be really REALLY broke.");               
